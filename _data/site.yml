@@ -11,9 +11,9 @@ site:
   
   # Contact
   email: "marchlab@example.ac.kr"
-  phone: "+82-2-000-0000"
-  address: "서울특별시 관악구 관악로 1, 000동 000호"
-  address_en: "000 Building, 1 Gwanak-ro, Gwanak-gu, Seoul, Korea"
+  phone: "+82-33-640-0000"
+  address: "강원도 강릉시 범일로 57 강원대학교 강릉캠퍼스 공학관 000호"
+  address_en: "Engineering Building, Gangneung Campus, Kangwon National University, 57 Beomil-ro, Gangneung-si, Gangwon-do 25457, Korea"
   
   # Social
   github: "https://github.com/marchlab"
@@ -65,7 +65,7 @@ site:
     cta_text: "연구 분야 보기"
     cta_text_en: "View Research Areas"
     cta_url: "/research/"
-    background_image: ""
+    background_image: "/assets/images/hero-placeholder.svg"
     stats:
       - label: "연구 논문"
         value: "150+"

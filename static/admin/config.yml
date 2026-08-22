@@ -14,8 +14,8 @@ backend:
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
-site_url: https://your-username.github.io
-logo_url: https://your-username.github.io/MaRCH_Homepage_code/assets/images/logo.png
+site_url: https://march-jjh.github.io/MaRCH-Homepage
+logo_url: https://march-jjh.github.io/MaRCH-Homepage/assets/images/logo.svg
 
 # Disable signups for Netlify Identity (security)
 # Go to Netlify Dashboard > Site Settings > Identity > Registration > Disable Signup

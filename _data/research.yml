@@ -15,6 +15,7 @@
     to minimize experimental trial-and-error and design novel materials with target 
     properties in silico. Research spans high-entropy alloys, catalysts, and 2D materials.
   icon: "cpu"
+  image: "/assets/images/research-computational.svg"
   keywords:
     - "DFT"
     - "Machine Learning"
@@ -51,6 +52,7 @@
     solid electrolytes for all-solid-state batteries, cathode materials for Li-S/Li-air 
     batteries, perovskite solar cells, and hydrogen production/storage materials.
   icon: "battery"
+  image: "/assets/images/research-energy.svg"
   keywords:
     - "Solid-State Battery"
     - "Perovskite Solar Cell"
@@ -87,6 +89,7 @@
     Investigating deformation mechanisms and optimizing additive manufacturing processes 
     for high-Mn steels, Ti alloys, and ceramic matrix composites.
   icon: "cube"
+  image: "/assets/images/research-structural.svg"
   keywords:
     - "High-Mn Steel"
     - "Titanium Alloy"
@@ -123,6 +126,7 @@
     Research includes biodegradable polymers, hydrogels, nanoparticle-based 
     drug carriers, and tissue engineering scaffold materials.
   icon: "dna"
+  image: "/assets/images/research-bio.svg"
   keywords:
     - "Biodegradable Polymer"
     - "Hydrogel"
