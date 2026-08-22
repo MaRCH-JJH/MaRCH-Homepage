@@ -1,8 +1,8 @@
 # Site settings
 title: MaRCH Lab
 description: "Materials Research & Computational Horizons Laboratory"
-url: "https://march-jjh.github.io/MaRCH-Homepage/"
-baseurl: "/MaRCH_Homepage_code"
+url: "https://march-jjh.github.io"
+baseurl: "/MaRCH-Homepage"
 lang: "ko_KR"
 
 # Author / Lab info
