@@ -1,4 +1,3 @@
-{% if jekyll.environment == 'development' %}
 <script>
   window.decapCMS = {
     config: {
@@ -6,9 +5,11 @@
         name: 'git-gateway',
         branch: 'main'
       },
-      load_config_file: false
+      media_folder: 'assets/images',
+      public_folder: '/assets/images',
+      site_url: 'https://march-jjh.github.io/MaRCH-Homepage',
+      logo_url: 'https://march-jjh.github.io/MaRCH-Homepage/assets/images/logo.svg'
     }
   };
 </script>
-<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-{% endif %}
+<script defer src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
