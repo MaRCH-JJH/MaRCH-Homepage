@@ -16,7 +16,7 @@ body_class: "members-page"
 </div>
 
 <div class="members-grid" role="list" aria-label="멤버 목록">
-  {% assign sorted_members = site.data.members | sort: "order" %}
+  {% assign sorted_members = site.data.members.items | sort: "order" %}
   {% for member in sorted_members %}
   {% include member-card.html member=member %}
   {% endfor %}

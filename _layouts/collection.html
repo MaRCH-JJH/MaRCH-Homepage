@@ -17,14 +17,14 @@ layout: default
 
     {% if page.collection == 'research' %}
     <div class="research-grid">
-      {% for item in site.data.research %}
+      {% for item in site.data.research.items %}
       {% include research-card.html item=item %}
       {% endfor %}
     </div>
     {% elsif page.collection == 'awards' %}
-    {% if site.data.awards.size > 0 %}
+    {% if site.data.awards.years.size > 0 %}
     <div class="awards-accordion">
-      {% for year_group in site.data.awards %}
+      {% for year_group in site.data.awards.years %}
       <details class="award-year" {% if forloop.first %}open{% endif %}>
         <summary class="award-year-summary">
           <span class="award-year-label">{{ year_group.year }}</span>
@@ -45,7 +45,7 @@ layout: default
     </div>
     {% endif %}
     {% elsif page.collection == 'publications' %}
-    {% if site.data.publications.size > 0 %}
+    {% if site.data.publications.years.size > 0 %}
     <div class="publications-filters" role="group" aria-label="논문 필터">
       <label class="filter-checkbox">
         <input type="checkbox" name="pub-filter" value="Journal" checked aria-label="저널 논문">
@@ -74,7 +74,7 @@ layout: default
     </div>
 
     <div class="publications-by-year">
-      {% for year_group in site.data.publications %}
+      {% for year_group in site.data.publications.years %}
       <section class="pub-year-section" data-year="{{ year_group.year }}">
         <h2 class="pub-year-heading">{{ year_group.year }}</h2>
         <ul class="publications-list" role="list">

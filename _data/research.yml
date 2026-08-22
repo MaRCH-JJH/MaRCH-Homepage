@@ -1,115 +1,116 @@
 # Research areas data
 # Editable via Decap CMS (Research collection)
 
-- id: rf-circuit-design
-  title: "RF/Microwave Circuit Design"
-  title_en: "RF/Microwave Circuit Design"
-  subtitle: "임피던스 매칭 및 EM 시뮬레이션 기반 수동/능동 회로 설계"
-  subtitle_en: "Passive/active circuit design based on impedance matching and EM simulation"
-  description: |
-    RF/Microwave 대역에서 동작하는 수동 및 능동 회로를 설계합니다. 임피던스 매칭
-    네트워크, 필터, 커플러 등 수동 소자 설계와 EM 시뮬레이션 기반 검증을 통해
-    안정적이고 재현 가능한 RF 회로 설계 방법론을 연구합니다.
-  description_en: |
-    Designing passive and active circuits operating in the RF/Microwave band.
-    Research covers impedance matching networks, filters, and couplers, combined
-    with EM simulation-based verification for reliable and reproducible RF
-    circuit design methodology.
-  icon: "cpu"
-  image: "/assets/images/research-rf-circuit-design.svg"
-  keywords:
-    - "Impedance Matching"
-    - "EM Simulation"
-    - "RF Filter"
-    - "Passive Circuit Design"
-  keywords_en:
-    - "Impedance Matching"
-    - "EM Simulation"
-    - "RF Filter"
-    - "Passive Circuit Design"
-  order: 1
+items:
+  - id: rf-circuit-design
+    title: "RF/Microwave Circuit Design"
+    title_en: "RF/Microwave Circuit Design"
+    subtitle: "임피던스 매칭 및 EM 시뮬레이션 기반 수동/능동 회로 설계"
+    subtitle_en: "Passive/active circuit design based on impedance matching and EM simulation"
+    description: |
+      RF/Microwave 대역에서 동작하는 수동 및 능동 회로를 설계합니다. 임피던스 매칭
+      네트워크, 필터, 커플러 등 수동 소자 설계와 EM 시뮬레이션 기반 검증을 통해
+      안정적이고 재현 가능한 RF 회로 설계 방법론을 연구합니다.
+    description_en: |
+      Designing passive and active circuits operating in the RF/Microwave band.
+      Research covers impedance matching networks, filters, and couplers, combined
+      with EM simulation-based verification for reliable and reproducible RF
+      circuit design methodology.
+    icon: "cpu"
+    image: "/assets/images/research-rf-circuit-design.svg"
+    keywords:
+      - "Impedance Matching"
+      - "EM Simulation"
+      - "RF Filter"
+      - "Passive Circuit Design"
+    keywords_en:
+      - "Impedance Matching"
+      - "EM Simulation"
+      - "RF Filter"
+      - "Passive Circuit Design"
+    order: 1
 
-- id: power-amplifier
-  title: "RF Power Amplifier"
-  title_en: "RF Power Amplifier"
-  subtitle: "GaN/GaAs 소자 기반 고효율·고출력 전력 증폭기 연구"
-  subtitle_en: "High-efficiency, high-power amplifier research based on GaN/GaAs devices"
-  description: |
-    MaRCH Lab의 핵심 연구분야로, RF Power Amplifier의 효율과 선형성을 함께
-    향상시키는 설계 기법을 연구합니다. GaAs HBT/pHEMT 및 GaN 소자를 기반으로
-    Doherty PA 구조를 포함한 high-efficiency, high-power, broadband PA 설계
-    방법론을 다룹니다.
-  description_en: |
-    The core research area of MaRCH Lab, focused on design techniques that
-    improve both efficiency and linearity of RF power amplifiers. Research is
-    based on GaAs HBT/pHEMT and GaN devices, covering Doherty PA architectures
-    and high-efficiency, high-power, broadband PA design methodology.
-  icon: "waveform"
-  image: "/assets/images/research-power-amplifier.svg"
-  featured: true
-  keywords:
-    - "GaN HEMT"
-    - "GaAs HBT/pHEMT"
-    - "Doherty PA"
-    - "Broadband PA"
-  keywords_en:
-    - "GaN HEMT"
-    - "GaAs HBT/pHEMT"
-    - "Doherty PA"
-    - "Broadband PA"
-  order: 2
+  - id: power-amplifier
+    title: "RF Power Amplifier"
+    title_en: "RF Power Amplifier"
+    subtitle: "GaN/GaAs 소자 기반 고효율·고출력 전력 증폭기 연구"
+    subtitle_en: "High-efficiency, high-power amplifier research based on GaN/GaAs devices"
+    description: |
+      MaRCH Lab의 핵심 연구분야로, RF Power Amplifier의 효율과 선형성을 함께
+      향상시키는 설계 기법을 연구합니다. GaAs HBT/pHEMT 및 GaN 소자를 기반으로
+      Doherty PA 구조를 포함한 high-efficiency, high-power, broadband PA 설계
+      방법론을 다룹니다.
+    description_en: |
+      The core research area of MaRCH Lab, focused on design techniques that
+      improve both efficiency and linearity of RF power amplifiers. Research is
+      based on GaAs HBT/pHEMT and GaN devices, covering Doherty PA architectures
+      and high-efficiency, high-power, broadband PA design methodology.
+    icon: "waveform"
+    image: "/assets/images/research-power-amplifier.svg"
+    featured: true
+    keywords:
+      - "GaN HEMT"
+      - "GaAs HBT/pHEMT"
+      - "Doherty PA"
+      - "Broadband PA"
+    keywords_en:
+      - "GaN HEMT"
+      - "GaAs HBT/pHEMT"
+      - "Doherty PA"
+      - "Broadband PA"
+    order: 2
 
-- id: mmic-semiconductor
-  title: "MMIC & Semiconductor"
-  title_en: "MMIC & Semiconductor"
-  subtitle: "모놀리식 마이크로파 집적회로 및 RF 반도체 소자 설계"
-  subtitle_en: "Monolithic microwave integrated circuit and RF semiconductor device design"
-  description: |
-    MMIC(Monolithic Microwave Integrated Circuit) 설계와 RF 반도체 공정을
-    연구합니다. 반도체 소자 모델링부터 레이아웃 설계, 웨이퍼 레벨 검증까지
-    RF 집적회로 개발 전 과정을 다룹니다.
-  description_en: |
-    Researching MMIC (Monolithic Microwave Integrated Circuit) design and RF
-    semiconductor processes, spanning device modeling, layout design, and
-    wafer-level verification across the RF IC development flow.
-  icon: "chip"
-  image: "/assets/images/research-mmic-semiconductor.svg"
-  keywords:
-    - "MMIC"
-    - "RF Semiconductor"
-    - "Device Modeling"
-    - "Wafer-Level Design"
-  keywords_en:
-    - "MMIC"
-    - "RF Semiconductor"
-    - "Device Modeling"
-    - "Wafer-Level Design"
-  order: 3
+  - id: mmic-semiconductor
+    title: "MMIC & Semiconductor"
+    title_en: "MMIC & Semiconductor"
+    subtitle: "모놀리식 마이크로파 집적회로 및 RF 반도체 소자 설계"
+    subtitle_en: "Monolithic microwave integrated circuit and RF semiconductor device design"
+    description: |
+      MMIC(Monolithic Microwave Integrated Circuit) 설계와 RF 반도체 공정을
+      연구합니다. 반도체 소자 모델링부터 레이아웃 설계, 웨이퍼 레벨 검증까지
+      RF 집적회로 개발 전 과정을 다룹니다.
+    description_en: |
+      Researching MMIC (Monolithic Microwave Integrated Circuit) design and RF
+      semiconductor processes, spanning device modeling, layout design, and
+      wafer-level verification across the RF IC development flow.
+    icon: "chip"
+    image: "/assets/images/research-mmic-semiconductor.svg"
+    keywords:
+      - "MMIC"
+      - "RF Semiconductor"
+      - "Device Modeling"
+      - "Wafer-Level Design"
+    keywords_en:
+      - "MMIC"
+      - "RF Semiconductor"
+      - "Device Modeling"
+      - "Wafer-Level Design"
+    order: 3
 
-- id: rf-measurement-system
-  title: "RF Measurement & System"
-  title_en: "RF Measurement & System"
-  subtitle: "네트워크/스펙트럼 분석기 기반 RF 특성평가 및 시스템 검증"
-  subtitle_en: "RF characterization and system verification using network/spectrum analyzers"
-  description: |
-    네트워크 분석기(VNA)와 스펙트럼 분석기를 활용한 RF 소자 및 회로의
-    특성평가 방법을 연구합니다. 설계된 회로와 증폭기가 실제 시스템 환경에서
-    요구 성능을 만족하는지 검증하는 계측·시스템 레벨 연구를 수행합니다.
-  description_en: |
-    Researching RF device and circuit characterization methods using network
-    analyzers (VNA) and spectrum analyzers. This includes measurement and
-    system-level verification confirming that designed circuits and amplifiers
-    meet target performance in real system environments.
-  icon: "antenna"
-  image: "/assets/images/research-rf-measurement-system.svg"
-  keywords:
-    - "VNA Measurement"
-    - "Spectrum Analysis"
-    - "RF Characterization"
-    - "System Verification"
-  keywords_en:
-    - "VNA Measurement"
-    - "Spectrum Analysis"
-    - "RF Characterization"
-    - "System Verification"
-  order: 4
+  - id: rf-measurement-system
+    title: "RF Measurement & System"
+    title_en: "RF Measurement & System"
+    subtitle: "네트워크/스펙트럼 분석기 기반 RF 특성평가 및 시스템 검증"
+    subtitle_en: "RF characterization and system verification using network/spectrum analyzers"
+    description: |
+      네트워크 분석기(VNA)와 스펙트럼 분석기를 활용한 RF 소자 및 회로의
+      특성평가 방법을 연구합니다. 설계된 회로와 증폭기가 실제 시스템 환경에서
+      요구 성능을 만족하는지 검증하는 계측·시스템 레벨 연구를 수행합니다.
+    description_en: |
+      Researching RF device and circuit characterization methods using network
+      analyzers (VNA) and spectrum analyzers. This includes measurement and
+      system-level verification confirming that designed circuits and amplifiers
+      meet target performance in real system environments.
+    icon: "antenna"
+    image: "/assets/images/research-rf-measurement-system.svg"
+    keywords:
+      - "VNA Measurement"
+      - "Spectrum Analysis"
+      - "RF Characterization"
+      - "System Verification"
+    keywords_en:
+      - "VNA Measurement"
+      - "Spectrum Analysis"
+      - "RF Characterization"
+      - "System Verification"
+    order: 4
