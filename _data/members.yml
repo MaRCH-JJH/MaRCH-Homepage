@@ -26,3 +26,26 @@ items:
     name_en: Prof. Kim
     linkedin: df
     category: professor
+  - google_scholar: sdf
+    bio_en: sdf
+    research_interests_en:
+      - df
+    research_interests:
+      - "123"
+    bio: sdfsdssd
+    name: 정진호
+    degree: ㅇㄴ
+    phone: "01"
+    order: -1
+    major_en: RF
+    role_en: M.S. Candidate
+    role: 석사과정
+    major: RF
+    id: s
+    image: /assets/images/정진호.jpg
+    orcid: "132"
+    office: masr
+    email: wsdf
+    name_en: Jeong jinho
+    linkedin: 3df
+    category: master
