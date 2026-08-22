@@ -21,7 +21,7 @@ layout: default
   <div class="page-body post-body-wrapper">
     <div class="container post-container">
       {% if page.image %}
-      <img src="{{ page.image | relative_url }}" alt="" class="post-image" loading="lazy">
+      <img src="{% include image-url.html path=page.image %}" alt="" class="post-image" loading="lazy">
       {% endif %}
 
       <div class="post-body">

@@ -13,7 +13,14 @@ backend:
     deleteMedia: "[skip ci] Delete \"{{path}}\""
 
 media_folder: "assets/images"
-public_folder: "/assets/images"
+# Full, absolute URL (not "/assets/images") because this site is deployed to a
+# GitHub Pages *project* page (march-jjh.github.io/MaRCH-Homepage/, not the
+# domain root). A root-relative public_folder resolves against the domain
+# root in the CMS's own editor preview and 404s. Every image widget's stored
+# path is therefore a fully-qualified URL now; _includes/image-url.html
+# handles both this format and any older root-relative paths already in the
+# data files, so nothing else needed to change for existing content.
+public_folder: "https://march-jjh.github.io/MaRCH-Homepage/assets/images"
 
 site_url: https://march-jjh.github.io/MaRCH-Homepage
 logo_url: https://march-jjh.github.io/MaRCH-Homepage/assets/images/logo.png

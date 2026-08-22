@@ -1,4 +1,4 @@
-<section class="hero" aria-labelledby="hero-title" style="{% if page.hero_background %}background-image: url('{{ site.baseurl }}{{ page.hero_background }}');{% elsif site.data.site.hero.background_image %}background-image: url('{{ site.baseurl }}{{ site.data.site.hero.background_image }}');{% endif %}">
+<section class="hero" aria-labelledby="hero-title" style="{% if page.hero_background %}background-image: url('{% include image-url.html path=page.hero_background %}');{% elsif site.data.site.hero.background_image %}background-image: url('{% include image-url.html path=site.data.site.hero.background_image %}');{% endif %}">
   <div class="container">
     <div class="hero-content">
       <h1 id="hero-title" class="hero-title">{{ page.hero_title | default: site.data.site.hero.title }}</h1>

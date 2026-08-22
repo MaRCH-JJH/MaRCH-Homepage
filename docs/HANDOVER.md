@@ -142,6 +142,25 @@
 - **윈도우**: Caesium Image Compressor
 - **명령줄**: `imagemagick` (`convert input.jpg -quality 85 -resize 800x500 output.jpg`)
 
+### (개발자용) 이미지 경로가 두 가지 형식으로 저장되는 이유
+
+이 사이트는 `march-jjh.github.io/MaRCH-Homepage/`처럼 도메인 루트가 아닌 하위 경로에 배포됩니다.
+Decap CMS의 이미지 위젯 자체 미리보기 기능은 이 하위 경로를 모르기 때문에, `public_folder`를
+`/assets/images`(루트 기준 상대경로)로 두면 CMS 편집 화면에서 이미지가 업로드/저장은 정상적으로
+되어도 썸네일 미리보기만 깨져 보이는 문제가 있었습니다(실제 배포된 사이트에는 정상 표시됨).
+
+이를 해결하기 위해 `admin/config.yml`의 `public_folder`를 전체 URL
+(`https://march-jjh.github.io/MaRCH-Homepage/assets/images`)로 바꿨습니다. 그 결과:
+
+- **이제부터 CMS로 새로 업로드하는 이미지**는 `https://march-jjh.github.io/MaRCH-Homepage/assets/images/파일명`처럼 전체 URL 형태로 저장됩니다.
+- **기존에 이미 들어있던 이미지 경로**(`/assets/images/hero-main.jpg` 등)는 예전 형식 그대로 남아있습니다.
+
+두 형식을 모두 정상적으로 처리하도록 `_includes/image-url.html`이라는 공용 include를 만들어서,
+이미지를 화면에 표시하는 모든 곳(히어로 배경, 연구/멤버/수상 카드, OG 공유 이미지 등)에서
+이 include를 거치도록 했습니다. 따라서 **직접 YAML 파일을 수정할 때는 예전처럼
+`/assets/images/파일명`(슬래시로 시작) 형식을 그대로 써도 되고, CMS로 업로드하면
+자동으로 전체 URL 형식이 저장되니 신경 쓰지 않아도 됩니다.**
+
 ---
 
 ## 4. 배포 확인 방법 (Actions 탭)

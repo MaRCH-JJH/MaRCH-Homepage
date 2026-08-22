@@ -1,0 +1,11 @@
+{% comment %}
+  Resolves an image path stored via Decap CMS's image widget.
+  Handles two possible stored formats without guessing at Jekyll's
+  relative_url internals for already-absolute input:
+    - legacy/relative: "/assets/images/x.png" -> prefixed with site.baseurl
+    - fully-qualified: "https://.../assets/images/x.png" -> used as-is
+  The second form is what admin/config.yml's public_folder now produces,
+  needed so Decap's own editor preview can resolve GitHub Pages'
+  project-site subpath (see docs/HANDOVER.md for context).
+  Usage: {% include image-url.html path=include.item.image %}
+{% endcomment %}{% if include.path contains "://" %}{{ include.path }}{% else %}{{ include.path | relative_url }}{% endif %}

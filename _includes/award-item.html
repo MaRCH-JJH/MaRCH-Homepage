@@ -14,8 +14,8 @@
   
   {% if include.award.image %}
   <div class="award-image-wrapper">
-    <button class="award-image-trigger" type="button" aria-label="{{ include.award.title }} 이미지 확대" data-modal-image="{{ include.award.image | relative_url }}" data-modal-caption="{{ include.award.title }} - {{ include.award.organization }}">
-      <img src="{{ include.award.image | relative_url }}" alt="" class="award-image" loading="lazy" width="200" height="150">
+    <button class="award-image-trigger" type="button" aria-label="{{ include.award.title }} 이미지 확대" data-modal-image="{% include image-url.html path=include.award.image %}" data-modal-caption="{{ include.award.title }} - {{ include.award.organization }}">
+      <img src="{% include image-url.html path=include.award.image %}" alt="" class="award-image" loading="lazy" width="200" height="150">
       <span class="image-zoom-icon" aria-hidden="true">
         {% include icon.html name="zoom-in" size="medium" %}
       </span>
