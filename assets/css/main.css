@@ -2108,8 +2108,175 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   flex-shrink: 0;
 }
 
+/* About page */
+
+.about-hero {
+  padding: calc(var(--header-height) + 80px) 0 60px;
+  background: var(--color-surface);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+[data-theme="dark"] .about-hero,
+:root:not([data-theme="light"]) .about-hero {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-hero-title {
+  margin-bottom: var(--space-content);
+  color: var(--color-foreground);
+}
+
+.about-hero-subtitle {
+  font-size: var(--type-body-size);
+  color: var(--color-muted);
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-visual-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-docs-card);
+}
+
+.about-intro-text h2 {
+  margin-bottom: var(--space-content);
+}
+
+.about-intro-text p {
+  color: var(--color-secondary);
+  line-height: var(--type-body-line-height);
+  margin-bottom: var(--space-content);
+}
+
+.about-intro-text p:last-child {
+  margin-bottom: 0;
+}
+
+.workflow-timeline {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px 16px;
+  list-style: none;
+}
+
+.workflow-timeline::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] .workflow-timeline::before,
+:root:not([data-theme="light"]) .workflow-timeline::before {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.workflow-step {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 140px;
+  min-width: 140px;
+  text-align: center;
+}
+
+.workflow-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin-bottom: var(--space-content);
+}
+
+.workflow-step-title {
+  font-size: var(--type-body-size);
+  font-weight: 600;
+  margin-bottom: var(--space-compact);
+  color: var(--color-foreground);
+}
+
+.workflow-step-description {
+  font-size: var(--type-body-small-size);
+  line-height: var(--type-body-small-line-height);
+  color: var(--color-muted);
+}
+
+.about-cta {
+  padding: 80px 0;
+  background: var(--color-canvas);
+  text-align: center;
+}
+
+.about-cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-cta-title {
+  margin-bottom: var(--space-compact);
+}
+
+.about-cta-text {
+  color: var(--color-muted);
+  line-height: var(--type-body-line-height);
+  margin-bottom: var(--space-content);
+}
+
 @media (max-width: 768px) {
-  .hero-title {
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: var(--space-content);
+  }
+
+  .workflow-timeline {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+  }
+
+  .workflow-timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+
+  .workflow-step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-content);
+    text-align: left;
+  }
+
+  .workflow-step-number {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title,
+  .about-hero-title {
     font-size: 40px;
     line-height: 48px;
   }

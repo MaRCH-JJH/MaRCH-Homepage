@@ -360,7 +360,7 @@
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     const animatedElements = document.querySelectorAll(
-      '.highlight-card, .research-card, .award-item, .publication-item, .member-card, .news-card, .stat-item'
+      '.highlight-card, .research-card, .award-item, .publication-item, .member-card, .news-card, .stat-item, .workflow-step'
     );
 
     const observerOptions = {
