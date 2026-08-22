@@ -72,7 +72,7 @@ hero:
   cta_text: "연구 분야 보기"
   cta_text_en: "View Research Areas"
   cta_url: "/research/"
-  background_image: "/assets/images/hero-main.jpg"
+  background_image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/hero-main.jpg"
   stats: []
 
 # Highlights (home page)

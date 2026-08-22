@@ -17,7 +17,7 @@ items:
       with EM simulation-based verification for reliable and reproducible RF
       circuit design methodology.
     icon: "cpu"
-    image: "/assets/images/research-rf-circuit-design.svg"
+    image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/research-rf-circuit-design.svg"
     keywords:
       - "Impedance Matching"
       - "EM Simulation"
@@ -46,7 +46,7 @@ items:
       based on GaAs HBT/pHEMT and GaN devices, covering Doherty PA architectures
       and high-efficiency, high-power, broadband PA design methodology.
     icon: "waveform"
-    image: "/assets/images/research-power-amplifier.svg"
+    image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/research-power-amplifier.svg"
     featured: true
     keywords:
       - "GaN HEMT"
@@ -74,7 +74,7 @@ items:
       semiconductor processes, spanning device modeling, layout design, and
       wafer-level verification across the RF IC development flow.
     icon: "chip"
-    image: "/assets/images/research-mmic-semiconductor.svg"
+    image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/research-mmic-semiconductor.svg"
     keywords:
       - "MMIC"
       - "RF Semiconductor"
@@ -102,7 +102,7 @@ items:
       system-level verification confirming that designed circuits and amplifiers
       meet target performance in real system environments.
     icon: "antenna"
-    image: "/assets/images/research-rf-measurement-system.svg"
+    image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/research-rf-measurement-system.svg"
     keywords:
       - "VNA Measurement"
       - "Spectrum Analysis"
