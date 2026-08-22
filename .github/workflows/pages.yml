@@ -27,16 +27,8 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-      
       - name: Install dependencies
-        run: |
-          bundle install
-          npm ci 2>/dev/null || true
+        run: bundle install
       
       - name: Build Jekyll site
         run: bundle exec jekyll build
