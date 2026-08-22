@@ -1,6 +1,6 @@
 # MaRCH Lab Website
 
-Microwave and RF Circuit Hub Laboratory 공식 웹사이트
+Microwave and RF Circuit ResearcH Lab 공식 웹사이트
 
 Jekyll + GitHub Pages + Decap CMS로 구축된 정적 사이트입니다.
 

@@ -801,6 +801,96 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   padding: 60px 0;
 }
 
+.post-header {
+  text-align: left;
+}
+
+.post-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-compact);
+  font-size: var(--type-body-small-size);
+  font-weight: 500;
+  color: var(--color-link);
+  margin-bottom: var(--space-content);
+}
+
+.post-back-link:hover {
+  color: var(--color-primary);
+}
+
+.post-back-icon {
+  display: inline-flex;
+  transform: rotate(180deg);
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-compact);
+  margin-bottom: var(--space-compact);
+}
+
+.post-date {
+  font-size: var(--type-body-small-size);
+  color: var(--color-muted);
+}
+
+.post-category {
+  font-size: var(--type-caption-size);
+  font-weight: 500;
+  padding: 4px 10px;
+  background: var(--color-canvas);
+  color: var(--color-secondary);
+  border-radius: var(--radius-marketing-pill);
+}
+
+.post-title {
+  margin-bottom: 0;
+}
+
+.post-container {
+  max-width: 760px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: var(--radius-docs-card);
+  margin-bottom: var(--space-content);
+}
+
+.post-body h2 {
+  margin-top: 40px;
+  margin-bottom: var(--space-content);
+}
+
+.post-body h3 {
+  margin-top: var(--space-content);
+  margin-bottom: var(--space-compact);
+}
+
+.post-body p {
+  margin-bottom: var(--space-content);
+  color: var(--color-secondary);
+}
+
+.post-body ul,
+.post-body ol {
+  margin: 0 0 var(--space-content) 1.25em;
+}
+
+.post-body li {
+  margin-bottom: var(--space-compact);
+  color: var(--color-secondary);
+}
+
+.post-body blockquote {
+  margin: 0 0 var(--space-content);
+  padding: var(--space-compact) var(--space-content);
+  border-left: 3px solid var(--color-primary);
+  color: var(--color-muted);
+}
+
 .collection-page .collection-content > * + * {
   margin-top: 60px;
 }

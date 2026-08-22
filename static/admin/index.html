@@ -4,23 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MaRCH Lab CMS</title>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
 <body>
-  <script>
-    window.decapCMS = {
-      config: {
-        backend: {
-          name: 'git-gateway',
-          branch: 'main'
-        },
-        media_folder: 'assets/images',
-        public_folder: '/assets/images',
-        site_url: 'https://march-jjh.github.io/MaRCH-Homepage',
-        logo_url: 'https://march-jjh.github.io/MaRCH-Homepage/assets/images/logo.svg',
-        load_config_file: false
-      }
-    };
-  </script>
+  <!-- config.yml is copied next to this file at build time (see .github/workflows/pages.yml) -->
+  <!-- and is auto-loaded by decap-cms.js from ./config.yml, so no inline config is needed here. -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>

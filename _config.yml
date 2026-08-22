@@ -1,13 +1,13 @@
 # Site settings
 title: MaRCH Lab
-description: "Microwave and RF Circuit Hub Laboratory"
+description: "Microwave and RF Circuit ResearcH Lab"
 url: "https://march-jjh.github.io"
 baseurl: "/MaRCH-Homepage"
 lang: "ko_KR"
 
 # Author / Lab info
 lab_name: "MaRCH Lab"
-lab_name_en: "Microwave and RF Circuit Hub Laboratory"
+lab_name_en: "Microwave and RF Circuit ResearcH Lab"
 email: "marchlab@example.ac.kr"
 address: "강원도 강릉시 범일로 57 강원대학교 강릉캠퍼스 공학관 000호"
 phone: "+82-33-640-0000"
