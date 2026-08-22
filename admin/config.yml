@@ -1,6 +1,4 @@
 # Decap CMS Configuration
-# This file is copied to static/admin/ during build
-
 backend:
   name: github
   repo: march-jjh/MaRCH-Homepage
@@ -19,10 +17,6 @@ public_folder: "/assets/images"
 
 site_url: https://march-jjh.github.io/MaRCH-Homepage
 logo_url: https://march-jjh.github.io/MaRCH-Homepage/assets/images/logo.svg
-
-# Disable signups for Netlify Identity (security)
-# Go to Netlify Dashboard > Site Settings > Identity > Registration > Disable Signup
-# This prevents unauthorized users from creating accounts
 
 collections:
   # Site settings (single file)
