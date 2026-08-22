@@ -23,6 +23,12 @@ export default {
       return handleCallback(url, env);
     }
 
+    if (url.pathname === "/") {
+      // Not part of the OAuth flow -- just a friendly health check so
+      // opening the bare worker URL in a browser doesn't look broken.
+      return new Response("Decap CMS OAuth Proxy is running!");
+    }
+
     return new Response("Not found", { status: 404 });
   },
 };
