@@ -66,7 +66,7 @@ collections:
               {name: cta_text, label: "CTA 버튼 텍스트 (한글)", widget: "string"},
               {name: cta_text_en, label: "CTA 버튼 텍스트 (영문)", widget: "string"},
               {name: cta_url, label: "CTA 버튼 URL", widget: "string"},
-              {name: background_image, label: "배경 이미지 경로", widget: "string"},
+              {name: background_image, label: "배경 이미지", widget: "image", required: false},
               {name: stats, label: "통계", widget: "list", fields: [
                   {name: label, label: "라벨", widget: "string"},
                   {name: value, label: "값", widget: "string"}
