@@ -6,6 +6,7 @@ backend:
   repo: march-jjh/MaRCH-Homepage
   branch: main
   base_url: https://1.kyd5329.workers.dev
+  client_id: Ov23liLuFZm5Y7O2HwMQ
   commit_messages:
     create: "Create {{collection}} \"{{slug}}\""
     update: "Update {{collection}} \"{{slug}}\""
