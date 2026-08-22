@@ -66,7 +66,7 @@ netlify dev
 ├── assets/
 │   ├── css/main.css         # 메인 스타일시트
 │   └── js/main.js           # 메인 자바스크립트
-├── static/admin/            # Decap CMS 설정
+├── admin/                   # Decap CMS 설정
 │   ├── config.yml           # CMS 컬렉션 정의
 │   └── index.html           # CMS 엔트리 포인트
 ├── .github/workflows/       # GitHub Actions

@@ -173,7 +173,7 @@
 | `bundle install` 실패 | Gemfile.lock 충돌 | Actions에서 "Re-run jobs" 클릭 |
 | Jekyll 빌드 에러 | YAML 문법 오류 | 로컬에서 `bundle exec jekyll build`로 확인 |
 | 권한 에러 | GitHub Pages 설정 | Settings > Actions > Workflow permissions 확인 |
-| CMS 파일 누락 | static/admin 폴더 없음 | 워크플로우에서 복사 단계 확인 |
+| CMS 파일 누락 | admin 폴더 없음 | 워크플로우에서 복사 단계 확인 |
 
 ---
 
@@ -248,7 +248,7 @@ url: "https://marchlab.example.ac.kr"
 baseurl: ""  # 루트 도메인 사용 시 빈 문자열
 ```
 
-#### 4. Decap CMS 설정 업데이트 (`static/admin/config.yml`)
+#### 4. Decap CMS 설정 업데이트 (`admin/config.yml`)
 
 ```yaml
 site_url: https://marchlab.example.ac.kr
@@ -272,7 +272,7 @@ logo_url: https://marchlab.example.ac.kr/assets/images/logo.png
 url: "https://example.ac.kr"
 baseurl: "/marchlab"
 
-# static/admin/config.yml
+# admin/config.yml
 site_url: https://example.ac.kr/marchlab
 ```
 
