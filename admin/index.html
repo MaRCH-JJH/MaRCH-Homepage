@@ -6,8 +6,56 @@
   <title>MaRCH Lab CMS</title>
 </head>
 <body>
-  <!-- config.yml is copied next to this file at build time (see .github/workflows/pages.yml) -->
-  <!-- and is auto-loaded by decap-cms.js from ./config.yml, so no inline config is needed here. -->
+  <!-- Decap CMS 스크립트 -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  
+  <!-- 설정과 client_id를 직접 명시하여 인코딩 및 파싱 에러 원천 차단 -->
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: "github",
+          repo: "march-jjh/MaRCH-Homepage",
+          branch: "main",
+          base_url: "https://1.kyd5329.workers.dev",
+          client_id: "Ov23liLuFZm5Y7O2HwMQ"
+        },
+        media_folder: "assets/images",
+        public_folder: "/assets/images",
+        site_url: "https://march-jjh.github.io/MaRCH-Homepage",
+        logo_url: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/logo.svg",
+        collections: [
+          {
+            name: "site",
+            label: "Site Settings",
+            files: [
+              {
+                name: "site",
+                label: "Settings",
+                file: "_data/site.yml",
+                fields: [
+                  { name: "name", label: "Site Name (KO)", widget: "string" },
+                  { name: "name_en", label: "Site Name (EN)", widget: "string" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "members",
+            label: "Members",
+            folder: "_data",
+            create: true,
+            slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+            identifier_field: "name",
+            fields: [
+              { name: "id", label: "ID", widget: "string", required: true },
+              { name: "name", label: "Name", widget: "string", required: true },
+              { name: "category", label: "Category", widget: "select", options: ["professor", "postdoc", "phd", "master", "alumni"], required: true }
+            ]
+          }
+        ]
+      }
+    });
+  </script>
 </body>
 </html>
