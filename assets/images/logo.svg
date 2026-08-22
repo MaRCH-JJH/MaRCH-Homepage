@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <rect x="0" y="0" width="50" height="50" rx="12" fill="#0071e3"/>
-  <path d="M12.5 25 L22 34.5 L37.5 15" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="60" y="35" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="28" font-weight="600" fill="#1d1d1f">MaRCH Lab</text>
-</svg>

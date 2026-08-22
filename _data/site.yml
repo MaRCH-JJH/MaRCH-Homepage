@@ -27,7 +27,7 @@ youtube: "https://youtube.com/@marchlab"
 
 # SEO
 keywords: "RF, Microwave, RF Power Amplifier, MMIC, 반도체, 전자공학, 연구실"
-og_image: "/assets/images/logo.svg"
+og_image: "/assets/images/logo.png"
 
 # Navigation (order matters)
 navigation:

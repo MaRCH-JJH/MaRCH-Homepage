@@ -306,6 +306,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 
 .logo-mark {
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .logo-text {
