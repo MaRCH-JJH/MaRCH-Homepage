@@ -84,4 +84,5 @@ backend:
 | GitHub에서 "redirect_uri is not associated with this application" | OAuth App의 콜백 URL과 워커 주소가 다름 | 3단계 다시 확인 |
 | 팝업이 뜨고 로그인해도 계속 로딩만 됨 | 워커 시크릿(`GITHUB_CLIENT_ID`/`GITHUB_CLIENT_SECRET`) 미설정 또는 오타 | Cloudflare 대시보드에서 값 재확인 |
 | 워커는 200/302를 정상 반환하는데 GitHub 인증 화면에서 404 | `GITHUB_CLIENT_ID` 시크릿 끝에 공백/줄바꿈이 섞여 들어감(GitHub 페이지에서 복사할 때 흔히 발생) — `/auth`가 리다이렉트하는 URL을 직접 열어보면 `client_id=...%20`처럼 값 끝에 `%20`이 붙어 있는 것으로 확인 가능 | Cloudflare 대시보드에서 `GITHUB_CLIENT_ID` 값을 삭제 후, 텍스트 에디터에 먼저 붙여넣어 앞뒤 공백이 없는지 확인한 값으로 재입력. `GITHUB_CLIENT_SECRET`도 같은 실수가 있을 수 있으니 함께 재확인 |
+| GitHub 인증(404 없음)까지는 성공하는데, 팝업이 닫힌 뒤 관리자 페이지가 로그인 화면에서 전혀 바뀌지 않음 | `/callback`이 postMessage 핸드셰이크 없이 GitHub 토큰 교환 응답(JSON)을 그대로 반환하는 구현임 — `curl ".../callback?code=test"`로 확인 시 `Content-Type: application/json`에 `{"access_token":...}` 또는 GitHub 에러 JSON이 그대로 나오면 이 문제. Decap CMS는 팝업이 `window.opener.postMessage("authorization:github:success:...")`를 직접 보내야만 로그인 완료로 인식하는데, JSON만 반환하는 워커는 이 메시지를 보내지 않음 | 워커 코드를 이 저장소의 `oauth-worker/worker.js`로 교체 배포 (base_url/시크릿은 그대로 유지, config.yml 수정 불필요) |
 | 로그인은 되는데 저장(Publish)이 안 됨 | 로그인한 GitHub 계정이 이 저장소에 쓰기 권한이 없음 | 저장소 Settings → Collaborators에서 권한 부여 |
