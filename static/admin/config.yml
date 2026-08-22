@@ -32,24 +32,22 @@ collections:
         label: "사이트 설정"
         file: "_data/site.yml"
         fields:
-          - {name: site, label: "사이트", widget: "object", fields: [
-              {name: name, label: "사이트명 (한글)", widget: "string"},
-              {name: name_en, label: "사이트명 (영문)", widget: "string"},
-              {name: tagline, label: "태그라인 (한글)", widget: "string"},
-              {name: tagline_en, label: "태그라인 (영문)", widget: "string"},
-              {name: description, label: "설명 (한글)", widget: "text"},
-              {name: description_en, label: "설명 (영문)", widget: "text"},
-              {name: email, label: "이메일", widget: "string"},
-              {name: phone, label: "전화번호", widget: "string"},
-              {name: address, label: "주소 (한글)", widget: "string"},
-              {name: address_en, label: "주소 (영문)", widget: "string"},
-              {name: github, label: "GitHub URL", widget: "string"},
-              {name: twitter, label: "Twitter URL", widget: "string"},
-              {name: linkedin, label: "LinkedIn URL", widget: "string"},
-              {name: youtube, label: "YouTube URL", widget: "string"},
-              {name: keywords, label: "키워드", widget: "string"},
-              {name: og_image, label: "OG 이미지 경로", widget: "string"}
-            ]}
+          - {name: name, label: "사이트명 (한글)", widget: "string"}
+          - {name: name_en, label: "사이트명 (영문)", widget: "string"}
+          - {name: tagline, label: "태그라인 (한글)", widget: "string"}
+          - {name: tagline_en, label: "태그라인 (영문)", widget: "string"}
+          - {name: description, label: "설명 (한글)", widget: "text"}
+          - {name: description_en, label: "설명 (영문)", widget: "text"}
+          - {name: email, label: "이메일", widget: "string"}
+          - {name: phone, label: "전화번호", widget: "string"}
+          - {name: address, label: "주소 (한글)", widget: "string"}
+          - {name: address_en, label: "주소 (영문)", widget: "string"}
+          - {name: github, label: "GitHub URL", widget: "string"}
+          - {name: twitter, label: "Twitter URL", widget: "string"}
+          - {name: linkedin, label: "LinkedIn URL", widget: "string"}
+          - {name: youtube, label: "YouTube URL", widget: "string"}
+          - {name: keywords, label: "키워드", widget: "string"}
+          - {name: og_image, label: "OG 이미지 경로", widget: "string"}
           - {name: navigation, label: "네비게이션", widget: "list", fields: [
               {name: title, label: "메뉴명 (한글)", widget: "string"},
               {name: url, label: "URL", widget: "string"},

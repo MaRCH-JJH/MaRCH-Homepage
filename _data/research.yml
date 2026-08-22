@@ -46,6 +46,7 @@
     and high-efficiency, high-power, broadband PA design methodology.
   icon: "waveform"
   image: "/assets/images/research-power-amplifier.svg"
+  featured: true
   keywords:
     - "GaN HEMT"
     - "GaAs HBT/pHEMT"

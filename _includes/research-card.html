@@ -1,11 +1,14 @@
-<article class="research-card" id="{{ include.item.id }}" role="listitem">
+<article class="research-card {% if include.item.featured %}research-card-featured{% endif %}" id="{{ include.item.id }}" role="listitem">
   <div class="research-image-wrapper">
     {% if include.item.image %}
-    <img src="{{ include.item.image | relative_url }}" alt="" class="research-image" loading="lazy" width="400" height="250">
+    <img src="{{ include.item.image | relative_url }}" alt="{{ include.item.title }} 연구분야를 표현한 일러스트" class="research-image" loading="lazy" width="400" height="250">
     {% else %}
     <div class="research-image-placeholder" aria-hidden="true">
       {% include icon.html name=include.item.icon size="xlarge" %}
     </div>
+    {% endif %}
+    {% if include.item.featured %}
+    <span class="research-featured-badge">핵심 연구분야</span>
     {% endif %}
   </div>
 

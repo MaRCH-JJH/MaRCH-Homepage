@@ -1,97 +1,101 @@
 # Site-wide configuration
 # This file is editable via Decap CMS (Settings collection)
+#
+# IMPORTANT: this file's top-level keys map directly to `site.data.site.*`
+# in Liquid (Jekyll keys site.data by filename: _data/site.yml -> site.data.site).
+# Do NOT add another top-level "site:" wrapper key here, or every
+# site.data.site.* lookup in the templates silently resolves to nil.
 
-site:
-  name: "MaRCH Lab"
-  name_en: "Microwave and RF Circuit ResearcH Lab"
-  tagline: "RF/Microwave 회로와 전력 증폭기의 새로운 지평을 열다"
-  tagline_en: "Opening New Horizons in RF/Microwave Circuits and Power Amplifiers"
-  description: "MaRCH Lab은 RF/Microwave 회로 설계와 RF Power Amplifier를 중심으로 MMIC 및 RF 계측 시스템을 연구합니다."
-  description_en: "MaRCH Lab researches RF/Microwave circuit design and RF power amplifiers, with a focus on MMIC and RF measurement systems."
-  
-  # Contact
-  email: "marchlab@example.ac.kr"
-  phone: "+82-33-640-0000"
-  address: "강원도 강릉시 범일로 57 강원대학교 강릉캠퍼스 공학관 000호"
-  address_en: "Engineering Building, Gangneung Campus, Kangwon National University, 57 Beomil-ro, Gangneung-si, Gangwon-do 25457, Korea"
-  
-  # Social
-  github: "https://github.com/marchlab"
-  twitter: "https://twitter.com/marchlab"
-  linkedin: "https://linkedin.com/company/marchlab"
-  youtube: "https://youtube.com/@marchlab"
-  
-  # SEO
-  keywords: "RF, Microwave, RF Power Amplifier, MMIC, 반도체, 전자공학, 연구실"
-  og_image: "/assets/images/logo.svg"
-  
-  # Navigation (order matters)
-  navigation:
-    - title: "홈"
-      url: "/"
-      en: "Home"
-    - title: "연구실 소개"
-      url: "/about/"
-      en: "About"
-    - title: "연구 경력"
-      url: "/research/"
-      en: "Research"
-    - title: "수상 경력"
-      url: "/awards/"
-      en: "Awards"
-    - title: "멤버"
-      url: "/members/"
-      en: "Members"
-    - title: "논문/성과"
-      url: "/publications/"
-      en: "Publications"
-    - title: "연락처"
-      url: "/contact/"
-      en: "Contact"
+name: "MaRCH Lab"
+name_en: "Microwave and RF Circuit ResearcH Lab"
+tagline: "RF/Microwave 회로와 전력 증폭기의 새로운 지평을 열다"
+tagline_en: "Opening New Horizons in RF/Microwave Circuits and Power Amplifiers"
+description: "MaRCH Lab은 RF/Microwave 회로 설계와 RF Power Amplifier를 중심으로 MMIC 및 RF 계측 시스템을 연구합니다."
+description_en: "MaRCH Lab researches RF/Microwave circuit design and RF power amplifiers, with a focus on MMIC and RF measurement systems."
 
-  # Footer
-  footer:
-    copyright: "© 2024 MaRCH Lab. All rights reserved."
-    powered_by: "Powered by Jekyll & Decap CMS"
-    links:
-      - title: "개인정보처리방침"
-        url: "/privacy/"
-      - title: "이용약관"
-        url: "/terms/"
+# Contact
+email: "marchlab@example.ac.kr"
+phone: "+82-33-640-0000"
+address: "강원도 강릉시 범일로 57 강원대학교 강릉캠퍼스 공학관 000호"
+address_en: "Engineering Building, Gangneung Campus, Kangwon National University, 57 Beomil-ro, Gangneung-si, Gangwon-do 25457, Korea"
 
-  # Hero (home page)
-  hero:
-    title: "RF/Microwave 회로와 전력 증폭기의 새로운 지평을 열다"
-    title_en: "Opening New Horizons in RF/Microwave Circuits and Power Amplifiers"
-    subtitle: "RF Power Amplifier를 중심으로 RF/Microwave 회로와 MMIC를 연구합니다."
-    subtitle_en: "Researching RF/Microwave circuits and MMIC with a focus on RF power amplifiers."
-    cta_text: "연구 분야 보기"
-    cta_text_en: "View Research Areas"
-    cta_url: "/research/"
-    background_image: "/assets/images/hero-main.jpg"
-    stats: []
+# Social
+github: "https://github.com/marchlab"
+twitter: "https://twitter.com/marchlab"
+linkedin: "https://linkedin.com/company/marchlab"
+youtube: "https://youtube.com/@marchlab"
 
-  # Highlights (home page)
-  highlights:
-    - title: "RF/Microwave 회로 설계"
-      description: "임피던스 매칭 및 EM 시뮬레이션 기반 수동/능동 회로 설계"
-      icon: "cpu"
-      url: "/research/#rf-circuit-design"
-    - title: "RF Power Amplifier"
-      description: "GaN/GaAs 소자 기반 고효율·고출력 전력 증폭기 연구"
-      icon: "waveform"
-      url: "/research/#power-amplifier"
-    - title: "MMIC & Semiconductor"
-      description: "모놀리식 마이크로파 집적회로 및 RF 반도체 소자 설계"
-      icon: "chip"
-      url: "/research/#mmic-semiconductor"
-    - title: "RF Measurement & System"
-      description: "네트워크/스펙트럼 분석기 기반 RF 특성평가 및 시스템 검증"
-      icon: "antenna"
-      url: "/research/#rf-measurement-system"
+# SEO
+keywords: "RF, Microwave, RF Power Amplifier, MMIC, 반도체, 전자공학, 연구실"
+og_image: "/assets/images/logo.svg"
 
-  # Theme
-  theme:
-    primary_color: "#0071e3"
-    accent_color: "#0066cc"
-    dark_mode_default: false
+# Navigation (order matters)
+navigation:
+  - title: "홈"
+    url: "/"
+    en: "Home"
+  - title: "연구실 소개"
+    url: "/about/"
+    en: "About"
+  - title: "연구 경력"
+    url: "/research/"
+    en: "Research"
+  - title: "수상 경력"
+    url: "/awards/"
+    en: "Awards"
+  - title: "멤버"
+    url: "/members/"
+    en: "Members"
+  - title: "논문/성과"
+    url: "/publications/"
+    en: "Publications"
+  - title: "연락처"
+    url: "/contact/"
+    en: "Contact"
+
+# Footer
+footer:
+  copyright: "© 2024 MaRCH Lab. All rights reserved."
+  powered_by: "Powered by Jekyll & Decap CMS"
+  links:
+    - title: "개인정보처리방침"
+      url: "/privacy/"
+    - title: "이용약관"
+      url: "/terms/"
+
+# Hero (home page)
+hero:
+  title: "RF/Microwave 회로와 전력 증폭기의 새로운 지평을 열다"
+  title_en: "Opening New Horizons in RF/Microwave Circuits and Power Amplifiers"
+  subtitle: "RF Power Amplifier를 중심으로 RF/Microwave 회로와 MMIC를 연구합니다."
+  subtitle_en: "Researching RF/Microwave circuits and MMIC with a focus on RF power amplifiers."
+  cta_text: "연구 분야 보기"
+  cta_text_en: "View Research Areas"
+  cta_url: "/research/"
+  background_image: "/assets/images/hero-main.jpg"
+  stats: []
+
+# Highlights (home page)
+highlights:
+  - title: "RF/Microwave 회로 설계"
+    description: "임피던스 매칭 및 EM 시뮬레이션 기반 수동/능동 회로 설계"
+    icon: "cpu"
+    url: "/research/#rf-circuit-design"
+  - title: "RF Power Amplifier"
+    description: "GaN/GaAs 소자 기반 고효율·고출력 전력 증폭기 연구"
+    icon: "waveform"
+    url: "/research/#power-amplifier"
+  - title: "MMIC & Semiconductor"
+    description: "모놀리식 마이크로파 집적회로 및 RF 반도체 소자 설계"
+    icon: "chip"
+    url: "/research/#mmic-semiconductor"
+  - title: "RF Measurement & System"
+    description: "네트워크/스펙트럼 분석기 기반 RF 특성평가 및 시스템 검증"
+    icon: "antenna"
+    url: "/research/#rf-measurement-system"
+
+# Theme
+theme:
+  primary_color: "#0071e3"
+  accent_color: "#0066cc"
+  dark_mode_default: false

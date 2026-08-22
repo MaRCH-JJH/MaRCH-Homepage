@@ -983,10 +983,28 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   border-color: rgba(0, 0, 0, 0.1);
 }
 
+.research-card-featured {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
 .research-image-wrapper {
   position: relative;
   aspect-ratio: 16 / 10;
   overflow: hidden;
+}
+
+.research-featured-badge {
+  position: absolute;
+  top: var(--space-compact);
+  left: var(--space-compact);
+  display: inline-block;
+  font-size: var(--type-caption-size);
+  font-weight: 600;
+  padding: 4px 10px;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  border-radius: var(--radius-marketing-pill);
 }
 
 .research-image {
