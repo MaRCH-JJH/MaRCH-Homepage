@@ -1,0 +1,85 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.data.site.name }}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.site.description }}{% endif %}">
+<meta name="keywords" content="{{ site.data.site.keywords }}">
+
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="{% if page.layout == 'home' %}website{% else %}article{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.data.site.name }}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.site.description }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.og_image | default: site.data.site.og_image }}">
+<meta property="og:site_name" content="{{ site.data.site.name }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@{{ site.twitter_username }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.data.site.name }}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.site.description }}{% endif %}">
+<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.og_image | default: site.data.site.og_image }}">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.data.site.name }}",
+  "alternateName": "{{ site.data.site.name_en }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "logo": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png",
+  "sameAs": [
+    "{{ site.data.site.github }}",
+    "{{ site.data.site.twitter }}",
+    "{{ site.data.site.linkedin }}",
+    "{{ site.data.site.youtube }}"
+  ],
+  "email": "{{ site.data.site.email }}",
+  "telephone": "{{ site.data.site.phone }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.data.site.address }}",
+    "addressLocality": "Seoul",
+    "addressCountry": "KR"
+  }
+}
+</script>
+
+{% if page.layout == 'home' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.data.site.name }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{% endif %}
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/assets/images/favicon.svg">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/apple-touch-icon.png">
+<link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Fonts: SF Pro alternative (system font stack) -->
+<link rel="preload" as="style" href="{{ site.baseurl }}/assets/css/fonts.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts.css"></noscript>
+
+{% seo %}
+{% feed_meta %}

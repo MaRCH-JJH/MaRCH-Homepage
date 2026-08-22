@@ -1,0 +1,102 @@
+# Site-wide configuration
+# This file is editable via Decap CMS (Settings collection)
+
+site:
+  name: "MaRCH Lab"
+  name_en: "Materials Research & Computational Horizons Laboratory"
+  tagline: "소재 연구의 새로운 지평을 열다"
+  tagline_en: "Opening New Horizons in Materials Research"
+  description: "MaRCH Lab은 계산과학과 실험과학의 융합을 통해 차세대 소재를 설계하고 발견합니다."
+  description_en: "MaRCH Lab designs and discovers next-generation materials through the convergence of computational and experimental science."
+  
+  # Contact
+  email: "marchlab@example.ac.kr"
+  phone: "+82-2-000-0000"
+  address: "서울특별시 관악구 관악로 1, 000동 000호"
+  address_en: "000 Building, 1 Gwanak-ro, Gwanak-gu, Seoul, Korea"
+  
+  # Social
+  github: "https://github.com/marchlab"
+  twitter: "https://twitter.com/marchlab"
+  linkedin: "https://linkedin.com/company/marchlab"
+  youtube: "https://youtube.com/@marchlab"
+  
+  # SEO
+  keywords: "소재과학, 계산과학, 머신러닝, 신소재, 연구실"
+  og_image: "/assets/images/og-default.jpg"
+  
+  # Navigation (order matters)
+  navigation:
+    - title: "홈"
+      url: "/"
+      en: "Home"
+    - title: "연구 경력"
+      url: "/research/"
+      en: "Research"
+    - title: "수상 경력"
+      url: "/awards/"
+      en: "Awards"
+    - title: "멤버"
+      url: "/members/"
+      en: "Members"
+    - title: "논문/성과"
+      url: "/publications/"
+      en: "Publications"
+    - title: "연락처/오시는길"
+      url: "/contact/"
+      en: "Contact"
+
+  # Footer
+  footer:
+    copyright: "© 2024 MaRCH Lab. All rights reserved."
+    powered_by: "Powered by Jekyll & Decap CMS"
+    links:
+      - title: "개인정보처리방침"
+        url: "/privacy/"
+      - title: "이용약관"
+        url: "/terms/"
+
+  # Hero (home page)
+  hero:
+    title: "소재 연구의 새로운 지평을 열다"
+    title_en: "Opening New Horizons in Materials Research"
+    subtitle: "계산과학과 실험과학의 융합으로 차세대 소재를 설계합니다."
+    subtitle_en: "Designing next-generation materials through computational-experimental convergence."
+    cta_text: "연구 분야 보기"
+    cta_text_en: "View Research Areas"
+    cta_url: "/research/"
+    background_image: "/assets/images/hero-bg.jpg"
+    stats:
+      - label: "연구 논문"
+        value: "150+"
+      - label: "연구 과제"
+        value: "25+"
+      - label: "특허 출원"
+        value: "30+"
+      - label: "국제 협력"
+        value: "15+"
+
+  # Highlights (home page)
+  highlights:
+    - title: "계산 소재 설계"
+      description: "DFT와 머신러닝을 활용한 신소재 발굴"
+      icon: "cpu"
+      url: "/research/#computational"
+    - title: "에너지 소재"
+      description: "배터리, 태양전지, 수소 에너지 소재 연구"
+      icon: "battery"
+      url: "/research/#energy"
+    - title: "구조 소재"
+      description: "초고강도 경량 합금 및 복합소재 개발"
+      icon: "cube"
+      url: "/research/#structural"
+    - title: "바이오 소재"
+      description: "의료용 생체적합 소재 및 약물전달 시스템"
+      icon: "dna"
+      url: "/research/#bio"
+
+  # Theme
+  theme:
+    primary_color: "#0071e3"
+    accent_color: "#0066cc"
+    dark_mode_default: false

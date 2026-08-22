@@ -1,0 +1,71 @@
+<li class="publication-item" data-type="{{ include.pub.type }}" data-category="{{ include.pub.category }}" role="listitem">
+  <article class="publication-card">
+    <header class="publication-header">
+      <span class="publication-type">{{ include.pub.type }}</span>
+      <span class="publication-category">{{ include.pub.category }}</span>
+    </header>
+    
+    <h3 class="publication-title">{{ include.pub.title }}</h3>
+    {% if include.pub.title_ko %}
+    <p class="publication-title-ko">{{ include.pub.title_ko }}</p>
+    {% endif %}
+    
+    <p class="publication-authors">{{ include.pub.authors }}</p>
+    
+    <div class="publication-venue">
+      {% if include.pub.journal %}
+      <cite class="publication-journal">{{ include.pub.journal }}</cite>
+      {% endif %}
+      {% if include.pub.volume %}
+      <span class="publication-volume">{{ include.pub.volume }}</span>
+      {% endif %}
+      {% if include.pub.issue %}
+      <span class="publication-issue">({{ include.pub.issue }})</span>
+      {% endif %}
+      {% if include.pub.pages %}
+      <span class="publication-pages">{{ include.pub.pages }}</span>
+      {% endif %}
+      {% if include.pub.conference %}
+      <span class="publication-conference">{{ include.pub.conference_full | default: include.pub.conference }}</span>
+      {% if include.pub.location %}
+      <span class="publication-location">{{ include.pub.location }}</span>
+      {% endif %}
+      {% if include.pub.date %}
+      <time class="publication-date" datetime="{{ include.pub.date }}">{{ include.pub.date | date: "%Y.%m.%d" }}</time>
+      {% endif %}
+      {% endif %}
+    </div>
+    
+    {% if include.pub.doi %}
+    <a href="https://doi.org/{{ include.pub.doi }}" class="publication-doi" target="_blank" rel="noopener noreferrer" aria-label="DOI: {{ include.pub.doi }}">
+      DOI: {{ include.pub.doi }}
+    </a>
+    {% endif %}
+    
+    {% if include.pub.url and include.pub.url != include.pub.doi %}
+    <a href="{{ include.pub.url }}" class="publication-link" target="_blank" rel="noopener noreferrer" aria-label="논문 원문 보기">
+      원문 보기
+      {% include icon.html name="external-link" size="small" %}
+    </a>
+    {% endif %}
+    
+    {% if include.pub.abstract %}
+    <details class="publication-abstract">
+      <summary>초록 보기</summary>
+      <p>{{ include.pub.abstract }}</p>
+    </details>
+    {% endif %}
+    
+    {% if include.pub.keywords.size > 0 %}
+    <ul class="publication-keywords" aria-label="키워드">
+      {% for keyword in include.pub.keywords %}
+      <li class="keyword-tag">{{ keyword }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    
+    {% if include.pub.featured %}
+    <span class="featured-badge" aria-label="추천 논문">추천</span>
+    {% endif %}
+  </article>
+</li>

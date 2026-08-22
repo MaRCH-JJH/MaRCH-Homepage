@@ -1,0 +1,216 @@
+# Members data
+# Editable via Decap CMS (Members collection)
+
+- id: prof-kim
+  name: "김교수"
+  name_en: "Prof. Kim"
+  role: "교수"
+  role_en: "Professor"
+  degree: "Ph.D."
+  major: "재료공학"
+  major_en: "Materials Engineering"
+  email: "prof.kim@marchlab.ac.kr"
+  phone: "+82-2-000-0001"
+  office: "000동 000호"
+  image: "/assets/images/members/prof-kim.jpg"
+  bio: "계산소재과학 분야의 세계적 권위자입니다. DFT 기반 소재 설계와 머신러닝 융합 연구를 선도하고 있습니다."
+  bio_en: "A world-renowned authority in computational materials science. Leading research in DFT-based materials design and ML convergence."
+  research_interests:
+    - "계산소재과학"
+    - "머신러닝"
+    - "DFT"
+    - "고엔트로피 합금"
+  research_interests_en:
+    - "Computational Materials Science"
+    - "Machine Learning"
+    - "DFT"
+    - "High-Entropy Alloys"
+  google_scholar: "https://scholar.google.com/citations?user=xxx"
+  orcid: "0000-0000-0000-0000"
+  linkedin: "https://linkedin.com/in/profkim"
+  category: "professor"
+  order: 1
+
+- id: dr-lee
+  name: "이박사"
+  name_en: "Dr. Lee"
+  role: "박사후연구원"
+  role_en: "Postdoctoral Researcher"
+  degree: "Ph.D."
+  major: "물리학"
+  major_en: "Physics"
+  email: "dr.lee@marchlab.ac.kr"
+  phone: "+82-2-000-0002"
+  office: "000동 001호"
+  image: "/assets/images/members/dr-lee.jpg"
+  bio: "에너지 소재 분야 전문가입니다. 차세대 배터리 소재 개발에 주력하고 있습니다."
+  bio_en: "Expert in energy materials. Focusing on next-generation battery materials development."
+  research_interests:
+    - "배터리 소재"
+    - "고체전해질"
+    - "계면 현상"
+  research_interests_en:
+    - "Battery Materials"
+    - "Solid Electrolytes"
+    - "Interfacial Phenomena"
+  google_scholar: "https://scholar.google.com/citations?user=yyy"
+  orcid: "0000-0000-0000-0001"
+  linkedin: "https://linkedin.com/in/drlee"
+  category: "postdoc"
+  order: 2
+
+- id: phd-park
+  name: "박박사과정"
+  name_en: "Park PhD"
+  role: "박사과정"
+  role_en: "Ph.D. Candidate"
+  degree: "M.S."
+  major: "재료공학"
+  major_en: "Materials Engineering"
+  email: "phd.park@marchlab.ac.kr"
+  phone: ""
+  office: "000동 002호"
+  image: "/assets/images/members/phd-park.jpg"
+  bio: "구조 소재 분야 박사과정생입니다. 초고강도 경량 합금 연구를 수행 중입니다."
+  bio_en: "Ph.D. candidate in structural materials. Researching ultra-high-strength lightweight alloys."
+  research_interests:
+    - "고강도 합금"
+    - "변형 메커니즘"
+    - "적층 제조"
+  research_interests_en:
+    - "High-Strength Alloys"
+    - "Deformation Mechanisms"
+    - "Additive Manufacturing"
+  google_scholar: "https://scholar.google.com/citations?user=zzz"
+  orcid: "0000-0000-0000-0002"
+  linkedin: "https://linkedin.com/in/phdpark"
+  category: "phd"
+  order: 3
+
+- id: phd-choi
+  name: "최박사과정"
+  name_en: "Choi PhD"
+  role: "박사과정"
+  role_en: "Ph.D. Candidate"
+  degree: "M.S."
+  major: "화학공학"
+  major_en: "Chemical Engineering"
+  email: "phd.choi@marchlab.ac.kr"
+  phone: ""
+  office: "000동 002호"
+  image: "/assets/images/members/phd-choi.jpg"
+  bio: "바이오 소재 분야 박사과정생입니다. 약물전달 시스템용 나노소재를 연구합니다."
+  bio_en: "Ph.D. candidate in biomaterials. Researching nanomaterials for drug delivery systems."
+  research_interests:
+    - "나노소재"
+    - "약물전달"
+    - "생체적합성"
+  research_interests_en:
+    - "Nanomaterials"
+    - "Drug Delivery"
+    - "Biocompatibility"
+  google_scholar: ""
+  orcid: ""
+  linkedin: ""
+  category: "phd"
+  order: 4
+
+- id: ms-kim
+  name: "김석사"
+  name_en: "Kim MS"
+  role: "석사과정"
+  role_en: "M.S. Candidate"
+  degree: "B.S."
+  major: "재료공학"
+  major_en: "Materials Engineering"
+  email: "ms.kim@marchlab.ac.kr"
+  phone: ""
+  office: "000동 003호"
+  image: "/assets/images/members/ms-kim.jpg"
+  bio: "계산소재과학 석사과정생입니다. 머신러닝을 활용한 소재 물성 예측을 연구합니다."
+  bio_en: "M.S. candidate in computational materials science. Researching ML-based materials property prediction."
+  research_interests:
+    - "머신러닝"
+    - "물성 예측"
+    - "데이터 기반 소재 설계"
+  research_interests_en:
+    - "Machine Learning"
+    - "Property Prediction"
+    - "Data-Driven Materials Design"
+  google_scholar: ""
+  orcid: ""
+  linkedin: ""
+  category: "master"
+  order: 5
+
+- id: ms-jung
+  name: "정석사"
+  name_en: "Jung MS"
+  role: "석사과정"
+  role_en: "M.S. Candidate"
+  degree: "B.S."
+  major: "신소재공학"
+  major_en: "Advanced Materials Engineering"
+  email: "ms.jung@marchlab.ac.kr"
+  phone: ""
+  office: "000동 003호"
+  image: "/assets/images/members/ms-jung.jpg"
+  bio: "에너지 소재 석사과정생입니다. 페로브스카이트 태양전지 소재를 연구합니다."
+  bio_en: "M.S. candidate in energy materials. Researching perovskite solar cell materials."
+  research_interests:
+    - "페로브스카이트"
+    - "태양전지"
+    - "광전 변환"
+  research_interests_en:
+    - "Perovskite"
+    - "Solar Cells"
+    - "Photoelectric Conversion"
+  google_scholar: ""
+  orcid: ""
+  linkedin: ""
+  category: "master"
+  order: 6
+
+- id: alumni-1
+  name: "졸업생1"
+  name_en: "Alumni 1"
+  role: "졸업생"
+  role_en: "Alumni"
+  degree: "Ph.D."
+  major: "재료공학"
+  major_en: "Materials Engineering"
+  email: "alumni1@company.com"
+  phone: ""
+  office: ""
+  image: "/assets/images/members/alumni-1.jpg"
+  bio: "2020년 박사 졸업, 현재 000연구소 선임연구원"
+  bio_en: "Ph.D. 2020, currently Senior Researcher at 000 Institute"
+  research_interests: []
+  research_interests_en: []
+  google_scholar: ""
+  orcid: ""
+  linkedin: ""
+  category: "alumni"
+  order: 7
+
+- id: alumni-2
+  name: "졸업생2"
+  name_en: "Alumni 2"
+  role: "졸업생"
+  role_en: "Alumni"
+  degree: "M.S."
+  major: "재료공학"
+  major_en: "Materials Engineering"
+  email: "alumni2@company.com"
+  phone: ""
+  office: ""
+  image: "/assets/images/members/alumni-2.jpg"
+  bio: "2021년 석사 졸업, 현재 000기업 연구원"
+  bio_en: "M.S. 2021, currently Researcher at 000 Company"
+  research_interests: []
+  research_interests_en: []
+  google_scholar: ""
+  orcid: ""
+  linkedin: ""
+  category: "alumni"
+  order: 8

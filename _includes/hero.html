@@ -1,0 +1,33 @@
+<section class="hero" aria-labelledby="hero-title" style="{% if page.hero_background %}background-image: url('{{ page.hero_background }}');{% elsif site.data.site.hero.background_image %}background-image: url('{{ site.data.site.hero.background_image }}');{% endif %}">
+  <div class="container">
+    <div class="hero-content">
+      <h1 id="hero-title" class="hero-title">{{ page.hero_title | default: site.data.site.hero.title }}</h1>
+      <p class="hero-subtitle">{{ page.hero_subtitle | default: site.data.site.hero.subtitle }}</p>
+      <div class="hero-actions">
+        <a href="{{ site.baseurl }}{{ page.hero_cta_url | default: site.data.site.hero.cta_url }}" class="btn btn-primary btn-large">
+          {{ page.hero_cta_text | default: site.data.site.hero.cta_text }}
+          {% include icon.html name="arrow-right" size="small" %}
+        </a>
+        <a href="{{ site.baseurl }}/contact/" class="btn btn-outline btn-large">
+          연락하기
+          {% include icon.html name="mail" size="small" %}
+        </a>
+      </div>
+    </div>
+    
+    {% if page.hero_stats or site.data.site.hero.stats %}
+    <div class="hero-stats" role="list" aria-label="연구실 통계">
+      {% for stat in page.hero_stats | default: site.data.site.hero.stats %}
+      <div class="stat-item" role="listitem">
+        <span class="stat-value" aria-label="{{ stat.label }}">{{ stat.value }}</span>
+        <span class="stat-label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  
+  <div class="hero-scroll-indicator" aria-hidden="true">
+    {% include icon.html name="chevron-down" size="large" %}
+  </div>
+</section>

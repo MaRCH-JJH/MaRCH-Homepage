@@ -1,0 +1,43 @@
+<article class="member-card" data-category="{{ include.member.category }}" role="listitem">
+  <div class="member-image-wrapper">
+    {% if include.member.image %}
+    <img src="{{ include.member.image | relative_url }}" alt="" class="member-image" loading="lazy" width="300" height="300">
+    {% else %}
+    <div class="member-image-placeholder" aria-hidden="true">
+      {% include icon.html name="user" size="xlarge" %}
+    </div>
+    {% endif %}
+  </div>
+  
+  <div class="member-info">
+    <h3 class="member-name">{{ include.member.name }}</h3>
+    <p class="member-role">{{ include.member.role }}{% if include.member.degree %}, {{ include.member.degree }}{% endif %}</p>
+    <p class="member-major">{{ include.member.major }}</p>
+    
+    {% if include.member.research_interests.size > 0 %}
+    <ul class="member-interests" aria-label="연구 관심분야">
+      {% for interest in include.member.research_interests limit:3 %}
+      <li>{{ interest }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    
+    <div class="member-links">
+      {% if include.member.email %}
+      <a href="mailto:{{ include.member.email }}" class="member-link" aria-label="이메일 보내기">
+        {% include icon.html name="mail" size="small" %}
+      </a>
+      {% endif %}
+      {% if include.member.google_scholar %}
+      <a href="{{ include.member.google_scholar }}" class="member-link" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
+        {% include icon.html name="scholar" size="small" %}
+      </a>
+      {% endif %}
+      {% if include.member.linkedin %}
+      <a href="{{ include.member.linkedin }}" class="member-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        {% include icon.html name="linkedin" size="small" %}
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</article>

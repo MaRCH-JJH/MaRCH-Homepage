@@ -1,0 +1,31 @@
+<article class="news-card" role="listitem">
+  {% if include.post.image %}
+  <a href="{{ include.post.url | relative_url }}" class="news-image-link" aria-label="{{ include.post.title }}">
+    <img src="{{ include.post.image | relative_url }}" alt="" class="news-image" loading="lazy" width="400" height="225">
+  </a>
+  {% else %}
+  <a href="{{ include.post.url | relative_url }}" class="news-image-link news-image-placeholder" aria-label="{{ include.post.title }}">
+    {% include icon.html name="newspaper" size="xlarge" %}
+  </a>
+  {% endif %}
+  
+  <div class="news-content">
+    <div class="news-meta">
+      <time class="news-date" datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%Y.%m.%d" }}</time>
+      {% if include.post.category %}
+      <span class="news-category">{{ include.post.category }}</span>
+      {% endif %}
+    </div>
+    
+    <h3 class="news-title">
+      <a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a>
+    </h3>
+    
+    <p class="news-excerpt">{{ include.post.excerpt | strip_html | truncatewords: 25 }}</p>
+    
+    <a href="{{ include.post.url | relative_url }}" class="news-read-more" aria-label="{{ include.post.title }} 계속 읽기">
+      계속 읽기
+      {% include icon.html name="arrow-right" size="small" %}
+    </a>
+  </div>
+</article>

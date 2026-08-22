@@ -1,0 +1,32 @@
+<article class="award-item" role="listitem">
+  <div class="award-content">
+    <div class="award-meta">
+      <time class="award-date" datetime="{{ include.award.date }}">{{ include.award.date | date: "%Y.%m.%d" }}</time>
+      <span class="award-category">{{ include.award.category }}</span>
+    </div>
+    <h3 class="award-title">{{ include.award.title }}</h3>
+    <p class="award-organization">{{ include.award.organization }}</p>
+    <p class="award-recipient">수상자: {{ include.award.recipient }}</p>
+    {% if include.award.description %}
+    <p class="award-description">{{ include.award.description }}</p>
+    {% endif %}
+  </div>
+  
+  {% if include.award.image %}
+  <div class="award-image-wrapper">
+    <button class="award-image-trigger" type="button" aria-label="{{ include.award.title }} 이미지 확대" data-modal-image="{{ include.award.image | relative_url }}" data-modal-caption="{{ include.award.title }} - {{ include.award.organization }}">
+      <img src="{{ include.award.image | relative_url }}" alt="" class="award-image" loading="lazy" width="200" height="150">
+      <span class="image-zoom-icon" aria-hidden="true">
+        {% include icon.html name="zoom-in" size="medium" %}
+      </span>
+    </button>
+  </div>
+  {% endif %}
+  
+  {% if include.award.link %}
+  <a href="{{ include.award.link }}" class="award-link" target="_blank" rel="noopener noreferrer" aria-label="{{ include.award.title }} 상세 보기">
+    {% include icon.html name="external-link" size="small" %}
+    상세 보기
+  </a>
+  {% endif %}
+</article>

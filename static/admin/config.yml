@@ -1,0 +1,213 @@
+# Decap CMS Configuration
+# This file is copied to static/admin/ during build
+
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "Create {{collection}} \"{{slug}}\""
+    update: "Update {{collection}} \"{{slug}}\""
+    delete: "Delete {{collection}} \"{{slug}}\""
+    uploadMedia: "[skip ci] Upload \"{{path}}\""
+    deleteMedia: "[skip ci] Delete \"{{path}}\""
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+site_url: https://your-username.github.io
+logo_url: https://your-username.github.io/MaRCH_Homepage_code/assets/images/logo.png
+
+# Disable signups for Netlify Identity (security)
+# Go to Netlify Dashboard > Site Settings > Identity > Registration > Disable Signup
+# This prevents unauthorized users from creating accounts
+
+collections:
+  # Site settings (single file)
+  - name: "site"
+    label: "사이트 설정"
+    label_singular: "사이트 설정"
+    description: "사이트 전체 설정 (네비게이션, 푸터, 히어로 등)"
+    files:
+      - name: "site"
+        label: "사이트 설정"
+        file: "_data/site.yml"
+        fields:
+          - {name: site, label: "사이트", widget: "object", fields: [
+              {name: name, label: "사이트명 (한글)", widget: "string"},
+              {name: name_en, label: "사이트명 (영문)", widget: "string"},
+              {name: tagline, label: "태그라인 (한글)", widget: "string"},
+              {name: tagline_en, label: "태그라인 (영문)", widget: "string"},
+              {name: description, label: "설명 (한글)", widget: "text"},
+              {name: description_en, label: "설명 (영문)", widget: "text"},
+              {name: email, label: "이메일", widget: "string"},
+              {name: phone, label: "전화번호", widget: "string"},
+              {name: address, label: "주소 (한글)", widget: "string"},
+              {name: address_en, label: "주소 (영문)", widget: "string"},
+              {name: github, label: "GitHub URL", widget: "string"},
+              {name: twitter, label: "Twitter URL", widget: "string"},
+              {name: linkedin, label: "LinkedIn URL", widget: "string"},
+              {name: youtube, label: "YouTube URL", widget: "string"},
+              {name: keywords, label: "키워드", widget: "string"},
+              {name: og_image, label: "OG 이미지 경로", widget: "string"}
+            ]}
+          - {name: navigation, label: "네비게이션", widget: "list", fields: [
+              {name: title, label: "메뉴명 (한글)", widget: "string"},
+              {name: url, label: "URL", widget: "string"},
+              {name: en, label: "메뉴명 (영문)", widget: "string"}
+            ]}
+          - {name: footer, label: "푸터", widget: "object", fields: [
+              {name: copyright, label: "저작권 문구", widget: "string"},
+              {name: powered_by, label: "Powered by 문구", widget: "string"},
+              {name: links, label: "링크", widget: "list", fields: [
+                  {name: title, label: "링크명", widget: "string"},
+                  {name: url, label: "URL", widget: "string"}
+                ]}
+            ]}
+          - {name: hero, label: "히어로 섹션", widget: "object", fields: [
+              {name: title, label: "제목 (한글)", widget: "string"},
+              {name: title_en, label: "제목 (영문)", widget: "string"},
+              {name: subtitle, label: "부제목 (한글)", widget: "text"},
+              {name: subtitle_en, label: "부제목 (영문)", widget: "text"},
+              {name: cta_text, label: "CTA 버튼 텍스트 (한글)", widget: "string"},
+              {name: cta_text_en, label: "CTA 버튼 텍스트 (영문)", widget: "string"},
+              {name: cta_url, label: "CTA 버튼 URL", widget: "string"},
+              {name: background_image, label: "배경 이미지 경로", widget: "string"},
+              {name: stats, label: "통계", widget: "list", fields: [
+                  {name: label, label: "라벨", widget: "string"},
+                  {name: value, label: "값", widget: "string"}
+                ]}
+            ]}
+          - {name: highlights, label: "하이라이트", widget: "list", fields: [
+              {name: title, label: "제목", widget: "string"},
+              {name: description, label: "설명", widget: "text"},
+              {name: icon, label: "아이콘명", widget: "string"},
+              {name: url, label: "연결 URL", widget: "string"}
+            ]}
+          - {name: theme, label: "테마", widget: "object", fields: [
+              {name: primary_color, label: "기본 색상", widget: "string"},
+              {name: accent_color, label: "액센트 색상", widget: "string"},
+              {name: dark_mode_default, label: "다크 모드 기본값", widget: "boolean"}
+            ]}
+
+  # Members
+  - name: "members"
+    label: "멤버"
+    label_singular: "멤버"
+    description: "연구실 멤버 관리 (교수, 박사후연구원, 박사과정, 석사과정, 졸업생)"
+    folder: "_data"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: name
+    fields:
+      - {name: id, label: "ID", widget: "string", required: true}
+      - {name: name, label: "이름 (한글)", widget: "string", required: true}
+      - {name: name_en, label: "이름 (영문)", widget: "string", required: true}
+      - {name: role, label: "직책 (한글)", widget: "select", options: ["교수", "박사후연구원", "박사과정", "석사과정", "졸업생"], required: true}
+      - {name: role_en, label: "직책 (영문)", widget: "select", options: ["Professor", "Postdoctoral Researcher", "Ph.D. Candidate", "M.S. Candidate", "Alumni"], required: true}
+      - {name: degree, label: "학위", widget: "string"}
+      - {name: major, label: "전공 (한글)", widget: "string"}
+      - {name: major_en, label: "전공 (영문)", widget: "string"}
+      - {name: email, label: "이메일", widget: "string"}
+      - {name: phone, label: "전화번호", widget: "string"}
+      - {name: office, label: "연구실", widget: "string"}
+      - {name: image, label: "프로필 이미지", widget: "image", required: false}
+      - {name: bio, label: "소개 (한글)", widget: "text"}
+      - {name: bio_en, label: "소개 (영문)", widget: "text"}
+      - {name: research_interests, label: "연구 관심분야 (한글)", widget: "list"}
+      - {name: research_interests_en, label: "연구 관심분야 (영문)", widget: "list"}
+      - {name: google_scholar, label: "Google Scholar URL", widget: "string"}
+      - {name: orcid, label: "ORCID", widget: "string"}
+      - {name: linkedin, label: "LinkedIn URL", widget: "string"}
+      - {name: category, label: "카테고리", widget: "select", options: ["professor", "postdoc", "phd", "master", "alumni"], required: true}
+      - {name: order, label: "정렬 순서", widget: "number", required: true}
+
+  # Research Areas
+  - name: "research"
+    label: "연구 분야"
+    label_singular: "연구 분야"
+    description: "연구 분야 관리"
+    folder: "_data"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: title
+    fields:
+      - {name: id, label: "ID", widget: "string", required: true}
+      - {name: title, label: "제목 (한글)", widget: "string", required: true}
+      - {name: title_en, label: "제목 (영문)", widget: "string", required: true}
+      - {name: subtitle, label: "부제목 (한글)", widget: "string"}
+      - {name: subtitle_en, label: "부제목 (영문)", widget: "string"}
+      - {name: description, label: "설명 (한글)", widget: "markdown"}
+      - {name: description_en, label: "설명 (영문)", widget: "markdown"}
+      - {name: icon, label: "아이콘명", widget: "string", required: true}
+      - {name: image, label: "이미지", widget: "image", required: false}
+      - {name: keywords, label: "키워드 (한글)", widget: "list"}
+      - {name: keywords_en, label: "키워드 (영문)", widget: "list"}
+      - {name: projects, label: "프로젝트", widget: "list", fields: [
+          {name: title, label: "프로젝트명", widget: "string"},
+          {name: period, label: "기간", widget: "string"},
+          {name: funding, label: "지원사업", widget: "string"}
+        ]}
+      - {name: publications, label: "대표 논문", widget: "list"}
+      - {name: order, label: "정렬 순서", widget: "number", required: true}
+
+  # Awards
+  - name: "awards"
+    label: "수상 경력"
+    label_singular: "수상 경력"
+    description: "수상 경력 관리 (연도별 그룹화)"
+    folder: "_data"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: title
+    fields:
+      - {name: year, label: "연도", widget: "number", required: true}
+      - {name: items, label: "수상 내역", widget: "list", fields: [
+          {name: id, label: "ID", widget: "string", required: true},
+          {name: title, label: "수상명 (한글)", widget: "string", required: true},
+          {name: title_en, label: "수상명 (영문)", widget: "string", required: true},
+          {name: organization, label: "수여기관 (한글)", widget: "string", required: true},
+          {name: organization_en, label: "수여기관 (영문)", widget: "string", required: true},
+          {name: date, label: "수상일", widget: "datetime", required: true, date_format: "YYYY-MM-DD", time_format: false},
+          {name: recipient, label: "수상자 (한글)", widget: "string", required: true},
+          {name: recipient_en, label: "수상자 (영문)", widget: "string", required: true},
+          {name: description, label: "설명 (한글)", widget: "text"},
+          {name: description_en, label: "설명 (영문)", widget: "text"},
+          {name: category, label: "카테고리 (한글)", widget: "select", options: ["학회상", "논문상", "정부포상", "재단상", "대학상", "국제논문상"]},
+          {name: category_en, label: "카테고리 (영문)", widget: "select", options: ["Society Award", "Paper Award", "Government Award", "Foundation Award", "University Award", "International Paper Award"]},
+          {name: image, label: "이미지", widget: "image", required: false},
+          {name: link, label: "상세 링크", widget: "string"}
+        ]}
+
+  # Publications
+  - name: "publications"
+    label: "논문/성과"
+    label_singular: "논문"
+    description: "논문 및 연구성과 관리 (연도별 그룹화)"
+    folder: "_data"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: title
+    fields:
+      - {name: year, label: "연도", widget: "number", required: true}
+      - {name: items, label: "논문 목록", widget: "list", fields: [
+          {name: id, label: "ID", widget: "string", required: true},
+          {name: title, label: "논문 제목 (영문)", widget: "string", required: true},
+          {name: title_ko, label: "논문 제목 (한글)", widget: "string"},
+          {name: authors, label: "저자", widget: "string", required: true},
+          {name: journal, label: "저널명", widget: "string"},
+          {name: volume, label: "권", widget: "string"},
+          {name: issue, label: "호", widget: "string"},
+          {name: pages, label: "페이지", widget: "string"},
+          {name: year, label: "출판 연도", widget: "number", required: true},
+          {name: doi, label: "DOI", widget: "string"},
+          {name: url, label: "논문 URL", widget: "string"},
+          {name: type, label: "타입", widget: "select", options: ["Journal", "Conference"], required: true},
+          {name: category, label: "분야", widget: "select", options: ["Computational", "Energy", "Structural", "Bio"], required: true},
+          {name: conference, label: "컨퍼런스명", widget: "string"},
+          {name: conference_full, label: "컨퍼런스 전체명", widget: "string"},
+          {name: location, label: "개최지", widget: "string"},
+          {name: date, label: "발표일", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false},
+          {name: featured, label: "추천 논문", widget: "boolean", default: false},
+          {name: abstract, label: "초록 (영문)", widget: "text"},
+          {name: keywords, label: "키워드", widget: "list"}
+        ]}

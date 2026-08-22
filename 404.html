@@ -1,0 +1,75 @@
+---
+layout: default
+title: "페이지를 찾을 수 없습니다"
+permalink: /404.html
+lang: "ko_KR"
+body_class: "page-404"
+---
+
+<div class="page-404-container">
+  <div class="page-404-content">
+    <h1 class="page-404-code">404</h1>
+    <h2 class="page-404-title">페이지를 찾을 수 없습니다</h2>
+    <p class="page-404-message">요청하신 페이지가 없거나 이동되었습니다.</p>
+    <a href="{{ site.baseurl }}/" class="btn btn-primary btn-large page-404-home">
+      {% include icon.html name="arrow-right" size="small" %}
+      홈으로 돌아가기
+    </a>
+  </div>
+</div>
+
+<style>
+.page-404-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--header-height) + 60px) var(--space-content) 60px;
+  text-align: center;
+}
+
+.page-404-code {
+  font-family: var(--font-display);
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-primary);
+  margin-bottom: var(--space-content);
+  letter-spacing: -0.03em;
+}
+
+.page-404-title {
+  font-size: var(--type-section-size);
+  font-weight: var(--type-section-weight);
+  line-height: var(--type-section-line-height);
+  margin-bottom: var(--space-content);
+  color: var(--color-foreground);
+}
+
+.page-404-message {
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-line-height);
+  color: var(--color-muted);
+  margin-bottom: var(--space-content);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-404-home {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-compact);
+}
+
+@media (max-width: 480px) {
+  .page-404-code {
+    font-size: 80px;
+  }
+  
+  .page-404-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+</style>

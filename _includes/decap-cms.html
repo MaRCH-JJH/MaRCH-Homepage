@@ -1,0 +1,14 @@
+{% if jekyll.environment == 'development' %}
+<script>
+  window.decapCMS = {
+    config: {
+      backend: {
+        name: 'git-gateway',
+        branch: 'main'
+      },
+      load_config_file: false
+    }
+  };
+</script>
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+{% endif %}

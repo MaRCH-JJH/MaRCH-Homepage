@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{% include hero.html %}
+
+<section class="section highlights-section" aria-labelledby="highlights-heading">
+  <div class="container">
+    <header class="section-header">
+      <h2 id="highlights-heading" class="section-title">{{ site.data.site.highlights[0].title | default: '주요 연구 분야' }}</h2>
+      <p class="section-subtitle">{{ site.data.site.tagline }}</p>
+    </header>
+    
+    <div class="highlights-grid">
+      {% for highlight in site.data.site.highlights %}
+      <article class="highlight-card">
+        <div class="highlight-icon" aria-hidden="true">
+          {% include icon.html name=highlight.icon size="large" %}
+        </div>
+        <h3 class="highlight-title">{{ highlight.title }}</h3>
+        <p class="highlight-description">{{ highlight.description }}</p>
+        <a href="{{ highlight.url }}" class="highlight-link" aria-label="{{ highlight.title }} 자세히 보기">
+          자세히 보기
+          {% include icon.html name="arrow-right" size="small" %}
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section news-section" aria-labelledby="news-heading">
+  <div class="container">
+    <header class="section-header">
+      <h2 id="news-heading" class="section-title">최신 소식</h2>
+      <a href="/news/" class="section-view-all">전체 보기 {% include icon.html name="arrow-right" size="small" %}</a>
+    </header>
+    
+    <div class="news-grid">
+      {% assign news_items = site.posts | limit: 3 %}
+      {% for post in news_items %}
+      {% include news-card.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section stats-section" aria-labelledby="stats-heading">
+  <div class="container">
+    <div class="stats-grid" role="list" aria-label="연구실 통계">
+      {% for stat in site.data.site.hero.stats %}
+      <div class="stat-item" role="listitem">
+        <span class="stat-value" aria-label="{{ stat.label }}">{{ stat.value }}</span>
+        <span class="stat-label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

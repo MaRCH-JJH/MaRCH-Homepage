@@ -1,0 +1,119 @@
+# Site settings
+title: MaRCH Lab
+description: "Materials Research & Computational Horizons Laboratory"
+url: "https://your-username.github.io"
+baseurl: "/MaRCH_Homepage_code"
+lang: "ko_KR"
+
+# Author / Lab info
+lab_name: "MaRCH Lab"
+lab_name_en: "Materials Research & Computational Horizons Laboratory"
+email: "marchlab@example.ac.kr"
+address: "서울특별시 관악구 관악로 1, 000동 000호"
+phone: "+82-2-000-0000"
+
+# Social
+github_username: "marchlab"
+twitter_username: "marchlab"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+# Collections
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+  awards:
+    output: true
+    permalink: /awards/:name/
+  members:
+    output: false
+  publications:
+    output: true
+    permalink: /publications/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: "collection"
+  - scope:
+      path: ""
+      type: "awards"
+    values:
+      layout: "collection"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "collection"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - docs/
+  - .github/
+  - static/admin/config.yml
+  - PROMPT.md
+  - DESIGN.md
+
+# Include
+include:
+  - _redirects
+  - .nojekyll
+
+# Sass
+sass:
+  style: compressed
+
+# Kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Feed
+feed:
+  path: feed.xml
+
+# SEO
+twitter:
+  username: marchlab
+  card: summary_large_image
+
+social:
+  name: MaRCH Lab
+  links:
+    - https://github.com/marchlab
+    - https://twitter.com/marchlab
+
+# Google Analytics (optional)
+google_analytics: ""
+
+# Decap CMS
+decap_cms:
+  enabled: true
+  backend:
+    name: git-gateway
+    branch: main
