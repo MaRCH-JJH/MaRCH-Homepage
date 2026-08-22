@@ -73,10 +73,3 @@ social:
 
 # Google Analytics (optional)
 google_analytics: ""
-
-# Decap CMS
-decap_cms:
-  enabled: true
-  backend:
-    name: git-gateway
-    branch: main
