@@ -202,7 +202,7 @@ collections:
           {name: doi, label: "DOI", widget: "string"},
           {name: url, label: "논문 URL", widget: "string"},
           {name: type, label: "타입", widget: "select", options: ["Journal", "Conference"], required: true},
-          {name: category, label: "분야", widget: "select", options: ["Computational", "Energy", "Structural", "Bio"], required: true},
+          {name: category, label: "분야", widget: "select", options: ["Circuit Design", "Power Amplifier", "MMIC", "Measurement"], required: true},
           {name: conference, label: "컨퍼런스명", widget: "string"},
           {name: conference_full, label: "컨퍼런스 전체명", widget: "string"},
           {name: location, label: "개최지", widget: "string"},

@@ -1,16 +1,16 @@
 # Site settings
 title: MaRCH Lab
-description: "Materials Research & Computational Horizons Laboratory"
+description: "Microwave and RF Circuit Hub Laboratory"
 url: "https://march-jjh.github.io"
 baseurl: "/MaRCH-Homepage"
 lang: "ko_KR"
 
 # Author / Lab info
 lab_name: "MaRCH Lab"
-lab_name_en: "Materials Research & Computational Horizons Laboratory"
+lab_name_en: "Microwave and RF Circuit Hub Laboratory"
 email: "marchlab@example.ac.kr"
-address: "서울특별시 관악구 관악로 1, 000동 000호"
-phone: "+82-2-000-0000"
+address: "강원도 강릉시 범일로 57 강원대학교 강릉캠퍼스 공학관 000호"
+phone: "+82-33-640-0000"
 
 # Social
 github_username: "marchlab"
@@ -27,43 +27,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-include-cache
-
-# Collections
-collections:
-  research:
-    output: true
-    permalink: /research/:name/
-  awards:
-    output: true
-    permalink: /awards/:name/
-  members:
-    output: false
-  publications:
-    output: true
-    permalink: /publications/:name/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "research"
-    values:
-      layout: "collection"
-  - scope:
-      path: ""
-      type: "awards"
-    values:
-      layout: "collection"
-  - scope:
-      path: ""
-      type: "publications"
-    values:
-      layout: "collection"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
 
 # Exclude from processing
 exclude:

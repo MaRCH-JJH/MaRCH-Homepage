@@ -53,7 +53,7 @@ lang: "ko_KR"
   
   <div class="contact-map">
     <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1!2d128.8667!3d37.7539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356b8f7e7c7c7c7c%3A0x1234567890abcdef!2z7YOs7ZW464yA7IS47J6l7JqU7Ja07J2Y7JuQ!5e0!3m2!1sko!2skr!4v1234567890"
+      src="https://www.google.com/maps?q=%EA%B0%95%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90+%EA%B0%95%EB%A6%89%EC%BA%A0%ED%8D%BC%EC%8A%A4&output=embed"
       width="100%" 
       height="400" 
       style="border:0;" 

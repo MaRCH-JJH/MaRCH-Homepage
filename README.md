@@ -1,6 +1,6 @@
 # MaRCH Lab Website
 
-Materials Research & Computational Horizons Laboratory 공식 웹사이트
+Microwave and RF Circuit Hub Laboratory 공식 웹사이트
 
 Jekyll + GitHub Pages + Decap CMS로 구축된 정적 사이트입니다.
 
@@ -17,8 +17,8 @@ Jekyll + GitHub Pages + Decap CMS로 구축된 정적 사이트입니다.
 
 ```bash
 # 저장소 클론
-git clone https://github.com/your-username/MaRCH_Homepage_code.git
-cd MaRCH_Homepage_code
+git clone https://github.com/MaRCH-JJH/MaRCH-Homepage.git
+cd MaRCH-Homepage
 
 # Ruby 의존성 설치
 bundle install
@@ -28,7 +28,7 @@ bundle exec jekyll serve --livereload
 
 ```
 
-브라우저에서 `http://localhost:4000/MaRCH_Homepage_code/` 접속
+브라우저에서 `http://localhost:4000/MaRCH-Homepage/` 접속
 
 ### Decap CMS 로컬 테스트
 

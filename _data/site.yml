@@ -3,11 +3,11 @@
 
 site:
   name: "MaRCH Lab"
-  name_en: "Materials Research & Computational Horizons Laboratory"
-  tagline: "소재 연구의 새로운 지평을 열다"
-  tagline_en: "Opening New Horizons in Materials Research"
-  description: "MaRCH Lab은 계산과학과 실험과학의 융합을 통해 차세대 소재를 설계하고 발견합니다."
-  description_en: "MaRCH Lab designs and discovers next-generation materials through the convergence of computational and experimental science."
+  name_en: "Microwave and RF Circuit Hub Laboratory"
+  tagline: "RF/Microwave 회로와 전력 증폭기의 새로운 지평을 열다"
+  tagline_en: "Opening New Horizons in RF/Microwave Circuits and Power Amplifiers"
+  description: "MaRCH Lab은 RF/Microwave 회로 설계와 RF Power Amplifier를 중심으로 MMIC 및 RF 계측 시스템을 연구합니다."
+  description_en: "MaRCH Lab researches RF/Microwave circuit design and RF power amplifiers, with a focus on MMIC and RF measurement systems."
   
   # Contact
   email: "marchlab@example.ac.kr"
@@ -22,7 +22,7 @@ site:
   youtube: "https://youtube.com/@marchlab"
   
   # SEO
-  keywords: "소재과학, 계산과학, 머신러닝, 신소재, 연구실"
+  keywords: "RF, Microwave, RF Power Amplifier, MMIC, 반도체, 전자공학, 연구실"
   og_image: "/assets/images/logo.svg"
   
   # Navigation (order matters)
@@ -58,42 +58,34 @@ site:
 
   # Hero (home page)
   hero:
-    title: "소재 연구의 새로운 지평을 열다"
-    title_en: "Opening New Horizons in Materials Research"
-    subtitle: "계산과학과 실험과학의 융합으로 차세대 소재를 설계합니다."
-    subtitle_en: "Designing next-generation materials through computational-experimental convergence."
+    title: "RF/Microwave 회로와 전력 증폭기의 새로운 지평을 열다"
+    title_en: "Opening New Horizons in RF/Microwave Circuits and Power Amplifiers"
+    subtitle: "RF Power Amplifier를 중심으로 RF/Microwave 회로와 MMIC를 연구합니다."
+    subtitle_en: "Researching RF/Microwave circuits and MMIC with a focus on RF power amplifiers."
     cta_text: "연구 분야 보기"
     cta_text_en: "View Research Areas"
     cta_url: "/research/"
     background_image: "/assets/images/hero-main.jpg"
-    stats:
-      - label: "연구 논문"
-        value: "150+"
-      - label: "연구 과제"
-        value: "25+"
-      - label: "특허 출원"
-        value: "30+"
-      - label: "국제 협력"
-        value: "15+"
+    stats: []
 
   # Highlights (home page)
   highlights:
-    - title: "계산 소재 설계"
-      description: "DFT와 머신러닝을 활용한 신소재 발굴"
+    - title: "RF/Microwave 회로 설계"
+      description: "임피던스 매칭 및 EM 시뮬레이션 기반 수동/능동 회로 설계"
       icon: "cpu"
-      url: "/research/#computational"
-    - title: "에너지 소재"
-      description: "배터리, 태양전지, 수소 에너지 소재 연구"
-      icon: "battery"
-      url: "/research/#energy"
-    - title: "구조 소재"
-      description: "초고강도 경량 합금 및 복합소재 개발"
-      icon: "cube"
-      url: "/research/#structural"
-    - title: "바이오 소재"
-      description: "의료용 생체적합 소재 및 약물전달 시스템"
-      icon: "dna"
-      url: "/research/#bio"
+      url: "/research/#rf-circuit-design"
+    - title: "RF Power Amplifier"
+      description: "GaN/GaAs 소자 기반 고효율·고출력 전력 증폭기 연구"
+      icon: "waveform"
+      url: "/research/#power-amplifier"
+    - title: "MMIC & Semiconductor"
+      description: "모놀리식 마이크로파 집적회로 및 RF 반도체 소자 설계"
+      icon: "chip"
+      url: "/research/#mmic-semiconductor"
+    - title: "RF Measurement & System"
+      description: "네트워크/스펙트럼 분석기 기반 RF 특성평가 및 시스템 검증"
+      icon: "antenna"
+      url: "/research/#rf-measurement-system"
 
   # Theme
   theme:

@@ -72,7 +72,7 @@
 
 1. 왼쪽 메뉴 **연구 분야** 클릭
 2. 기존 항목 클릭하여 수정 또는 **New 연구 분야**로 추가
-3. 아이콘명은 미리 정의된 것 중 선택: `cpu`, `battery`, `cube`, `dna`
+3. 아이콘명은 미리 정의된 것 중 선택: `cpu`, `waveform`, `chip`, `antenna`
 
 #### 수상 경력 추가
 
@@ -88,7 +88,7 @@
 3. **New 논문/성과** 클릭 → 연도 선택 → 논문 추가
 4. **DOI** 입력 시 자동으로 링크 생성됨
 5. **타입**: Journal/Conference 선택
-6. **분야**: Computational/Energy/Structural/Bio 선택
+6. **분야**: Circuit Design/Power Amplifier/MMIC/Measurement 선택
 7. **추천 논문** 체크 시 상단에 뱃지 표시
 
 ### 발행(Publish) 프로세스

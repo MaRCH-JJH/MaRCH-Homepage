@@ -6,7 +6,7 @@ layout: default
 <section class="section highlights-section" aria-labelledby="highlights-heading">
   <div class="container">
     <header class="section-header">
-      <h2 id="highlights-heading" class="section-title">{{ site.data.site.highlights[0].title | default: '주요 연구 분야' }}</h2>
+      <h2 id="highlights-heading" class="section-title">주요 연구 분야</h2>
       <p class="section-subtitle">{{ site.data.site.tagline }}</p>
     </header>
     
@@ -18,7 +18,7 @@ layout: default
         </div>
         <h3 class="highlight-title">{{ highlight.title }}</h3>
         <p class="highlight-description">{{ highlight.description }}</p>
-        <a href="{{ highlight.url }}" class="highlight-link" aria-label="{{ highlight.title }} 자세히 보기">
+        <a href="{{ site.baseurl }}{{ highlight.url }}" class="highlight-link" aria-label="{{ highlight.title }} 자세히 보기">
           자세히 보기
           {% include icon.html name="arrow-right" size="small" %}
         </a>
@@ -32,7 +32,7 @@ layout: default
   <div class="container">
     <header class="section-header">
       <h2 id="news-heading" class="section-title">최신 소식</h2>
-      <a href="/news/" class="section-view-all">전체 보기 {% include icon.html name="arrow-right" size="small" %}</a>
+      <a href="{{ site.baseurl }}/news/" class="section-view-all">전체 보기 {% include icon.html name="arrow-right" size="small" %}</a>
     </header>
     
     <div class="news-grid">
@@ -44,6 +44,7 @@ layout: default
   </div>
 </section>
 
+{% if site.data.site.hero.stats.size > 0 %}
 <section class="section stats-section" aria-labelledby="stats-heading">
   <div class="container">
     <div class="stats-grid" role="list" aria-label="연구실 통계">
@@ -56,3 +57,4 @@ layout: default
     </div>
   </div>
 </section>
+{% endif %}

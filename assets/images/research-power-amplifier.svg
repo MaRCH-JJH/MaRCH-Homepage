@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="pa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0071e3"/>
+      <stop offset="100%" style="stop-color:#00a1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#f0f4f8"/>
+
+  <!-- small input sine wave -->
+  <path d="M90 250 Q120 200 150 250 T210 250 T270 250" fill="none" stroke="url(#pa)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- amplifier triangle block -->
+  <path d="M310 180 L470 250 L310 320 Z" fill="url(#pa)" opacity="0.9"/>
+  <text x="360" y="257" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="22" font-weight="600" fill="white" text-anchor="middle">PA</text>
+
+  <!-- large output sine wave -->
+  <path d="M500 250 Q545 140 590 250 T680 250 T770 250" fill="none" stroke="url(#pa)" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- device labels -->
+  <g fill="none" stroke="url(#pa)" stroke-width="2" opacity="0.35">
+    <rect x="150" y="380" width="90" height="50" rx="6"/>
+    <rect x="270" y="380" width="90" height="50" rx="6"/>
+    <rect x="390" y="380" width="90" height="50" rx="6"/>
+    <rect x="510" y="380" width="90" height="50" rx="6"/>
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="15" fill="#515154" text-anchor="middle">
+    <text x="195" y="410">GaN</text>
+    <text x="315" y="410">GaAs</text>
+    <text x="435" y="410">Doherty</text>
+    <text x="555" y="410">Broadband</text>
+  </g>
+</svg>

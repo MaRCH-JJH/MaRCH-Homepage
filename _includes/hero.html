@@ -1,4 +1,4 @@
-<section class="hero" aria-labelledby="hero-title" style="{% if page.hero_background %}background-image: url('{{ page.hero_background }}');{% elsif site.data.site.hero.background_image %}background-image: url('{{ site.data.site.hero.background_image }}');{% endif %}">
+<section class="hero" aria-labelledby="hero-title" style="{% if page.hero_background %}background-image: url('{{ site.baseurl }}{{ page.hero_background }}');{% elsif site.data.site.hero.background_image %}background-image: url('{{ site.baseurl }}{{ site.data.site.hero.background_image }}');{% endif %}">
   <div class="container">
     <div class="hero-content">
       <h1 id="hero-title" class="hero-title">{{ page.hero_title | default: site.data.site.hero.title }}</h1>
@@ -15,9 +15,10 @@
       </div>
     </div>
     
-    {% if page.hero_stats or site.data.site.hero.stats %}
+    {% assign hero_stats = page.hero_stats | default: site.data.site.hero.stats %}
+    {% if hero_stats.size > 0 %}
     <div class="hero-stats" role="list" aria-label="연구실 통계">
-      {% for stat in page.hero_stats | default: site.data.site.hero.stats %}
+      {% for stat in hero_stats %}
       <div class="stat-item" role="listitem">
         <span class="stat-value" aria-label="{{ stat.label }}">{{ stat.value }}</span>
         <span class="stat-label">{{ stat.label }}</span>

@@ -1,4 +1,4 @@
-<article class="research-card" role="listitem">
+<article class="research-card" id="{{ include.item.id }}" role="listitem">
   <div class="research-image-wrapper">
     {% if include.item.image %}
     <img src="{{ include.item.image | relative_url }}" alt="" class="research-image" loading="lazy" width="400" height="250">
@@ -8,7 +8,7 @@
     </div>
     {% endif %}
   </div>
-  
+
   <div class="research-content">
     <div class="research-icon" aria-hidden="true">
       {% include icon.html name=include.item.icon size="large" %}
@@ -16,7 +16,7 @@
     <h3 class="research-title">{{ include.item.title }}</h3>
     <p class="research-subtitle">{{ include.item.subtitle }}</p>
     <p class="research-description">{{ include.item.description | strip_newlines | truncatewords: 30 }}</p>
-    
+
     {% if include.item.keywords.size > 0 %}
     <ul class="research-keywords" aria-label="키워드">
       {% for keyword in include.item.keywords limit:4 %}
@@ -24,10 +24,16 @@
       {% endfor %}
     </ul>
     {% endif %}
-    
-    <a href="{{ include.item.url | default: '#' }}" class="research-link" aria-label="{{ include.item.title }} 자세히 보기">
-      자세히 보기
-      {% include icon.html name="arrow-right" size="small" %}
-    </a>
+
+    {% assign full_description = include.item.description | strip_newlines %}
+    {% if full_description.size > 0 %}
+    <details class="research-details">
+      <summary class="research-details-toggle">
+        설명 더보기
+        {% include icon.html name="chevron-down" size="small" %}
+      </summary>
+      <p class="research-details-body">{{ full_description }}</p>
+    </details>
+    {% endif %}
   </div>
 </article>
