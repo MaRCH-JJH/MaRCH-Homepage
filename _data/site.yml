@@ -8,8 +8,8 @@
 
 name: "MaRCH Lab"
 name_en: "Microwave and RF Circuit ResearcH Lab"
-tagline: "RF/Microwave 회로와 전력 증폭기의 새로운 지평을 열다"
-tagline_en: "Opening New Horizons in RF/Microwave Circuits and Power Amplifiers"
+tagline: "Microwave & RF 기술의 가능성을 연구하다"
+tagline_en: "Researching the Possibilities of Microwave & RF Technology"
 description: "MaRCH Lab은 RF/Microwave 회로 설계와 RF Power Amplifier를 중심으로 MMIC 및 RF 계측 시스템을 연구합니다."
 description_en: "MaRCH Lab researches RF/Microwave circuit design and RF power amplifiers, with a focus on MMIC and RF measurement systems."
 
@@ -65,8 +65,8 @@ footer:
 
 # Hero (home page)
 hero:
-  title: "RF/Microwave 회로와 전력 증폭기의 새로운 지평을 열다"
-  title_en: "Opening New Horizons in RF/Microwave Circuits and Power Amplifiers"
+  title: "Microwave & RF 기술의 가능성을 연구하다"
+  title_en: "Researching the Possibilities of Microwave & RF Technology"
   subtitle: "RF Power Amplifier를 중심으로 RF/Microwave 회로와 MMIC를 연구합니다."
   subtitle_en: "Researching RF/Microwave circuits and MMIC with a focus on RF power amplifiers."
   cta_text: "연구 분야 보기"
