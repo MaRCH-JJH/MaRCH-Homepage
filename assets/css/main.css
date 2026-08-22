@@ -801,6 +801,58 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   padding: 60px 0;
 }
 
+/* :where() keeps these at near-zero specificity so any component-specific
+   rule (.member-role, .contact-details p, .news-excerpt, ...) that also
+   lives inside .page-body always wins. This is only a default for plain
+   Markdown prose (about/terms/privacy pages) that has no component class. */
+:where(.page-body) h2 {
+  margin-top: 40px;
+  margin-bottom: var(--space-content);
+}
+
+:where(.page-body) h2:first-child {
+  margin-top: 0;
+}
+
+:where(.page-body) h3 {
+  margin-top: var(--space-content);
+  margin-bottom: var(--space-compact);
+}
+
+:where(.page-body) p {
+  margin-bottom: var(--space-content);
+  color: var(--color-secondary);
+}
+
+:where(.page-body) ul,
+:where(.page-body) ol {
+  margin: 0 0 var(--space-content) 1.25em;
+}
+
+:where(.page-body) li {
+  margin-bottom: var(--space-compact);
+  color: var(--color-secondary);
+}
+
+:where(.page-body) a {
+  color: var(--color-link);
+}
+
+:where(.page-body) a:hover {
+  color: var(--color-primary);
+}
+
+:where(.page-body) blockquote {
+  margin: 0 0 var(--space-content);
+  padding: var(--space-compact) var(--space-content);
+  border-left: 3px solid var(--color-primary);
+  color: var(--color-muted);
+}
+
+:where(.page-body) strong {
+  color: var(--color-foreground);
+}
+
 .post-header {
   text-align: left;
 }
@@ -1941,6 +1993,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   font-size: var(--type-body-size);
   color: var(--color-secondary);
   line-height: var(--type-body-line-height);
+  margin-bottom: 0;
 }
 
 .contact-details a {
