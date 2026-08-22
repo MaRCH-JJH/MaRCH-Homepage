@@ -65,7 +65,7 @@ site:
     cta_text: "연구 분야 보기"
     cta_text_en: "View Research Areas"
     cta_url: "/research/"
-    background_image: "/assets/images/hero-placeholder.svg"
+    background_image: "/assets/images/hero-main.jpg"
     stats:
       - label: "연구 논문"
         value: "150+"
