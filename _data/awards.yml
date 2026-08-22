@@ -15,7 +15,7 @@
       description_en: "Awarded for contributions to the advancement of computational materials science"
       category: "학회상"
       category_en: "Society Award"
-      image: "/assets/images/awards/2024-researcher-of-year.jpg"
+      image: ""
       link: "https://www.kims.or.kr/award/2024"
     - id: award-2024-2
       title: "우수논문상"
@@ -29,7 +29,7 @@
       description_en: "Best Paper Award for research on high-entropy ceramics"
       category: "논문상"
       category_en: "Paper Award"
-      image: "/assets/images/awards/2024-best-paper.jpg"
+      image: ""
       link: "https://www.kcers.or.kr/award/2024"
     - id: award-2024-3
       title: "젊은과학자상"
@@ -43,7 +43,7 @@
       description_en: "Young Scientist Award for achievements in all-solid-state battery materials research"
       category: "정부포상"
       category_en: "Government Award"
-      image: "/assets/images/awards/2024-young-scientist.jpg"
+      image: ""
       link: "https://www.kofst.or.kr/award/2024"
 
 - year: 2023
@@ -60,7 +60,7 @@
       description_en: "For research on deformation mechanisms of high-Mn steels"
       category: "학회상"
       category_en: "Society Award"
-      image: "/assets/images/awards/2023-academic.jpg"
+      image: ""
       link: "https://www.kimm.org/award/2023"
     - id: award-2023-2
       title: "최우수논문상"
@@ -74,7 +74,7 @@
       description_en: "Outstanding Paper Award for nanoparticle drug delivery research"
       category: "국제논문상"
       category_en: "International Paper Award"
-      image: "/assets/images/awards/2023-outstanding-paper.jpg"
+      image: ""
       link: "https://www.materialstoday.com/awards/2023"
     - id: award-2023-3
       title: "연구장려상"
@@ -105,7 +105,7 @@
       description_en: "For technology transfer and commercialization of all-solid-state battery materials"
       category: "정부포상"
       category_en: "Government Award"
-      image: "/assets/images/awards/2022-tech-innovation.jpg"
+      image: ""
       link: "https://www.motie.go.kr/award/2022"
     - id: award-2022-2
       title: "우수연구성과상"
@@ -136,5 +136,5 @@
       description_en: "Interface control in ceramic matrix composites research"
       category: "학회상"
       category_en: "Society Award"
-      image: "/assets/images/awards/2021-early-career.jpg"
+      image: ""
       link: "https://www.kscm.or.kr/award/2021"

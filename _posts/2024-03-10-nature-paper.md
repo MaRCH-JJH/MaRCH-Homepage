@@ -4,7 +4,6 @@ title: "Nature Computational Science 게재 - 고엔트로피 합금 머신러�
 date: 2024-03-10
 category: "논문 게재"
 excerpt: "김교수 연구팀이 머신러닝을 활용한 고엔트로피 합금 발굴 연구로 Nature Computational Science에 논문을 게재했습니다."
-image: "/assets/images/news/nature-computational-science.jpg"
 lang: "ko_KR"
 ---
 

@@ -23,7 +23,7 @@ site:
   
   # SEO
   keywords: "소재과학, 계산과학, 머신러닝, 신소재, 연구실"
-  og_image: "/assets/images/og-default.jpg"
+  og_image: "/assets/images/logo.svg"
   
   # Navigation (order matters)
   navigation:
@@ -65,7 +65,7 @@ site:
     cta_text: "연구 분야 보기"
     cta_text_en: "View Research Areas"
     cta_url: "/research/"
-    background_image: "/assets/images/hero-bg.jpg"
+    background_image: ""
     stats:
       - label: "연구 논문"
         value: "150+"

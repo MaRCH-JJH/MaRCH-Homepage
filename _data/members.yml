@@ -12,7 +12,7 @@
   email: "prof.kim@marchlab.ac.kr"
   phone: "+82-2-000-0001"
   office: "000동 000호"
-  image: "/assets/images/members/prof-kim.jpg"
+  image: ""
   bio: "계산소재과학 분야의 세계적 권위자입니다. DFT 기반 소재 설계와 머신러닝 융합 연구를 선도하고 있습니다."
   bio_en: "A world-renowned authority in computational materials science. Leading research in DFT-based materials design and ML convergence."
   research_interests:
@@ -42,7 +42,7 @@
   email: "dr.lee@marchlab.ac.kr"
   phone: "+82-2-000-0002"
   office: "000동 001호"
-  image: "/assets/images/members/dr-lee.jpg"
+  image: ""
   bio: "에너지 소재 분야 전문가입니다. 차세대 배터리 소재 개발에 주력하고 있습니다."
   bio_en: "Expert in energy materials. Focusing on next-generation battery materials development."
   research_interests:
@@ -70,7 +70,7 @@
   email: "phd.park@marchlab.ac.kr"
   phone: ""
   office: "000동 002호"
-  image: "/assets/images/members/phd-park.jpg"
+  image: ""
   bio: "구조 소재 분야 박사과정생입니다. 초고강도 경량 합금 연구를 수행 중입니다."
   bio_en: "Ph.D. candidate in structural materials. Researching ultra-high-strength lightweight alloys."
   research_interests:
@@ -98,7 +98,7 @@
   email: "phd.choi@marchlab.ac.kr"
   phone: ""
   office: "000동 002호"
-  image: "/assets/images/members/phd-choi.jpg"
+  image: ""
   bio: "바이오 소재 분야 박사과정생입니다. 약물전달 시스템용 나노소재를 연구합니다."
   bio_en: "Ph.D. candidate in biomaterials. Researching nanomaterials for drug delivery systems."
   research_interests:
@@ -126,7 +126,7 @@
   email: "ms.kim@marchlab.ac.kr"
   phone: ""
   office: "000동 003호"
-  image: "/assets/images/members/ms-kim.jpg"
+  image: ""
   bio: "계산소재과학 석사과정생입니다. 머신러닝을 활용한 소재 물성 예측을 연구합니다."
   bio_en: "M.S. candidate in computational materials science. Researching ML-based materials property prediction."
   research_interests:
@@ -154,7 +154,7 @@
   email: "ms.jung@marchlab.ac.kr"
   phone: ""
   office: "000동 003호"
-  image: "/assets/images/members/ms-jung.jpg"
+  image: ""
   bio: "에너지 소재 석사과정생입니다. 페로브스카이트 태양전지 소재를 연구합니다."
   bio_en: "M.S. candidate in energy materials. Researching perovskite solar cell materials."
   research_interests:
@@ -182,7 +182,7 @@
   email: "alumni1@company.com"
   phone: ""
   office: ""
-  image: "/assets/images/members/alumni-1.jpg"
+  image: ""
   bio: "2020년 박사 졸업, 현재 000연구소 선임연구원"
   bio_en: "Ph.D. 2020, currently Senior Researcher at 000 Institute"
   research_interests: []
@@ -204,7 +204,7 @@
   email: "alumni2@company.com"
   phone: ""
   office: ""
-  image: "/assets/images/members/alumni-2.jpg"
+  image: ""
   bio: "2021년 석사 졸업, 현재 000기업 연구원"
   bio_en: "M.S. 2021, currently Researcher at 000 Company"
   research_interests: []
