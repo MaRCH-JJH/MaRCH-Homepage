@@ -38,8 +38,8 @@ jobs:
       - name: Copy Decap CMS config
         run: |
           mkdir -p _site/admin
-          cp static/admin/config.yml _site/admin/config.yml
-          cp static/admin/index.html _site/admin/index.html 2>/dev/null || true
+          cp admin/config.yml _site/admin/config.yml
+          cp admin/index.html _site/admin/index.html 2>/dev/null || true
       
       - name: Create .nojekyll
         run: touch _site/.nojekyll

@@ -37,6 +37,7 @@ exclude:
   - README.md
   - docs/
   - .github/
+  - admin/config.yml
   - PROMPT.md
   - DESIGN.md
 
