@@ -779,7 +779,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 }
 
 .page-header {
-  padding: 60px 0 40px;
+  padding: calc(var(--header-height) + 60px) 0 40px;
   text-align: center;
   background: var(--color-surface);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -2159,7 +2159,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   }
   
   .page-header {
-    padding: 40px 0 30px;
+    padding: calc(var(--header-height) + 40px) 0 30px;
   }
   
   .page-body {
