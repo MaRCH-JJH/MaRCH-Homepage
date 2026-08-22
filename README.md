@@ -261,4 +261,4 @@ MIT License - 자유롭게 사용, 수정, 배포 가능
 
 ---
 
-**문의**: marchlab@example.ac.kr
+**문의**: wlsgh8403@kangwon.ac.kr
