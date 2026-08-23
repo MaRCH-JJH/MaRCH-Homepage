@@ -34,14 +34,13 @@ items:
 
       using GaAs HBTs, as well as MMIC and RF module design.
     research_interests_en:
+      - RF Power Amplifier
       - Load Modulation Power Amplifiers (LMPAs)
       - load-insensitive power amplifier design
-      - and high-efficiency
-      - high-power RF power amplifiers.
     research_interests:
+      - RF Power Amplifier
       - Load Modulation Power Amplifier (LMPA)
       - Load-Insensitive Power Amplifier
-      - 고효율·고출력 RF 전력증폭기 설계
     bio: |-
       RF 전력증폭기(PA)를 중심으로 RF 및 초고주파 회로 설계를 연구하고 있습니다.
       GaAs HBT 기반 고출력·고효율 전력증폭기, MMIC 및 RF 모듈 설계를 주요 연구 분야로 하며,
@@ -69,11 +68,11 @@ items:
 
       master
     research_interests_en:
-      - Power Amplifier
+      - RF Power Amplifier
       - Doherty PA
       - Dual-band
     research_interests:
-      - Power Amplifier
+      - RF Power Amplifier
       - Doherty PA
       - Dual-band
     bio: RF 전력증폭기(PA)를 중심으로 RF 및 초고주파 회로 설계를 연구하고 있습니다. GaAs HBT 기반 고출력·고효율 전력증폭기,
@@ -99,13 +98,13 @@ items:
       scope to phased array antennas and grow into an RF design expert with a
       comprehensive perspective.
     research_interests_en:
+      - RF Power Amplifier
       - Phased Array Antennas
       - Radar System Design
-      - Power Amplifiers
     research_interests:
+      - RF Power Amplifier
       - Phased Array Antennas
       - Radar System Design
-      - Power Amplifiers
     bio: 전력 증폭기를 중점으로 연구하고 있습니다. 이러한 단일 회로 설계 역량을 바탕으로, 레이다 시스템을 이해하고 최적화하는 데 큰 관심을
       두고 있습니다. 최종적으로는 위상배열 안테나까지 연구 범위를 확장하여, 통합적인 시야를 갖춘 RF 설계 전문가로 성장하고자 합니다.
     name: 이경민
@@ -130,11 +129,11 @@ items:
       I enjoy bridging theory and practical measurement, and aim to build
       expertise in high-frequency circuit design.
     research_interests_en:
-      - Power Amplifier
+      - RF Power Amplifier
       - Passive Components
       - MMIC Design
     research_interests:
-      - Power Amplifier
+      - RF Power Amplifier
       - Passive Components
       - MMIC Design
     bio: 강원대학교 전자반도체공학부 학부연구생 권병준입니다. MaRCH Lab에서 RF/마이크로파 회로의 설계·시뮬레이션·제작·측정을 수행하고
@@ -154,11 +153,11 @@ items:
     name_en: Byeongjun Kwon
     category: undergrad
   - research_interests_en:
-      - Power Amplifier
+      - RF Power Amplifier
       - Passive Components
       - MMIC Design
     research_interests:
-      - Power Amplifier
+      - RF Power Amplifier
       - Passive Components
       - MMIC Design
     bio: RF 및 마이크로파 회로설계에 관심을 가지고 있으며, 특히 MMIC(Monolithic Microwave Integrated
