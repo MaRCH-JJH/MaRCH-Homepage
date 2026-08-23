@@ -93,3 +93,60 @@ items:
     email: whgnsgml00@gwnu.ac.kr
     name_en: Hunhee Cho
     category: master
+  - bio_en: >
+      I am Byeongjun Kwon, an undergraduate researcher in the Electronic &
+      Semiconductor Engineering Department at Kangwon National University. At
+      the MaRCH Lab, I work on the design, simulation, fabrication, and
+      measurement of RF/microwave circuits. My main interests lie in RF IC
+      design, particularly power amplifiers (PA) and low-noise amplifiers (LNA).
+      I enjoy bridging theory and practical measurement, and aim to build
+      expertise in high-frequency circuit design.
+    research_interests_en:
+      - Power Amplifier
+      - Passive Components
+      - MMIC Design
+    research_interests:
+      - Power Amplifier
+      - Passive Components
+      - MMIC Design
+    bio: 강원대학교 전자반도체공학부 학부연구생 권병준입니다. MaRCH Lab에서 RF/마이크로파 회로의 설계·시뮬레이션·제작·측정을 수행하고
+      있습니다. 특히 전력 증폭기(PA)와 저잡음 증폭기(LNA) 등 RF IC 설계에 관심을 두고 있으며, 이론과 실제 측정을 연결하는
+      과정에 흥미를 느낍니다. 앞으로 고주파 회로 설계 분야에서 전문성을 쌓아가는 것을 목표로 하고 있습니다.
+    name: 권병준
+    phone: 010-3523-1329
+    order: 4
+    major_en: Department of Electronic and Semiconductor Engineering
+    role_en: Undergraduate Researcher
+    role: 학부연구생
+    major: 전자반도체공학부
+    id: byeongjun
+    image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_171844691.jpg
+    office: MaRCH Lab
+    email: kbj5521@kangwon.ac.kr
+    name_en: Byeongjun Kwon
+    category: undergrad
+  - research_interests_en:
+      - Power Amplifier
+      - Passive Components
+      - MMIC Design
+    research_interests:
+      - Power Amplifier
+      - Passive Components
+      - MMIC Design
+    bio: RF 및 마이크로파 회로설계에 관심을 가지고 있으며, 특히 MMIC(Monolithic Microwave Integrated
+      Circuit) 설계 분야를 중점적으로 공부하고 있습니다. 고주파 회로의 동작 원리와 설계 기법을 익히고, 시뮬레이션과 회로 설계
+      경험을 바탕으로 RF 집적회로 설계 역량을 발전시키는 것을 목표로 하고 있습니다.
+    name: 김린
+    degree: ""
+    phone: 010-8524-4997
+    order: 5
+    major_en: Department of Electronic and Semiconductor Engineering
+    role_en: Undergraduate Researcher
+    role: 학부연구생
+    major: 전자반도체공학부
+    id: lynn
+    image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_170620760.jpg
+    office: MaRCH Lab
+    email: lynnda64589@gmail.com
+    name_en: Kim Lynn
+    category: undergrad
