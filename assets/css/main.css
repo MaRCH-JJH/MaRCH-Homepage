@@ -930,6 +930,32 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   color: var(--color-secondary);
 }
 
+/* A paragraph containing only an image (i.e. one inserted via the markdown
+   editor's image button) flows as an inline block instead of a full-width
+   block. Two or three inserted back-to-back wrap onto the same line
+   automatically -- no special syntax needed, this is exactly how images
+   already get added today (kakaotalk_....jpg one after another). Also
+   caps a single/lone image at less than full width instead of 100%. */
+.post-body p:has(> img:only-child) {
+  display: inline-block;
+  width: calc(50% - 20px);
+  vertical-align: top;
+  margin: 0 20px 20px 0;
+}
+
+.post-body p:has(> img:only-child) img {
+  width: 100%;
+  border-radius: var(--radius-docs-card);
+}
+
+@media (max-width: 600px) {
+  .post-body p:has(> img:only-child) {
+    display: block;
+    width: 100%;
+    margin: 0 0 var(--space-content);
+  }
+}
+
 .post-body ul,
 .post-body ol {
   margin: 0 0 var(--space-content) 1.25em;
