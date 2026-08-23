@@ -88,6 +88,42 @@ collections:
               {name: dark_mode_default, label: "다크 모드 기본값", widget: "boolean"}
             ]}
 
+  # About page (single file: _data/about.yml -- the "연구실 소개" page's Hero/
+  # Intro/Vision/Workflow/CTA text. Its Research Areas section pulls from the
+  # "research" collection below instead, so it isn't duplicated here.)
+  - name: "about"
+    label: "연구실 소개 페이지"
+    label_singular: "연구실 소개"
+    description: "연구실 소개(About) 페이지 콘텐츠 관리"
+    files:
+      - name: "about"
+        label: "연구실 소개"
+        file: "_data/about.yml"
+        fields:
+          - {name: hero, label: "히어로", widget: "object", fields: [
+              {name: title, label: "제목", widget: "string", required: true},
+              {name: subtitle, label: "부제목", widget: "string", required: false}
+            ]}
+          - {name: intro, label: "소개", widget: "object", fields: [
+              {name: heading, label: "제목", widget: "string", required: true},
+              {name: paragraph_1, label: "본문 1", widget: "text", required: false},
+              {name: paragraph_2, label: "본문 2", widget: "text", required: false},
+              {name: image, label: "이미지", widget: "image", required: false}
+            ]}
+          - {name: vision, label: "Research Vision 카드", widget: "list", fields: [
+              {name: icon, label: "아이콘명", widget: "string", required: true},
+              {name: title, label: "제목", widget: "string", required: true},
+              {name: description, label: "설명", widget: "text", required: false}
+            ]}
+          - {name: workflow, label: "Research Workflow 단계", widget: "list", fields: [
+              {name: title, label: "제목", widget: "string", required: true},
+              {name: description, label: "설명", widget: "text", required: false}
+            ]}
+          - {name: cta, label: "하단 CTA", widget: "object", fields: [
+              {name: title, label: "제목", widget: "string", required: true},
+              {name: text, label: "설명", widget: "text", required: false}
+            ]}
+
   # News (Jekyll posts, one file per entry in _posts/ -- this one genuinely is
   # a folder collection, unlike members/research/awards/publications above,
   # since Jekyll posts are already designed as one-file-per-post)
