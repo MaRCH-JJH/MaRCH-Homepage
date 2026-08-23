@@ -1352,11 +1352,6 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   display: none;
 }
 
-.filter-checkbox input:checked + .filter-label {
-  color: var(--color-primary);
-}
-
-.filter-checkbox input:checked ~ .filter-label,
 .filter-checkbox:has(input:checked) {
   background: rgba(0, 113, 227, 0.1);
   color: var(--color-primary);

@@ -114,24 +114,20 @@
     if (filterCheckboxes.length === 0) return;
 
     function applyFilters() {
-      const activeFilters = Array.from(filterCheckboxes)
+      const selectedFilters = Array.from(filterCheckboxes)
         .filter(cb => cb.checked)
         .map(cb => cb.value);
 
       publicationItems.forEach(item => {
-        const type = item.dataset.type;
-        const category = item.dataset.category;
-        
-        const typeMatch = activeFilters.includes(type) || activeFilters.includes('all');
-        const categoryMatch = activeFilters.includes(category) || activeFilters.includes('all');
-        
-        if (typeMatch && categoryMatch) {
-          item.style.display = '';
-          item.hidden = false;
-        } else {
-          item.style.display = 'none';
-          item.hidden = true;
-        }
+        // Each publication has exactly one type (Journal/Conference) and one
+        // category (Circuit Design/Power Amplifier/MMIC/Measurement) -- not
+        // arrays. Selecting filters across both groups is OR, not AND: a
+        // publication shows if EITHER its type OR its category is checked.
+        const tags = [item.dataset.type, item.dataset.category];
+        const show = selectedFilters.length === 0 || tags.some(tag => selectedFilters.includes(tag));
+
+        item.style.display = show ? '' : 'none';
+        item.hidden = !show;
       });
     }
 
