@@ -88,6 +88,28 @@ collections:
               {name: dark_mode_default, label: "다크 모드 기본값", widget: "boolean"}
             ]}
 
+  # News (Jekyll posts, one file per entry in _posts/ -- this one genuinely is
+  # a folder collection, unlike members/research/awards/publications above,
+  # since Jekyll posts are already designed as one-file-per-post)
+  - name: "news"
+    label: "최신소식"
+    label_singular: "소식"
+    description: "홈 화면과 /news/ 목록에 나오는 연구실 소식·공지"
+    folder: "_posts"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: title
+    fields:
+      - {name: layout, widget: "hidden", default: "post"}
+      - {name: lang, widget: "hidden", default: "ko_KR"}
+      - {name: title, label: "제목", widget: "string", required: true}
+      - {name: date, label: "날짜", widget: "datetime", required: true, date_format: "YYYY-MM-DD", time_format: false}
+      - {name: category, label: "카테고리", widget: "string", required: false, hint: "예: 공지사항, 논문 게재, 수상 소식, 모집 공고"}
+      - {name: excerpt, label: "요약 (목록에 표시되는 짧은 설명)", widget: "text", required: false}
+      - {name: image, label: "대표 이미지", widget: "image", required: false}
+      - {name: body, label: "본문", widget: "markdown", required: false}
+
   # Members (single file: _data/members.yml, edited as one list)
   - name: "members"
     label: "멤버"
