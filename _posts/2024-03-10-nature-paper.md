@@ -10,7 +10,6 @@ excerpt: MaRCH Lab이 연구하는 RF/Microwave Circuit Design, RF Power Amplifi
   Measurement & Characterization 3대 분야를 소개합니다.
 image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_175907650.png
 ---
-
 MaRCH Lab은 RF/Microwave 분야에서 아래 3가지 방향으로 연구를 진행하고 있습니다.
 
 ## 연구 분야
@@ -37,4 +36,4 @@ VNA, Spectrum Analyzer 등의 RF 측정 장비를 활용하여 제작된 회로�
 
 ## 연구실 소개 페이지 안내
 
-각 연구 분야에 대한 자세한 내용은 \[연구 분야]({{ site.baseurl }}/research/) 페이지에서 확인하실 수 있습니다.
+각 연구 분야에 대한 자세한 내용은 \[연구 분야] 페이지에서 확인하실 수 있습니다.
