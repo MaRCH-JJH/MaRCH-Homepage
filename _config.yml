@@ -5,16 +5,6 @@ url: "https://march-jjh.github.io"
 baseurl: "/MaRCH-Homepage"
 lang: "ko_KR"
 
-# Author / Lab info
-lab_name: "MaRCH Lab"
-lab_name_en: "Microwave and RF Circuit ResearcH Lab"
-email: "jyjeon@kangwon.ac.kr"
-address: "강원특별자치도 강릉시 죽헌길 7 (지변동) 공학1호관(N11) 501호"
-phone: "033-640-2430"
-
-# Social
-github_username: "marchlab"
-
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -24,7 +14,6 @@ permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag
   - jekyll-include-cache
 
 # Exclude from processing
@@ -59,15 +48,6 @@ kramdown:
 # Feed
 feed:
   path: feed.xml
-
-# SEO
-twitter:
-  card: summary_large_image
-
-social:
-  name: MaRCH Lab
-  links:
-    - https://github.com/marchlab
 
 # Google Analytics (optional)
 google_analytics: ""
