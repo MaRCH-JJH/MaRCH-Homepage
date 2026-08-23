@@ -1,96 +1,76 @@
-# Site-wide configuration
-# This file is editable via Decap CMS (Settings collection)
-#
-# IMPORTANT: this file's top-level keys map directly to `site.data.site.*`
-# in Liquid (Jekyll keys site.data by filename: _data/site.yml -> site.data.site).
-# Do NOT add another top-level "site:" wrapper key here, or every
-# site.data.site.* lookup in the templates silently resolves to nil.
-
-name: "MaRCH Lab"
-name_en: "Microwave and RF Circuit ResearcH Lab"
-tagline: "Microwave & RF 기술의 가능성을 연구하다"
-tagline_en: "Researching the Possibilities of Microwave & RF Technology"
-description: "MaRCH Lab은 RF/Microwave 회로 설계와 RF Power Amplifier를 중심으로 MMIC 및 RF 계측 시스템을 연구합니다."
-description_en: "MaRCH Lab researches RF/Microwave circuit design and RF power amplifiers, with a focus on MMIC and RF measurement systems."
-
-# Contact
-email: "jyjeon@kangwon.ac.kr"
-phone: "033-640-2430"
-address: "강원특별자치도 강릉시 죽헌길 7 (지변동) 공학1호관(N11) 501호"
-address_en: "Room 501, Engineering Building 1 (N11), 7 Jukheon-gil, Jibyeon-dong, Gangneung-si, Gangwon State, Korea"
-
-# Social
-github: "https://github.com/MaRCH-JJH"
-
-# SEO
-keywords: "RF, Microwave, RF Power Amplifier, MMIC, 반도체, 전자공학, 연구실"
-og_image: "/assets/images/logo.png"
-
-# Navigation (order matters)
+name: MaRCH Lab
+name_en: Microwave and RF Circuit ResearcH Lab
+tagline: Microwave & RF 기술의 가능성을 연구하다
+tagline_en: Researching the Possibilities of Microwave & RF Technology
+description: MaRCH Lab은 RF/Microwave 회로 설계와 RF Power Amplifier를 중심으로 MMIC 및 RF
+  계측 시스템을 연구합니다.
+description_en: MaRCH Lab researches RF/Microwave circuit design and RF power
+  amplifiers, with a focus on MMIC and RF measurement systems.
+email: jyjeon@kangwon.ac.kr
+phone: 033-640-2430
+address: 강원특별자치도 강릉시 죽헌길 7 (지변동) 공학1호관(N11) 501호
+address_en: Room 404, Engineering Building 1 (N11), 7 Jukheon-gil, Jibyeon-dong,
+  Gangneung-si, Gangwon State, Korea
+github: https://github.com/MaRCH-JJH
+keywords: RF, Microwave, RF Power Amplifier, MMIC, 반도체, 전자공학, 연구실
+og_image: /assets/images/logo.png
 navigation:
-  - title: "홈"
-    url: "/"
-    en: "Home"
-  - title: "연구실 소개"
-    url: "/about/"
-    en: "About"
-  - title: "지도교수"
-    url: "/professor/"
-    en: "Professor"
-  - title: "연구 분야"
-    url: "/research/"
-    en: "Research"
-  - title: "수상 경력"
-    url: "/awards/"
-    en: "Awards"
-  - title: "멤버"
-    url: "/members/"
-    en: "Members"
-  - title: "논문/성과"
-    url: "/publications/"
-    en: "Publications"
-  - title: "연락처"
-    url: "/contact/"
-    en: "Contact"
-
-# Footer
+  - title: 홈
+    url: /
+    en: Home
+  - title: 연구실 소개
+    url: /about/
+    en: About
+  - title: 지도교수
+    url: /professor/
+    en: Professor
+  - title: 연구 분야
+    url: /research/
+    en: Research
+  - title: 수상 경력
+    url: /awards/
+    en: Awards
+  - title: 멤버
+    url: /members/
+    en: Members
+  - title: 논문/성과
+    url: /publications/
+    en: Publications
+  - title: 연락처
+    url: /contact/
+    en: Contact
 footer:
-  copyright: "© 2024 MaRCH Lab. All rights reserved."
-  powered_by: "Powered by Jekyll & Decap CMS"
+  copyright: © 2020 MaRCH Lab. All rights reserved.
+  powered_by: Powered by Jekyll & Decap CMS
   links:
-    - title: "개인정보처리방침"
-      url: "/privacy/"
-    - title: "이용약관"
-      url: "/terms/"
-
-# Hero (home page)
+    - title: 개인정보처리방침
+      url: /privacy/
+    - title: 이용약관
+      url: /terms/
 hero:
-  title: "Microwave & RF 기술의 가능성을 연구하다"
-  title_en: "Researching the Possibilities of Microwave & RF Technology"
-  subtitle: "RF Power Amplifier를 중심으로 RF/Microwave 회로와 MMIC를 연구합니다."
-  subtitle_en: "Researching RF/Microwave circuits and MMIC with a focus on RF power amplifiers."
-  cta_text: "연구 분야 보기"
-  cta_text_en: "View Research Areas"
-  cta_url: "/research/"
-  background_image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/hero-main.jpg"
+  cta_url: /research/
+  background_image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/hero-main.jpg
+  cta_text_en: View Research Areas
+  subtitle_en: Researching RF/Microwave circuits and MMIC with a focus on RF power
+    amplifiers.
+  title_en: Researching the Possibilities of Microwave & RF Technology
+  subtitle: RF Power Amplifier를 중심으로 RF/Microwave 회로와 MMIC를 연구합니다.
+  title: Microwave & RF 기술의 가능성을 연구하다
+  cta_text: 연구 분야 보기
   stats: []
-
-# Highlights (home page)
 highlights:
-  - title: "RF/Microwave Circuit Design"
-    description: "임피던스 매칭, 필터, 커플러 등 RF 수동회로 및 MMIC 설계 기술"
-    icon: "cpu"
-    url: "/research/#rf-circuit-design"
-  - title: "RF Power Amplifier"
-    description: "GaN/GaAs 소자 기반 고효율·고출력 전력 증폭기 연구"
-    icon: "waveform"
-    url: "/research/#power-amplifier"
-  - title: "RF Measurement & Characterization"
-    description: "VNA/Spectrum Analyzer 기반 RF 회로 및 PA 특성 측정·검증"
-    icon: "antenna"
-    url: "/research/#rf-measurement"
-
-# Theme
+  - title: RF/Microwave Circuit Design
+    description: 임피던스 매칭, 필터, 커플러 등 RF 수동회로 및 MMIC 설계 기술
+    icon: cpu
+    url: /research/#rf-circuit-design
+  - title: RF Power Amplifier
+    description: GaN/GaAs 소자 기반 고효율·고출력 전력 증폭기 연구
+    icon: waveform
+    url: /research/#power-amplifier
+  - title: RF Measurement & Characterization
+    description: VNA/Spectrum Analyzer 기반 RF 회로 및 PA 특성 측정·검증
+    icon: antenna
+    url: /research/#rf-measurement
 theme:
   primary_color: "#0071e3"
   accent_color: "#0066cc"
