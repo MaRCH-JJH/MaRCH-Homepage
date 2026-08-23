@@ -62,7 +62,7 @@ lang: "ko_KR"
   <div class="container">
     <header class="section-header">
       <h2 id="research-areas-heading" class="section-title">Research Areas</h2>
-      <p class="section-subtitle">MaRCH Lab의 4가지 연구 분야입니다.</p>
+      <p class="section-subtitle">MaRCH Lab의 3가지 연구 분야입니다.</p>
     </header>
     <div class="research-grid">
       {% for item in site.data.research.items %}

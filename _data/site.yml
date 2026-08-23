@@ -77,22 +77,18 @@ hero:
 
 # Highlights (home page)
 highlights:
-  - title: "RF/Microwave 회로 설계"
-    description: "임피던스 매칭 및 EM 시뮬레이션 기반 수동/능동 회로 설계"
+  - title: "RF/Microwave Circuit Design"
+    description: "임피던스 매칭, 필터, 커플러 등 RF 수동회로 및 MMIC 설계 기술"
     icon: "cpu"
     url: "/research/#rf-circuit-design"
   - title: "RF Power Amplifier"
     description: "GaN/GaAs 소자 기반 고효율·고출력 전력 증폭기 연구"
     icon: "waveform"
     url: "/research/#power-amplifier"
-  - title: "MMIC & Semiconductor"
-    description: "모놀리식 마이크로파 집적회로 및 RF 반도체 소자 설계"
-    icon: "chip"
-    url: "/research/#mmic-semiconductor"
-  - title: "RF Measurement & System"
-    description: "네트워크/스펙트럼 분석기 기반 RF 특성평가 및 시스템 검증"
+  - title: "RF Measurement & Characterization"
+    description: "VNA/Spectrum Analyzer 기반 RF 회로 및 PA 특성 측정·검증"
     icon: "antenna"
-    url: "/research/#rf-measurement-system"
+    url: "/research/#rf-measurement"
 
 # Theme
 theme:

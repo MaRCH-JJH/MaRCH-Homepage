@@ -5,29 +5,29 @@ items:
   - id: rf-circuit-design
     title: "RF/Microwave Circuit Design"
     title_en: "RF/Microwave Circuit Design"
-    subtitle: "임피던스 매칭 및 EM 시뮬레이션 기반 수동/능동 회로 설계"
-    subtitle_en: "Passive/active circuit design based on impedance matching and EM simulation"
+    subtitle: "임피던스 매칭, 필터, 커플러 등 RF 수동회로 및 MMIC 설계 기술"
+    subtitle_en: "Passive RF circuit and MMIC design based on impedance matching, filters, and couplers"
     description: |
-      RF/Microwave 대역에서 동작하는 수동 및 능동 회로를 설계합니다. 임피던스 매칭
-      네트워크, 필터, 커플러 등 수동 소자 설계와 EM 시뮬레이션 기반 검증을 통해
-      안정적이고 재현 가능한 RF 회로 설계 방법론을 연구합니다.
+      임피던스 매칭 네트워크, 필터, 커플러, 발룬 및 트랜스포머 등 RF/Microwave 회로를
+      설계하고, EM Simulation을 기반으로 회로의 전자기적 특성을 분석합니다. 또한 RF
+      반도체 소자를 활용한 MMIC 회로 설계 및 레이아웃 기술을 연구합니다.
     description_en: |
-      Designing passive and active circuits operating in the RF/Microwave band.
-      Research covers impedance matching networks, filters, and couplers, combined
-      with EM simulation-based verification for reliable and reproducible RF
-      circuit design methodology.
+      Designs RF/Microwave circuits such as impedance matching networks, filters,
+      couplers, baluns, and transformers, and analyzes their electromagnetic
+      characteristics through EM simulation. Also researches MMIC circuit design
+      and layout techniques using RF semiconductor devices.
     icon: "cpu"
     image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/research-rf-circuit-design.svg"
     keywords:
       - "Impedance Matching"
+      - "Filter / Coupler"
       - "EM Simulation"
-      - "RF Filter"
-      - "Passive Circuit Design"
+      - "MMIC Design"
     keywords_en:
       - "Impedance Matching"
+      - "Filter / Coupler"
       - "EM Simulation"
-      - "RF Filter"
-      - "Passive Circuit Design"
+      - "MMIC Design"
     order: 1
 
   - id: power-amplifier
@@ -36,81 +36,55 @@ items:
     subtitle: "GaN/GaAs 소자 기반 고효율·고출력 전력 증폭기 연구"
     subtitle_en: "High-efficiency, high-power amplifier research based on GaN/GaAs devices"
     description: |
-      MaRCH Lab의 핵심 연구분야로, RF Power Amplifier의 효율과 선형성을 함께
-      향상시키는 설계 기법을 연구합니다. GaAs HBT/pHEMT 및 GaN 소자를 기반으로
-      Doherty PA 구조를 포함한 high-efficiency, high-power, broadband PA 설계
-      방법론을 다룹니다.
+      MaRCH Lab의 핵심 연구 분야로, GaAs HBT/pHEMT 및 GaN 소자를 기반으로
+      고효율·고출력·광대역 RF Power Amplifier 설계 기술을 연구합니다. Doherty PA와
+      Load Modulation 등 다양한 증폭 구조와 MMIC 기반 설계 기술을 활용하여 효율과
+      출력 성능을 향상시키는 설계 기법을 연구합니다.
     description_en: |
-      The core research area of MaRCH Lab, focused on design techniques that
-      improve both efficiency and linearity of RF power amplifiers. Research is
-      based on GaAs HBT/pHEMT and GaN devices, covering Doherty PA architectures
-      and high-efficiency, high-power, broadband PA design methodology.
+      MaRCH Lab's core research area, focused on high-efficiency, high-power, and
+      broadband RF Power Amplifier design based on GaAs HBT/pHEMT and GaN devices.
+      Uses amplifier architectures such as Doherty PA and load modulation, along
+      with MMIC-based design techniques, to improve efficiency and output
+      performance.
     icon: "waveform"
     image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/research-power-amplifier.svg"
     featured: true
     keywords:
-      - "GaN HEMT"
-      - "GaAs HBT/pHEMT"
+      - "High-Efficiency PA"
       - "Doherty PA"
-      - "Broadband PA"
+      - "GaN / GaAs Devices"
+      - "MMIC-based PA"
     keywords_en:
-      - "GaN HEMT"
-      - "GaAs HBT/pHEMT"
+      - "High-Efficiency PA"
       - "Doherty PA"
-      - "Broadband PA"
+      - "GaN / GaAs Devices"
+      - "MMIC-based PA"
     order: 2
 
-  - id: mmic-semiconductor
-    title: "MMIC & Semiconductor"
-    title_en: "MMIC & Semiconductor"
-    subtitle: "모놀리식 마이크로파 집적회로 및 RF 반도체 소자 설계"
-    subtitle_en: "Monolithic microwave integrated circuit and RF semiconductor device design"
+  - id: rf-measurement
+    title: "RF Measurement & Characterization"
+    title_en: "RF Measurement & Characterization"
+    subtitle: "VNA/Spectrum Analyzer 기반 RF 회로 및 PA 특성 측정·검증"
+    subtitle_en: "RF circuit and PA characterization and verification using VNA/spectrum analyzers"
     description: |
-      MMIC(Monolithic Microwave Integrated Circuit) 설계와 RF 반도체 공정을
-      연구합니다. 반도체 소자 모델링부터 레이아웃 설계, 웨이퍼 레벨 검증까지
-      RF 집적회로 개발 전 과정을 다룹니다.
+      VNA, Spectrum Analyzer 등의 RF 측정 장비를 활용하여 제작된 회로와 전력
+      증폭기의 S-parameter, Gain, 출력 전력, PAE 등의 특성을 측정하고, Simulation
+      결과와 비교·분석하여 설계를 검증합니다.
     description_en: |
-      Researching MMIC (Monolithic Microwave Integrated Circuit) design and RF
-      semiconductor processes, spanning device modeling, layout design, and
-      wafer-level verification across the RF IC development flow.
-    icon: "chip"
-    image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/research-mmic-semiconductor.svg"
-    keywords:
-      - "MMIC"
-      - "RF Semiconductor"
-      - "Device Modeling"
-      - "Wafer-Level Design"
-    keywords_en:
-      - "MMIC"
-      - "RF Semiconductor"
-      - "Device Modeling"
-      - "Wafer-Level Design"
-    order: 3
-
-  - id: rf-measurement-system
-    title: "RF Measurement & System"
-    title_en: "RF Measurement & System"
-    subtitle: "네트워크/스펙트럼 분석기 기반 RF 특성평가 및 시스템 검증"
-    subtitle_en: "RF characterization and system verification using network/spectrum analyzers"
-    description: |
-      네트워크 분석기(VNA)와 스펙트럼 분석기를 활용한 RF 소자 및 회로의
-      특성평가 방법을 연구합니다. 설계된 회로와 증폭기가 실제 시스템 환경에서
-      요구 성능을 만족하는지 검증하는 계측·시스템 레벨 연구를 수행합니다.
-    description_en: |
-      Researching RF device and circuit characterization methods using network
-      analyzers (VNA) and spectrum analyzers. This includes measurement and
-      system-level verification confirming that designed circuits and amplifiers
-      meet target performance in real system environments.
+      Uses RF measurement equipment such as VNAs and spectrum analyzers to
+      measure S-parameters, gain, output power, and PAE of fabricated circuits
+      and power amplifiers, comparing results against simulation to verify the
+      design.
     icon: "antenna"
     image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/research-rf-measurement-system.svg"
     keywords:
-      - "VNA Measurement"
+      - "VNA / S-Parameter"
       - "Spectrum Analysis"
-      - "RF Characterization"
-      - "System Verification"
+      - "PAE / Output Power"
+      - "Design Verification"
     keywords_en:
-      - "VNA Measurement"
+      - "VNA / S-Parameter"
       - "Spectrum Analysis"
-      - "RF Characterization"
-      - "System Verification"
-    order: 4
+      - "PAE / Output Power"
+      - "Design Verification"
+    order: 3
