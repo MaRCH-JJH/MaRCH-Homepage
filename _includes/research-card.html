@@ -18,7 +18,7 @@
     </div>
     <h3 class="research-title">{{ include.item.title }}</h3>
     <p class="research-subtitle">{{ include.item.subtitle }}</p>
-    <p class="research-description">{{ include.item.description | strip_newlines | truncatewords: 30 }}</p>
+    <p class="research-description">{{ include.item.description | replace: "\n", " " | truncatewords: 30 }}</p>
 
     {% if include.item.keywords.size > 0 %}
     <ul class="research-keywords" aria-label="키워드">
@@ -28,7 +28,7 @@
     </ul>
     {% endif %}
 
-    {% assign full_description = include.item.description | strip_newlines %}
+    {% assign full_description = include.item.description | replace: "\n", " " %}
     {% if full_description.size > 0 %}
     <details class="research-details">
       <summary class="research-details-toggle">

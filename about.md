@@ -20,8 +20,8 @@ lang: "ko_KR"
       </div>
       <div class="about-intro-text">
         <h2>{{ site.data.about.intro.heading }}</h2>
-        <p>{{ site.data.about.intro.paragraph_1 | strip_newlines }}</p>
-        <p>{{ site.data.about.intro.paragraph_2 | strip_newlines }}</p>
+        <p>{{ site.data.about.intro.paragraph_1 | replace: "\n", " " }}</p>
+        <p>{{ site.data.about.intro.paragraph_2 | replace: "\n", " " }}</p>
       </div>
     </div>
   </div>

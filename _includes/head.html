@@ -77,6 +77,19 @@
 <!-- Preconnect for performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+<!-- Pretendard: covers Korean (Hangul) and Latin glyphs from one deliberately
+     matched typeface, at real 100-900 weight files. Without this, Korean text
+     has no font in the stack below that supports Hangul, so it silently falls
+     back to the OS's own UI font (e.g. Malgun Gothic on Windows) while Latin
+     text renders in Arial -- two unrelated typefaces whose "bold" looks
+     visually different in weight even at the same CSS font-weight, which is
+     why English text next to Korean text looked less bold. Loaded first in
+     --font-display/--font-text below so both scripts render consistently;
+     the SF Pro/system stack after it is only a fallback if this CDN fails. -->
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"></noscript>
 
 <!-- Fonts: SF Pro alternative (system font stack) -->
 <link rel="preload" as="style" href="{{ site.baseurl }}/assets/css/fonts.css" onload="this.onload=null;this.rel='stylesheet'">
