@@ -1,16 +1,8 @@
-# About page ("연구실 소개") content
-# Editable via Decap CMS (연구실 소개 페이지 collection)
-#
-# The "Research Areas" section on this page pulls from _data/research.yml
-# (already CMS-editable via the "연구 분야" collection), so it isn't
-# duplicated here.
-
 hero:
-  title: "Microwave & RF 기술의 가능성을 연구하다"
-  subtitle: "Microwave and RF Circuit Research Laboratory"
-
+  title: Microwave & RF 기술의 가능성을 연구하다
+  subtitle: Microwave and RF Circuit Research Laboratory
 intro:
-  heading: "MaRCH Lab을 소개합니다"
+  heading: MaRCH Lab을 소개합니다
   paragraph_1: |
     MaRCH Lab(Microwave and RF Circuit ResearcH Lab)은 RF/Microwave 회로
     설계와 RF Power Amplifier를 핵심 연구 분야로, MMIC 설계 기술과 RF
@@ -18,33 +10,30 @@ intro:
   paragraph_2: |
     회로 이론과 설계에 그치지 않고, 실제 제작과 측정을 통해 설계 결과를
     검증하고 개선하는 연구를 지향합니다.
-  image: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/hero-main.jpg"
-
+  image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/march-chrismas.png
 vision:
-  - icon: "waveform"
-    title: "High Efficiency"
-    description: "고효율·고출력 RF Power Amplifier 설계 기술을 확보합니다."
-  - icon: "chip"
-    title: "Advanced RF Semiconductor"
-    description: "GaAs/GaN 기반 MMIC 및 RF 반도체 설계 역량을 강화합니다."
-  - icon: "antenna"
-    title: "From Design to Measurement"
-    description: "설계-제작-측정을 아우르는 실전형 연구 환경을 구축합니다."
-
+  - icon: waveform
+    title: High Efficiency
+    description: 고효율·고출력 RF Power Amplifier 설계 기술을 확보합니다.
+  - icon: chip
+    title: Advanced RF Semiconductor
+    description: GaAs/GaN 기반 MMIC 및 RF 반도체 설계 역량을 강화합니다.
+  - icon: antenna
+    title: From Design to Measurement
+    description: 설계-제작-측정을 아우르는 실전형 연구 환경을 구축합니다.
 workflow:
-  - title: "Concept"
-    description: "연구 목표와 사양을 정의합니다."
-  - title: "Circuit Design"
-    description: "임피던스 매칭과 회로 토폴로지를 설계합니다."
-  - title: "EM Simulation"
-    description: "전자기 시뮬레이션으로 설계를 검증합니다."
-  - title: "Fabrication"
-    description: "설계한 회로를 실제로 제작합니다."
-  - title: "Measurement"
-    description: "VNA·스펙트럼 분석기로 특성을 측정합니다."
-  - title: "Analysis & Optimization"
-    description: "측정 결과를 분석하고 설계를 개선합니다."
-
+  - title: Concept
+    description: 연구 목표와 사양을 정의합니다.
+  - title: Circuit Design
+    description: 임피던스 매칭과 회로 토폴로지를 설계합니다.
+  - title: EM Simulation
+    description: 전자기 시뮬레이션으로 설계를 검증합니다.
+  - title: Fabrication
+    description: 설계한 회로를 실제로 제작합니다.
+  - title: Measurement
+    description: VNA·스펙트럼 분석기로 특성을 측정합니다.
+  - title: Analysis & Optimization
+    description: 측정 결과를 분석하고 설계를 개선합니다.
 cta:
-  title: "Join MaRCH Lab"
-  text: "RF/Microwave 기술을 직접 설계하고, 제작하고, 측정하며 연구하고 싶은 학생을 기다립니다."
+  title: Join MaRCH Lab
+  text: RF/Microwave 기술을 직접 설계하고, 제작하고, 측정하며 연구하고 싶은 학생을 기다립니다.
