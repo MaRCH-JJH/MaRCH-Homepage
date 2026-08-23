@@ -10,20 +10,20 @@ items:
       - RF/Microwave Circuit Design
       - MMIC
     bio: RF/Microwave 회로와 RF Power Amplifier를 중심으로 연구실을 지도하고 있습니다.
-    name: 김교수
+    name: 전주영
     degree: Ph.D.
-    phone: +82-33-640-0001
+    phone: +82-33-640-2430
     order: 1
-    major_en: Electronic Engineering
+    major_en: Electrical and Computer Engineering (Electronic Engineering)
     role_en: Professor
     role: 교수
-    major: 전자공학
-    id: prof-kim
-    image: ""
+    major: 전기·컴퓨터공학부 (전자공학)
+    id: jooyoung
+    image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/temp_1668588442215100.jpg
     orcid: ""
-    office: 공학관 000호
-    email: prof.kim@marchlab.example.ac.kr
-    name_en: Prof. Kim
+    office: 공학1호관(N11) 404호
+    email: jyjeon@kangwon.ac.kr
+    name_en: Jooyoung Jeon
     category: professor
   - google_scholar: ""
     bio_en: >-
