@@ -36,7 +36,9 @@ layout: default
     </header>
     
     <div class="news-grid">
-      {% assign news_items = site.posts | limit: 3 %}
+      {% assign pinned_posts = site.posts | where: "pinned", true | sort: "order" %}
+      {% assign other_posts = site.posts | where_exp: "post", "post.pinned != true" %}
+      {% assign news_items = pinned_posts | concat: other_posts | limit: 3 %}
       {% for post in news_items %}
       {% include news-card.html post=post %}
       {% endfor %}

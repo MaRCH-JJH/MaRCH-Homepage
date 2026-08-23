@@ -2,10 +2,12 @@
   {% if include.post.image %}
   <a href="{{ include.post.url | relative_url }}" class="news-image-link" aria-label="{{ include.post.title }}">
     <img src="{% include image-url.html path=include.post.image %}" alt="" class="news-image" loading="lazy" width="400" height="225">
+    {% if include.post.pinned %}<span class="research-featured-badge">고정</span>{% endif %}
   </a>
   {% else %}
   <a href="{{ include.post.url | relative_url }}" class="news-image-link news-image-placeholder" aria-label="{{ include.post.title }}">
     {% include icon.html name="newspaper" size="xlarge" %}
+    {% if include.post.pinned %}<span class="research-featured-badge">고정</span>{% endif %}
   </a>
   {% endif %}
   

@@ -105,6 +105,8 @@ collections:
       - {name: lang, widget: "hidden", default: "ko_KR"}
       - {name: title, label: "제목", widget: "string", required: true}
       - {name: date, label: "날짜", widget: "datetime", required: true, date_format: "YYYY-MM-DD", time_format: false}
+      - {name: pinned, label: "상단 고정", widget: "boolean", default: false, hint: "켜면 날짜와 무관하게 항상 맨 위쪽에 노출됩니다."}
+      - {name: order, label: "고정 노출 순서", widget: "number", default: 0, required: false, hint: "'상단 고정'을 켠 글에만 적용됩니다 (숫자가 작을수록 먼저 노출). 고정하지 않은 글은 이 값과 무관하게 항상 날짜순으로 표시됩니다."}
       - {name: category, label: "카테고리", widget: "string", required: false, hint: "예: 공지사항, 논문 게재, 수상 소식, 모집 공고"}
       - {name: excerpt, label: "요약 (목록에 표시되는 짧은 설명)", widget: "text", required: false}
       - {name: image, label: "대표 이미지", widget: "image", required: false}
