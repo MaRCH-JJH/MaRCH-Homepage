@@ -8,6 +8,7 @@ order: ""
 category: 연구실 소개
 excerpt: MaRCH Lab이 연구하는 RF/Microwave 회로 설계, RF Power Amplifier, MMIC, RF 계측·시스템
   4대 분야를 소개합니다.
+image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_175907650.png
 ---
 
 MaRCH Lab은 RF/Microwave 분야에서 아래 4가지 방향으로 연구를 진행하고 있습니다.
