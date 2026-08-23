@@ -93,6 +93,34 @@ items:
     email: whgnsgml00@gwnu.ac.kr
     name_en: Hunhee Cho
     category: master
+  - bio_en: I am focusing my research on power amplifiers. Based on this
+      single-circuit design expertise, I have a great interest in understanding
+      and optimizing radar systems. Ultimately, I aim to expand my research
+      scope to phased array antennas and grow into an RF design expert with a
+      comprehensive perspective.
+    research_interests_en:
+      - Phased Array Antennas
+      - Radar System Design
+      - Power Amplifiers
+    research_interests:
+      - Phased Array Antennas
+      - Radar System Design
+      - Power Amplifiers
+    bio: 전력 증폭기를 중점으로 연구하고 있습니다. 이러한 단일 회로 설계 역량을 바탕으로, 레이다 시스템을 이해하고 최적화하는 데 큰 관심을
+      두고 있습니다. 최종적으로는 위상배열 안테나까지 연구 범위를 확장하여, 통합적인 시야를 갖춘 RF 설계 전문가로 성장하고자 합니다.
+    name: 이경민
+    phone: 010-5313-5099
+    order: 5
+    major_en: Electrical Engineering
+    role_en: M.S. Candidate
+    role: 석사과정
+    major: 전자공학
+    id: gyeongMin
+    image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_180815479.jpg
+    office: MaRCH Lab
+    email: swastika4662@gmail.com
+    name_en: GyeongMin Lee
+    category: master
   - bio_en: >
       I am Byeongjun Kwon, an undergraduate researcher in the Electronic &
       Semiconductor Engineering Department at Kangwon National University. At
