@@ -1702,6 +1702,17 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   flex-shrink: 0;
 }
 
+.member-position-logo {
+  /* Company logos are usually wide wordmarks, not square icons -- fix the
+     height to line up with the text and let width follow the logo's own
+     aspect ratio instead of squashing it into a 1:1 box. */
+  height: 16px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .member-major {
   font-size: var(--type-body-small-size);
   color: var(--color-secondary);
