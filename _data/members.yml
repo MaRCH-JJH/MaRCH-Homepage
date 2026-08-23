@@ -10,20 +10,20 @@ items:
       - RF/Microwave Circuit Design
       - MMIC
     bio: RF/Microwave 회로와 RF Power Amplifier를 중심으로 연구실을 지도하고 있습니다.
-    name: 김교수
+    name: 전주영
     degree: Ph.D.
-    phone: +82-33-640-0001
+    phone: +82-33-640-2430
     order: 1
-    major_en: Electronic Engineering
+    major_en: Electrical and Computer Engineering (Electronic Engineering)
     role_en: Professor
     role: 교수
-    major: 전자공학
-    id: prof-kim
-    image: ""
+    major: 전기·컴퓨터공학부 (전자공학)
+    id: jooyoung
+    image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/temp_1668588442215100.jpg
     orcid: ""
-    office: 공학관 000호
-    email: prof.kim@marchlab.example.ac.kr
-    name_en: Prof. Kim
+    office: 공학1호관(N11) 404호
+    email: jyjeon@kangwon.ac.kr
+    name_en: Jooyoung Jeon
     category: professor
   - google_scholar: ""
     bio_en: >-
@@ -60,4 +60,36 @@ items:
     office: MaRCH Lab
     email: wlsgh8403@kangwon.ac.kr
     name_en: Jinho Jeong
+    category: master
+  - bio_en: >-
+      His research focuses on RF and microwave circuit design, particularly RF
+      power amplifiers (PAs). His research interests include high-power and
+      high-efficiency RF power amplifiers using GaAs HBTs, as well as MMIC and
+      RF module design.
+
+      master
+    research_interests_en:
+      - Power Amplifier
+      - Doherty PA
+      - Dual-band
+    research_interests:
+      - Power Amplifier
+      - Doherty PA
+      - Dual-band
+    bio: RF 전력증폭기(PA)를 중심으로 RF 및 초고주파 회로 설계를 연구하고 있습니다. GaAs HBT 기반 고출력·고효율 전력증폭기,
+      MMIC 및 RF 모듈 설계를 주요 연구 분야로 하며, 다양한 RF 시스템에 적용 가능한 고효율 전력증폭기 기술 개발에 관심을 가지고
+      있습니다.
+    name: 조훈희
+    degree: M.S.
+    phone: 010-2579-2463
+    order: 3
+    major_en: Electrical Engineering
+    role_en: M.S. Candidate
+    role: 석사과정
+    major: 전자공학
+    id: hunhee
+    image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_164624530.jpg
+    office: MaRCH
+    email: whgnsgml00@gwnu.ac.kr
+    name_en: Hunhee Cho
     category: master
