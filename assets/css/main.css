@@ -2251,12 +2251,23 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   /* Full override (not just padding-top) so this section doesn't also
      inherit .section's 80px bottom padding -- it was stacking with the
      next section's own top padding into a ~160px gap. */
-  padding: calc(var(--header-height) + 60px) 0 40px;
+  padding: calc(var(--header-height) + 60px) 0 60px;
+  /* Same white-band-on-canvas-background treatment .about-hero/.page-header
+     already use, so the intro reads as a distinct band instead of floating
+     on the plain page background. */
+  background: var(--color-surface);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .professor-hero-section,
+:root:not([data-theme="light"]) .professor-hero-section {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
 .professor-photo {
   max-width: 320px;
   border-radius: var(--radius-docs-card);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .professor-name {
