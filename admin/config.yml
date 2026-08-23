@@ -3,8 +3,8 @@ backend:
   name: github
   repo: march-jjh/MaRCH-Homepage
   branch: main
-  base_url: https://1.kyd5329.workers.dev
-  client_id: Ov23liLuFZm5Y7O2HwMQ
+  base_url: https://1.jinho2850.workers.dev
+  client_id: Ov23li5MrV3cMYhEUabb
   commit_messages:
     create: "Create {{collection}} \"{{slug}}\""
     update: "Update {{collection}} \"{{slug}}\""
