@@ -111,6 +111,11 @@ collections:
       - {name: excerpt, label: "요약 (목록에 표시되는 짧은 설명)", widget: "text", required: false}
       - {name: image, label: "대표 이미지", widget: "image", required: false}
       - {name: body, label: "본문", widget: "markdown", required: false}
+      - {name: gallery_columns, label: "사진 한 줄에 몇 장?", widget: "select", options: ["1", "2", "3"], default: "2", required: false, hint: "아래 '사진들'에 넣은 사진이 한 줄에 몇 장씩 나란히 표시될지 정합니다. 숫자가 클수록 사진이 작아집니다."}
+      - {name: gallery, label: "사진들 (여러 장 추가 가능, 나란히 표시됨)", widget: "list", required: false, fields: [
+          {name: image, label: "이미지", widget: "image", required: true},
+          {name: caption, label: "설명 (선택)", widget: "string", required: false}
+        ]}
 
   # Members (single file: _data/members.yml, edited as one list)
   - name: "members"

@@ -27,6 +27,19 @@ layout: default
       <div class="post-body">
         {{ content }}
       </div>
+
+      {% if page.gallery.size > 0 %}
+      <div class="post-gallery" style="--post-gallery-columns: {{ page.gallery_columns | default: 2 }};">
+        {% for photo in page.gallery %}
+        <figure class="post-gallery-item">
+          <img src="{% include image-url.html path=photo.image %}" alt="{{ photo.caption | default: '' }}" loading="lazy">
+          {% if photo.caption %}
+          <figcaption>{{ photo.caption }}</figcaption>
+          {% endif %}
+        </figure>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
   </div>
 </article>
