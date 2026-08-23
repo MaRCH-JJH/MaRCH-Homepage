@@ -27,7 +27,7 @@ lang: "ko_KR"
   </div>
 </section>
 
-<section class="section" aria-labelledby="vision-heading">
+<section class="section highlights-section" aria-labelledby="vision-heading">
   <div class="container">
     <header class="section-header">
       <h2 id="vision-heading" class="section-title">Research Vision</h2>
