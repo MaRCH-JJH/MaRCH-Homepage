@@ -208,6 +208,7 @@ collections:
               {name: degree, label: "학위", widget: "string", required: false},
               {name: major, label: "전공 (한글)", widget: "string", required: false},
               {name: major_en, label: "전공 (영문)", widget: "string", required: false},
+              {name: current_position, label: "현재 소속 (졸업생 취업처)", widget: "string", required: false, hint: "졸업생 카드에 강조 표시됩니다. 예: peopleworks ARSENAL"},
               {name: email, label: "이메일", widget: "string", required: false},
               {name: phone, label: "전화번호", widget: "string", required: false},
               {name: office, label: "연구실", widget: "string", required: false},

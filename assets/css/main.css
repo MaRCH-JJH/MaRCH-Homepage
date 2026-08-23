@@ -1682,6 +1682,26 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   margin-bottom: var(--space-compact);
 }
 
+/* Alumni's current employer -- surfaced as its own accent pill (rather than
+   plain text like .member-major) since it's the detail alumni cards should
+   lead with. */
+.member-position {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--type-caption-size);
+  font-weight: 600;
+  color: var(--color-primary);
+  background: rgba(0, 113, 227, 0.1);
+  padding: 4px 12px;
+  border-radius: var(--radius-marketing-pill);
+  margin-bottom: var(--space-content);
+}
+
+.member-position svg {
+  flex-shrink: 0;
+}
+
 .member-major {
   font-size: var(--type-body-small-size);
   color: var(--color-secondary);

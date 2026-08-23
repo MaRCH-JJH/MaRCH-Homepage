@@ -12,6 +12,12 @@
   <div class="member-info">
     <h3 class="member-name">{{ include.member.name }}</h3>
     <p class="member-role">{{ include.member.role }}{% if include.member.degree %}, {{ include.member.degree }}{% endif %}</p>
+    {% if include.member.current_position %}
+    <p class="member-position">
+      {% include icon.html name="briefcase" size="small" %}
+      <span>{{ include.member.current_position }}</span>
+    </p>
+    {% endif %}
     <p class="member-major">{{ include.member.major }}</p>
     
     {% if include.member.research_interests.size > 0 %}
