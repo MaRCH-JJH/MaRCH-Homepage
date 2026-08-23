@@ -1,72 +1,84 @@
-# Professor page ("지도교수") content
-# Editable via Decap CMS (지도교수 페이지 collection)
-#
-# Contact email comes from _data/site.yml (site.data.site.email) instead of
-# being duplicated here, since it's already the same address managed there.
-
-name: "전주영"
-eyebrow: "Faculty"
-role: "Professor"
-affiliation: "전자·반도체공학부 · Kangwon National University"
-photo: "https://march-jjh.github.io/MaRCH-Homepage/assets/images/professor.jpg"
-
+name: 전주영
+eyebrow: Faculty
+role: Professor
+affiliation: 전자·반도체공학부 · Kangwon National University
+photo: https://march-jjh.github.io/MaRCH-Homepage/assets/images/professor.jpg
 interests:
-  - en: "RF Circuits & Systems"
-    ko: "RF 회로 및 시스템"
-  - en: "Power Amplifier Modules for Mobile Communication Terminals"
-    ko: "이동통신 단말기용 전력증폭기 모듈"
-
+  - en: RF Circuits & Systems
+    ko: RF 회로 및 시스템
+  - en: Power Amplifier Modules for Mobile Communication Terminals
+    ko: 이동통신 단말기용 전력증폭기 모듈
 education:
-  - "1999 서울대학교 공학사 - 전기공학부 (전기/전자/제어공학)"
-  - "2001 서울대학교 공학석사 - 전기·컴퓨터공학부 (전자공학)"
-  - "2009 서울대학교 공학박사 - 전기·컴퓨터공학부 (전자공학)"
-
+  - 1999 서울대학교 공학사 - 전기공학부 (전기/전자/제어공학)
+  - 2001 서울대학교 공학석사 - 전기·컴퓨터공학부 (전자공학)
+  - 2009 서울대학교 공학박사 - 전기·컴퓨터공학부 (전자공학)
 career:
   - text: "2009.1 – 2020.2 : Broadcom Inc. (구. Avago Technologies Korea)"
     sub_items:
-      - "PA IC 연구개발 연구원 (2009~2016)"
-      - "PA IC 설계팀장/연구위원 (2016~2020)"
+      - PA IC 연구개발 연구원 (2009~2016)
+      - PA IC 설계팀장/연구위원 (2016~2020)
   - text: "2020.3 – 2024.3 : 강릉원주대학교 전자공학과 조교수"
     sub_items: []
   - text: "2024.3 – 현재 : 국립강릉원주대학교 전자·반도체공학부 부교수"
     sub_items: []
-  - text: "Session chair, IEEE International Symposium on Radio-Frequency Integration Technology (RFIT) 2017"
+  - text: Session chair, IEEE International Symposium on Radio-Frequency Integration
+      Technology (RFIT) 2017
     sub_items: []
-  - text: "Technical Program Committee member (Reviewer), IEEE International Symposium on Radio-Frequency Integration Technology (RFIT) 2022"
+  - text: Technical Program Committee member (Reviewer), IEEE International
+      Symposium on Radio-Frequency Integration Technology (RFIT) 2022
     sub_items: []
-
 publications:
-  - title: "A physics-based GaAs PHEMT noise model for low drain bias operation using characteristic potential method"
-    meta: "Jooyoung Jeon, Youngwoo Kwon and Hong-Shick Min · IEEE Microwave and Wireless Components Letters, Vol. 12, Issue 9 · Sept. 2002"
-  - title: "A highly-integrated Doherty amplifier for CDMA handset applications using an active phase splitter"
-    meta: "Junghyun Kim, Seongjun Bae, Joomin Jeong, Jooyoung Jeon and Youngwoo Kwon · IEEE Microwave and Wireless Components Letters, Vol. 15, Issue 5 · May 2005"
-  - title: "Temperature compensating bias circuit for GaAs HBT RF power amplifiers with stage bypass architecture"
-    meta: "Jeon, J., Kim, J., & Kwon, Y. · Electronics Letters, 44(19), 1141 · 2008 · doi:10.1049/el:20080769"
-  - title: "A Novel Load Mismatch Detection and Correction Technique for 3G/4G Load Insensitive Power Amplifier Application"
-    meta: "Donghyeon Ji, Jooyoung Jeon and Junghyun Kim · IEEE Transactions on Microwave Theory and Techniques, Vol. 63, Issue 5 · May 2015"
-  - title: "A linearity-improved multi-band envelope tracking Tx power amplifier under antenna mismatch for mobile applications"
-    meta: "Donghyeon Ji, Jooyoung Jeon and Junghyun Kim · Microwave and Optical Technology Letters, Vol. 60, Issue 9 · Sep. 2018"
-  - title: "Delta-Sigma Modulator with Relaxed Feedback Timing for High Speed Applications"
-    meta: "Youngho Jung and Jooyoung Jeon · Electronics, Vol. 8, Issue 10 · Oct. 2019"
-  - title: "Software-Based Adaptive Protection Control against Load Mismatch for a Mobile Power Amplifier Module"
-    meta: "Jooyoung Jeon, Youngho Jung and Myounggon Kang · Electronics, Vol. 8, Issue 11 · Oct. 2019"
-  - title: "A Ruggedness Improved Mobile Radio Frequency Power Amplifier Module with Dynamic Impedance Correction by Software Defined Atomization"
-    meta: "Jooyoung Jeon and Myounggon Kang · Electronics, Vol. 8, Issue 11 · Nov. 2019"
-  - title: "High-Performance RF Power Amplifier Module Using Optimum Chip-Level Packaging Structure"
-    meta: "H. Nam, J. Kim, J. Jeon, H. Jhon and J. Kim · IEEE Transactions on Industrial Electronics, Vol. 69, No. 6, pp. 5660-5668 · June 2022"
-
+  - title: A physics-based GaAs PHEMT noise model for low drain bias operation using
+      characteristic potential method
+    meta: Jooyoung Jeon, Youngwoo Kwon and Hong-Shick Min · IEEE Microwave and
+      Wireless Components Letters, Vol. 12, Issue 9 · Sept. 2002
+  - title: A highly-integrated Doherty amplifier for CDMA handset applications using
+      an active phase splitter
+    meta: Junghyun Kim, Seongjun Bae, Joomin Jeong, Jooyoung Jeon and Youngwoo Kwon
+      · IEEE Microwave and Wireless Components Letters, Vol. 15, Issue 5 · May
+      2005
+  - title: Temperature compensating bias circuit for GaAs HBT RF power amplifiers
+      with stage bypass architecture
+    meta: Jeon, J., Kim, J., & Kwon, Y. · Electronics Letters, 44(19), 1141 · 2008 ·
+      doi:10.1049/el:20080769
+  - title: A Novel Load Mismatch Detection and Correction Technique for 3G/4G Load
+      Insensitive Power Amplifier Application
+    meta: Donghyeon Ji, Jooyoung Jeon and Junghyun Kim · IEEE Transactions on
+      Microwave Theory and Techniques, Vol. 63, Issue 5 · May 2015
+  - title: A linearity-improved multi-band envelope tracking Tx power amplifier
+      under antenna mismatch for mobile applications
+    meta: Donghyeon Ji, Jooyoung Jeon and Junghyun Kim · Microwave and Optical
+      Technology Letters, Vol. 60, Issue 9 · Sep. 2018
+  - title: Delta-Sigma Modulator with Relaxed Feedback Timing for High Speed
+      Applications
+    meta: Youngho Jung and Jooyoung Jeon · Electronics, Vol. 8, Issue 10 · Oct. 2019
+  - title: Software-Based Adaptive Protection Control against Load Mismatch for a
+      Mobile Power Amplifier Module
+    meta: Jooyoung Jeon, Youngho Jung and Myounggon Kang · Electronics, Vol. 8,
+      Issue 11 · Oct. 2019
+  - title: A Ruggedness Improved Mobile Radio Frequency Power Amplifier Module with
+      Dynamic Impedance Correction by Software Defined Atomization
+    meta: Jooyoung Jeon and Myounggon Kang · Electronics, Vol. 8, Issue 11 · Nov.
+      2019
+  - title: High-Performance RF Power Amplifier Module Using Optimum Chip-Level
+      Packaging Structure
+    meta: H. Nam, J. Kim, J. Jeon, H. Jhon and J. Kim · IEEE Transactions on
+      Industrial Electronics, Vol. 69, No. 6, pp. 5660-5668 · June 2022
 patents:
-  - title: "Temperature-compensated circuit for power amplifier using diode voltage control"
-    meta: "Jooyoung Jeon, Junghyun Kim · US7,310,015, USA · Dec. 2007"
-  - title: "다이오드 전압제어를 통한 전력증폭기의 온도보상회로"
-    meta: "전주영, 지동현, 김정헌 · 1007046860000, KR · 2007"
-  - title: "Method and apparatus for providing impedance matching for high-frequency signal transmitter"
-    meta: "Joo Young Jeon, Sang Hwa Jung, Jung Hyun Kim, Young Kwon · US8,233,851, USA · Dec. 2012"
-  - title: "Amplifier module"
-    meta: "Joo Young Jeon, Donghyeon Ji, Jung Hyun Kim · US9,559,731, USA · Jan. 2017"
-  - title: "Amplifier module"
-    meta: "Joo Young Jeon, Donghyeon Ji, Jung Hyun Kim · US9,692,461, USA · June 2017"
-  - title: "Feedback amplifier as an impedance modulator for a linear power amplifier"
-    meta: "(Filed) Seung Yub Lee, Un-Ha Kim, Jun Hee Oh, Joo Young Jeon · 16/666,856, USA · 2019"
-
-office: "공학1호관(N11) 404호"
+  - title: Temperature-compensated circuit for power amplifier using diode voltage
+      control
+    meta: Jooyoung Jeon, Junghyun Kim · US7,310,015, USA · Dec. 2007
+  - title: 다이오드 전압제어를 통한 전력증폭기의 온도보상회로
+    meta: 전주영, 지동현, 김정현 · 1007046860000, KR · 2007
+  - title: Method and apparatus for providing impedance matching for high-frequency
+      signal transmitter
+    meta: Joo Young Jeon, Sang Hwa Jung, Jung Hyun Kim, Young Kwon · US8,233,851,
+      USA · Dec. 2012
+  - title: Amplifier module
+    meta: Joo Young Jeon, Donghyeon Ji, Jung Hyun Kim · US9,559,731, USA · Jan. 2017
+  - title: Amplifier module
+    meta: Joo Young Jeon, Donghyeon Ji, Jung Hyun Kim · US9,692,461, USA · June 2017
+  - title: Feedback amplifier as an impedance modulator for a linear power amplifier
+    meta: (Filed) Seung Yub Lee, Un-Ha Kim, Jun Hee Oh, Joo Young Jeon · 16/666,856,
+      USA · 2019
+office: 공학1호관(N11) 404호
