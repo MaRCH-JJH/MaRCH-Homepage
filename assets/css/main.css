@@ -2295,10 +2295,11 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 }
 
 /* Professor page -- reuses .about-intro (2-col grid), .member-image-wrapper/
-   .member-image (photo crop), .research-keywords/.keyword-tag (tag pills),
-   .page-body typography, and .contact-item/.contact-icon/.contact-details
-   (from the About and Contact pages) rather than introducing new patterns.
-   Only the few rules below are specific to this page. */
+   .member-image (photo crop), .page-body typography, and .contact-item/
+   .contact-icon/.contact-details (from the About and Contact pages) rather
+   than introducing new patterns. Only the rules below are specific to this
+   page: hero identity block, research-interests emphasis, and the CV card's
+   internal rhythm (dividers between the existing 학력/경력/논문/특허 blocks). */
 
 .professor-hero-section {
   /* Full override (not just padding-top) so this section doesn't also
@@ -2317,29 +2318,137 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
-.professor-photo {
-  max-width: 320px;
-  border-radius: var(--radius-docs-card);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+.professor-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.professor-name {
+/* Narrower, fixed-width photo column instead of .about-intro's flat 1fr 1fr
+   -- the photo was floating small inside an overly wide column, which read
+   as empty space rather than intentional whitespace. */
+.professor-hero-section .about-intro {
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.professor-photo {
+  max-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius-docs-card);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .professor-photo,
+:root:not([data-theme="light"]) .professor-photo {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Scoped under .professor-hero-section (rather than bare classes) so these
+   beat .about-intro-text p's shared margin/color rule on specificity --
+   otherwise that shared rule (1 class + 1 tag) silently wins over a single
+   class selector and flattens this block's intended spacing/color. */
+.professor-hero-section .professor-eyebrow {
+  font-size: var(--type-caption-size);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
   margin-bottom: var(--space-compact);
 }
 
-.professor-role {
+/* The name is the single most important element on the page, so it gets
+   its own scale above the shared h1 rule rather than just relying on
+   font-weight -- size is what actually reads as "important" at a glance. */
+.professor-name {
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-content);
+}
+
+.professor-hero-section .professor-role {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-foreground);
+  margin-bottom: 4px;
+}
+
+.professor-hero-section .professor-affiliation {
   font-size: var(--type-body-size);
   color: var(--color-muted);
-  margin-bottom: var(--space-compact);
+  margin-bottom: var(--space-content);
+  padding-bottom: var(--space-content);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.professor-interests-heading {
-  margin-top: var(--space-content);
-  margin-bottom: var(--space-compact);
+[data-theme="dark"] .professor-affiliation,
+:root:not([data-theme="light"]) .professor-affiliation {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.professor-hero-section .professor-interests-label {
+  font-size: var(--type-caption-size);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-content);
+}
+
+.professor-interests-list {
+  list-style: none;
+  margin-bottom: var(--space-content);
+}
+
+.professor-interest-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--space-content);
+  border-left: 2px solid var(--color-primary);
+  margin-bottom: var(--space-content);
+}
+
+.professor-interest-item:last-child {
+  margin-bottom: 0;
+}
+
+.professor-interest-en {
+  font-size: var(--type-body-size);
+  font-weight: 500;
+  color: var(--color-foreground);
+}
+
+.professor-interest-ko {
+  display: block;
+  font-size: var(--type-body-small-size);
+  color: var(--color-muted);
+  margin-top: 2px;
+}
+
+/* Jumps into the CV card below via the real anchors on its existing
+   학력/경력/논문/특허 headings -- no new sections invented, just a way to
+   see and reach what's already on the page. Uses the sitewide smooth-scroll
+   already bound to any in-page anchor link, no extra JS needed. */
+.professor-section-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-compact);
+  font-size: var(--type-body-small-size);
+  color: var(--color-muted);
+}
+
+.professor-section-links a {
+  color: var(--color-link);
+}
+
+.professor-section-links a:hover {
+  color: var(--color-primary);
 }
 
 .professor-cv-section {
-  padding-top: 0;
+  padding-top: 20px;
 }
 
 .professor-body {
@@ -2357,6 +2466,87 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   border-color: rgba(255, 255, 255, 0.1);
 }
 
+.professor-cv-block {
+  padding-top: 48px;
+  margin-top: 48px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.professor-cv-block:first-child {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: none;
+}
+
+[data-theme="dark"] .professor-cv-block,
+:root:not([data-theme="light"]) .professor-cv-block {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.professor-cv-title {
+  font-size: var(--type-tile-heading-size);
+  margin-bottom: var(--space-content);
+  /* Keeps the heading clear of the fixed header when jumped to via the
+     hero's anchor links above. */
+  scroll-margin-top: calc(var(--header-height) + 20px);
+}
+
+.professor-plain-list {
+  margin: 0 0 0 1.25em;
+}
+
+.professor-plain-list li {
+  color: var(--color-secondary);
+  line-height: var(--type-body-line-height);
+  margin-bottom: var(--space-compact);
+}
+
+.professor-plain-list li:last-child {
+  margin-bottom: 0;
+}
+
+.professor-plain-list ul {
+  margin: var(--space-compact) 0 var(--space-compact) 1.25em;
+}
+
+.pub-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.pub-entry {
+  margin-bottom: var(--space-content);
+}
+
+.pub-entry:last-child {
+  margin-bottom: 0;
+}
+
+.pub-entry::marker {
+  font-size: var(--type-body-small-size);
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.pub-title {
+  font-size: var(--type-body-size);
+  font-weight: 500;
+  color: var(--color-foreground);
+  line-height: var(--type-body-line-height);
+  margin-bottom: 4px;
+}
+
+.pub-meta {
+  font-size: var(--type-body-small-size);
+  color: var(--color-muted);
+  line-height: var(--type-body-small-line-height);
+}
+
+.pub-meta em {
+  font-style: italic;
+  color: var(--color-secondary);
+}
+
 .professor-contact-section {
   background: var(--color-canvas);
 }
@@ -2367,7 +2557,8 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 }
 
 @media (max-width: 768px) {
-  .about-intro {
+  .about-intro,
+  .professor-hero-section .about-intro {
     grid-template-columns: 1fr;
     gap: var(--space-content);
   }
@@ -2377,8 +2568,17 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
     margin: 0 auto;
   }
 
+  .professor-name {
+    font-size: 40px;
+  }
+
   .professor-body {
     padding: 28px 20px;
+  }
+
+  .professor-cv-block {
+    padding-top: 32px;
+    margin-top: 32px;
   }
 
   .workflow-timeline {
