@@ -25,7 +25,7 @@ lang: "ko_KR"
   </div>
 </section>
 
-<section class="section">
+<section class="section professor-cv-section">
   <div class="container">
     <div class="page-body professor-body" markdown="1">
 

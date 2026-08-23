@@ -2248,11 +2248,15 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
    Only the few rules below are specific to this page. */
 
 .professor-hero-section {
-  padding-top: calc(var(--header-height) + 60px);
+  /* Full override (not just padding-top) so this section doesn't also
+     inherit .section's 80px bottom padding -- it was stacking with the
+     next section's own top padding into a ~160px gap. */
+  padding: calc(var(--header-height) + 60px) 0 40px;
 }
 
 .professor-photo {
   max-width: 320px;
+  border-radius: var(--radius-docs-card);
 }
 
 .professor-name {
@@ -2270,12 +2274,23 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   margin-bottom: var(--space-compact);
 }
 
+.professor-cv-section {
+  padding-top: 0;
+}
+
 .professor-body {
-  /* .page-body normally also offsets for the fixed header (it's usually the
-     first element on the page); this section isn't first here, so cancel
-     that -- everything else about .page-body (heading/paragraph/list
-     spacing) still applies via the :where(.page-body) rules. */
-  padding: 0;
+  /* Same card look already used for .research-card/.award-year (surface
+     background, subtle border, --radius-docs-card) so the CV content
+     reads as a contained section instead of a bare list of bullets. */
+  background: var(--color-surface);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-docs-card);
+  padding: 48px;
+}
+
+[data-theme="dark"] .professor-body,
+:root:not([data-theme="light"]) .professor-body {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .professor-contact-section {
@@ -2296,6 +2311,10 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   .professor-photo {
     max-width: 240px;
     margin: 0 auto;
+  }
+
+  .professor-body {
+    padding: 28px 20px;
   }
 
   .workflow-timeline {
