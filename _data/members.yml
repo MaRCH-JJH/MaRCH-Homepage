@@ -177,3 +177,15 @@ items:
     email: lynnda64589@gmail.com
     name_en: Kim Lynn
     category: undergrad
+  - name: 현중
+    degree: B.S.
+    order: 6
+    major_en: Electrical Engineering
+    role_en: Alumni
+    role: 졸업생
+    major: 전자공학
+    id: Hyeonjung
+    image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_230250623.jpg
+    office: MaRCH Lab
+    name_en: Hyeonjung Kim
+    category: alumni
