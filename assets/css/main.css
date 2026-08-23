@@ -1693,7 +1693,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   font-weight: 600;
   color: var(--color-primary);
   background: rgba(0, 113, 227, 0.1);
-  padding: 8px 18px;
+  padding: 10px 20px;
   border-radius: var(--radius-marketing-pill);
   margin-bottom: var(--space-content);
 }
@@ -1708,9 +1708,9 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
      briefcase-icon fallback. Company logos are usually wide wordmarks, not
      square icons, so width follows the logo's own aspect ratio instead of
      being squashed into a 1:1 box. */
-  height: 34px;
+  height: 44px;
   width: auto;
-  max-width: 160px;
+  max-width: 200px;
   object-fit: contain;
   flex-shrink: 0;
 }
