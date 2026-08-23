@@ -1693,7 +1693,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   font-weight: 600;
   color: var(--color-primary);
   background: rgba(0, 113, 227, 0.1);
-  padding: 4px 12px;
+  padding: 6px 16px;
   border-radius: var(--radius-marketing-pill);
   margin-bottom: var(--space-content);
 }
@@ -1703,12 +1703,14 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 }
 
 .member-position-logo {
-  /* Company logos are usually wide wordmarks, not square icons -- fix the
-     height to line up with the text and let width follow the logo's own
-     aspect ratio instead of squashing it into a 1:1 box. */
-  height: 16px;
+  /* The logo stands alone in the badge (no adjacent text -- the logo
+     already shows the company name), so it can run a bit larger than the
+     briefcase-icon fallback. Company logos are usually wide wordmarks, not
+     square icons, so width follows the logo's own aspect ratio instead of
+     being squashed into a 1:1 box. */
+  height: 22px;
   width: auto;
-  max-width: 80px;
+  max-width: 120px;
   object-fit: contain;
   flex-shrink: 0;
 }

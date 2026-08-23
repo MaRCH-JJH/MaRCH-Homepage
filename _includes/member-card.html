@@ -15,11 +15,11 @@
     {% if include.member.current_position %}
     <p class="member-position">
       {% if include.member.company_logo %}
-      <img src="{% include image-url.html path=include.member.company_logo %}" alt="" class="member-position-logo" loading="lazy">
+      <img src="{% include image-url.html path=include.member.company_logo %}" alt="{{ include.member.current_position }}" class="member-position-logo" loading="lazy">
       {% else %}
       {% include icon.html name="briefcase" size="small" %}
-      {% endif %}
       <span>{{ include.member.current_position }}</span>
+      {% endif %}
     </p>
     {% endif %}
     <p class="member-major">{{ include.member.major }}</p>
