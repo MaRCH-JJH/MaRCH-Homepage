@@ -1,5 +1,97 @@
-# Publications data
-# Editable via Decap CMS (Publications collection)
-# 등록된 논문/성과가 없습니다. CMS의 "논문/성과" 컬렉션에서 연도를 추가해 주세요.
 years:
-  []
+  - year: 2022
+    items:
+      - abstract: In this paper, a two-stage single-ended power amplifier (PA) with
+          broadband gain characteristics was presentedby utilizing a radio
+          frequency (RF) transformer (TF), which is essential for a differential
+          amplifier. The bandwidthof a PA can be improved by designing TF to
+          have broadband characteristics and then applying it to the
+          inter-stagematching network (IMN) of a PA. For broadband gain
+          characteristics while maintaining the performance and areaof the
+          existing PA, an IMN was implemented on an monolithic microwave
+          integrated circuit (MMIC) and amulti-layer printed circuit board
+          (PCB), and the simulation results were compared. As a result of
+          simulating the PAmodule designed using InGaP/GaAs HBT model, it has
+          been confirmed that the PA employing the proposed designmethod has an
+          improved fractional bandwidth of 19.8% at a center frequency of
+          3.3GHz, while the conventionalPA showed that of 11.2%.
+        pages: 456-461
+        authors: 김욱현 / Ukhyun Kim, 우제욱 / Jewook Woo, 전주영
+        keywords:
+          - Amplifiers
+          - RF transformer
+          - Broadband
+          - inter-stage matching network
+          - Fractional bandwidth
+        title_ko: RF 트랜스포머를 사용한 광대역 전력증폭기 설계
+        featured: false
+        date: ""
+        url: https://doi.org/10.7471/ikeee.2022.26.3.456
+        conference_full: ""
+        location: ""
+        journal: 전기전자학회논문지 / Journal of IKEEE
+        title: Broadband power amplifier design utilizing RF transformer
+        issue: "3"
+        volume: "26"
+        type: Journal
+        id: ukhyun
+        conference: ""
+        year: 2022
+        category: Power Amplifier
+        doi: 10.7471/ikeee.2022.26.3.456
+  - year: 2023
+    items:
+      - abstract: >+
+          In this paper, a Radio Frequency (RF) transformer (TF) based on LTCC
+          (Low Temperature Co-fired Ceramic) forthe output stage of differential
+          power amplifiers is presented. Instead of using an usual L-C matching
+          circuit, asmall-sized transformer was implemented on the LTCC board
+          and the results were verified through simulation. Forreduced size and
+          better performance, a TF using more metal layers was implemented and
+          compared with theexisting TF through simulation. As a result of
+          comparison, the proposed TF has an area reduced by 55% and acoupling
+          coefficient increased by 25%, and insertion loss improvement of about
+          0.4dB at 5GHz was confirmed.
+
+        pages: 53-58
+        authors: 우제욱 / Jewook Woo, 김희수 / Heesu Kim, 전주영
+        title_ko: 차동 전력증폭기 출력단용 LTCC 기반 RF 트랜스포머 설계
+        featured: false
+        url: https://doi.org/10.7471/ikeee.2023.27.1.53
+        journal: 전기전자학회논문지 / Journal of IKEEE
+        title: LTCC-based transformer design for output stage of differential RF power
+          amplifiers
+        issue: "1"
+        volume: "27"
+        type: Journal
+        id: "1"
+        conference: ""
+        year: 2023
+        category: Circuit Design
+        doi: 10.7471/ikeee.2023.27.1.53
+  - year: 2026
+    items:
+      - abstract: In this paper, an effective miniaturization technique for a
+          conventional dual-band Wilkinson power divider ispresented. By
+          applying an additional size-reduction approach to a previously
+          reported π-type equivalent dual-bandstructure, the effective circuit
+          core area is significantly reduced while preserving the dual-band
+          operatingcharacteristics. The proposed miniaturized structure is
+          implemented on a cost-effective FR4 substrate instead ofexpensive
+          low-loss substrates, and its validity is experimentally verified at
+          0.92 GHz in the Sub-GHz IoT band and2.4 GHz in the ISM band.
+        pages: 109-113
+        authors: 최은성 / Eun-Seong Choi, 전주영
+        title_ko: IoT 무선 통신용 이중대역 윌킨슨 전력분배기의 소형화 기법
+        featured: false
+        url: https://doi.org/10.7471/ikeee.2026.30.1.109
+        journal: 전기전자학회논문지 / Journal of IKEEE
+        title: Miniaturization Technique of a Dual-Band Wilkinson Power Divider for IoT
+          Wireless Communication
+        issue: "1"
+        volume: "30"
+        type: Journal
+        id: "1"
+        year: 2026
+        category: Circuit Design
+        doi: 10.7471/ikeee.2026.30.1.109
