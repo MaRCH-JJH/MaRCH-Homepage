@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "MaRCH Lab 연구 분야 소개"
-date: 2024-03-10
-category: "연구실 소개"
-excerpt: "MaRCH Lab이 연구하는 RF/Microwave 회로 설계, RF Power Amplifier, MMIC, RF 계측·시스템 4대 분야를 소개합니다."
-lang: "ko_KR"
+lang: ko_KR
+title: MaRCH Lab 연구 분야 소개
+date: 2026-08-23
+category: 연구실 소개
+excerpt: MaRCH Lab이 연구하는 RF/Microwave 회로 설계, RF Power Amplifier, MMIC, RF 계측·시스템
+  4대 분야를 소개합니다.
 ---
 
 MaRCH Lab은 RF/Microwave 분야에서 아래 4가지 방향으로 연구를 진행하고 있습니다.
