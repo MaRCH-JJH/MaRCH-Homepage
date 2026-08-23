@@ -2241,10 +2241,61 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   margin-bottom: var(--space-content);
 }
 
+/* Professor page -- reuses .about-intro (2-col grid), .member-image-wrapper/
+   .member-image (photo crop), .research-keywords/.keyword-tag (tag pills),
+   .page-body typography, and .contact-item/.contact-icon/.contact-details
+   (from the About and Contact pages) rather than introducing new patterns.
+   Only the few rules below are specific to this page. */
+
+.professor-hero-section {
+  padding-top: calc(var(--header-height) + 60px);
+}
+
+.professor-photo {
+  max-width: 320px;
+}
+
+.professor-name {
+  margin-bottom: var(--space-compact);
+}
+
+.professor-role {
+  font-size: var(--type-body-size);
+  color: var(--color-muted);
+  margin-bottom: var(--space-compact);
+}
+
+.professor-interests-heading {
+  margin-top: var(--space-content);
+  margin-bottom: var(--space-compact);
+}
+
+.professor-body {
+  /* .page-body normally also offsets for the fixed header (it's usually the
+     first element on the page); this section isn't first here, so cancel
+     that -- everything else about .page-body (heading/paragraph/list
+     spacing) still applies via the :where(.page-body) rules. */
+  padding: 0;
+}
+
+.professor-contact-section {
+  background: var(--color-canvas);
+}
+
+.professor-contact {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .about-intro {
     grid-template-columns: 1fr;
     gap: var(--space-content);
+  }
+
+  .professor-photo {
+    max-width: 240px;
+    margin: 0 auto;
   }
 
   .workflow-timeline {

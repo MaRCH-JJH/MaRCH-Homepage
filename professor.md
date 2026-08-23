@@ -1,19 +1,33 @@
 ---
-layout: page
+layout: default
 title: "지도교수"
-subtitle: "MaRCH Lab을 이끄는 지도교수를 소개합니다."
 description: "MaRCH Lab 지도교수 전주영 교수 소개 - RF 회로 및 시스템, 전력증폭기 연구."
 lang: "ko_KR"
 ---
 
-## 기본 정보
+<section class="section professor-hero-section">
+  <div class="container">
+    <div class="about-intro">
+      <div class="member-image-wrapper professor-photo">
+        <img src="{{ site.baseurl }}/assets/images/professor.jpg" alt="전주영 교수" class="member-image" loading="lazy" width="300" height="400">
+      </div>
+      <div class="about-intro-text">
+        <h1 class="professor-name">전주영</h1>
+        <p class="professor-role">Professor · 전자·반도체공학부</p>
+        <p class="professor-role">Kangwon National University</p>
+        <h3 class="professor-interests-heading">Research Interests</h3>
+        <ul class="research-keywords" aria-label="연구 관심분야">
+          <li class="keyword-tag">RF 회로 및 시스템</li>
+          <li class="keyword-tag">이동통신 단말기용 전력증폭기 모듈</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-- **이름**: 전주영
-- **직급**: 부교수
-- **전화**: [{{ site.data.site.phone }}](tel:{{ site.data.site.phone }})
-- **메일**: [{{ site.data.site.email }}](mailto:{{ site.data.site.email }})
-- **전공**: RF 회로 및 시스템 설계
-- **학력**: 서울대학교 공학사, 서울대학교 공학박사
+<section class="section">
+  <div class="container">
+    <div class="page-body professor-body" markdown="1">
 
 ## 학력
 
@@ -30,11 +44,6 @@ lang: "ko_KR"
 - 2024.3 – 현재 : 국립강릉원주대학교 전자·반도체공학부 부교수
 - Session chair, IEEE International Symposium on Radio-Frequency Integration Technology (RFIT) 2017
 - Technical Program Committee member (Reviewer), IEEE International Symposium on Radio-Frequency Integration Technology (RFIT) 2022
-
-## 전문분야
-
-1. RF 회로 및 시스템
-2. 이동통신 단말기용 전력증폭기 모듈
 
 ## 주요 논문
 
@@ -56,3 +65,35 @@ lang: "ko_KR"
 - "Amplifier module," Joo Young Jeon, Donghyeon Ji, Jung Hyun Kim, US9,559,731, USA, Jan. 2017.
 - "Amplifier module," Joo Young Jeon, Donghyeon Ji, Jung Hyun Kim, US9,692,461, USA, June 2017.
 - (Filed) "Feedback amplifier as an impedance modulator for a linear power amplifier," Seung Yub Lee, Un-Ha Kim, Jun Hee Oh, Joo Young Jeon, 16/666,856, USA, 2019.
+
+    </div>
+  </div>
+</section>
+
+<section class="section professor-contact-section">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title">Contact</h2>
+    </header>
+    <div class="professor-contact">
+      <div class="contact-item">
+        <div class="contact-icon">
+          {% include icon.html name="mail" size="large" %}
+        </div>
+        <div class="contact-details">
+          <h4>이메일</h4>
+          <p><a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          {% include icon.html name="location" size="large" %}
+        </div>
+        <div class="contact-details">
+          <h4>연구실</h4>
+          <p>공학1호관(N11) 404호</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
