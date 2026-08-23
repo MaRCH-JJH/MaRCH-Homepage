@@ -124,6 +124,43 @@ collections:
               {name: text, label: "설명", widget: "text", required: false}
             ]}
 
+  # Professor page (single file: _data/professor.yml -- the "지도교수" page's
+  # profile, research interests, education/career/publications/patents, and
+  # office location. Contact email is not duplicated here -- it comes from
+  # the "site" collection's email field, which the page already uses.)
+  - name: "professor"
+    label: "지도교수 페이지"
+    label_singular: "지도교수"
+    description: "지도교수(Professor) 페이지 콘텐츠 관리"
+    files:
+      - name: "professor"
+        label: "지도교수"
+        file: "_data/professor.yml"
+        fields:
+          - {name: name, label: "이름", widget: "string", required: true}
+          - {name: eyebrow, label: "상단 라벨", widget: "string", required: false, hint: "예: Faculty"}
+          - {name: role, label: "직책", widget: "string", required: true, hint: "예: Professor"}
+          - {name: affiliation, label: "소속", widget: "string", required: false}
+          - {name: photo, label: "프로필 사진", widget: "image", required: false}
+          - {name: interests, label: "연구 관심분야", widget: "list", fields: [
+              {name: en, label: "영문", widget: "string", required: true},
+              {name: ko, label: "한글", widget: "string", required: false}
+            ]}
+          - {name: education, label: "학력", widget: "list", required: false, hint: "한 줄에 한 항목씩 (예: 1999 서울대학교 공학사 - 전기공학부)"}
+          - {name: career, label: "주요 경력", widget: "list", fields: [
+              {name: text, label: "내용", widget: "string", required: true},
+              {name: sub_items, label: "하위 항목 (선택)", widget: "list", required: false}
+            ]}
+          - {name: publications, label: "주요 논문", widget: "list", fields: [
+              {name: title, label: "논문 제목", widget: "string", required: true},
+              {name: meta, label: "저자 · 저널 · 날짜", widget: "string", required: false}
+            ]}
+          - {name: patents, label: "특허", widget: "list", fields: [
+              {name: title, label: "특허명", widget: "string", required: true},
+              {name: meta, label: "발명자 · 특허번호 · 날짜", widget: "string", required: false}
+            ]}
+          - {name: office, label: "연구실 위치", widget: "string", required: false}
+
   # News (Jekyll posts, one file per entry in _posts/ -- this one genuinely is
   # a folder collection, unlike members/research/awards/publications above,
   # since Jekyll posts are already designed as one-file-per-post)
