@@ -12,6 +12,7 @@ body_class: "members-page"
   <button class="tab-btn" data-category="postdoc" role="tab" aria-selected="false" aria-controls="panel-postdoc">박사후연구원</button>
   <button class="tab-btn" data-category="phd" role="tab" aria-selected="false" aria-controls="panel-phd">박사과정</button>
   <button class="tab-btn" data-category="master" role="tab" aria-selected="false" aria-controls="panel-master">석사과정</button>
+  <button class="tab-btn" data-category="undergrad" role="tab" aria-selected="false" aria-controls="panel-undergrad">학부연구생</button>
   <button class="tab-btn" data-category="alumni" role="tab" aria-selected="false" aria-controls="panel-alumni">졸업생</button>
 </div>
 

@@ -25,4 +25,4 @@ GaAs HBT/pHEMT 및 GaN 소자를 기반으로 Doherty PA 구조를 포함한 hig
 
 ## 연구실 소개 페이지 안내
 
-각 연구 분야에 대한 자세한 내용은 [연구 경력]({{ site.baseurl }}/research/) 페이지에서 확인하실 수 있습니다.
+각 연구 분야에 대한 자세한 내용은 [연구 분야]({{ site.baseurl }}/research/) 페이지에서 확인하실 수 있습니다.

@@ -332,7 +332,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 .nav-list {
   display: flex;
   align-items: center;
-  gap: var(--space-content);
+  gap: var(--space-control-inline);
 }
 
 .nav-link {

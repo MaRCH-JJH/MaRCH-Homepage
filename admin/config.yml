@@ -102,8 +102,8 @@ collections:
               {name: id, label: "ID", widget: "string", required: true},
               {name: name, label: "이름 (한글)", widget: "string", required: true},
               {name: name_en, label: "이름 (영문)", widget: "string", required: false},
-              {name: role, label: "직책 (한글)", widget: "select", options: ["교수", "박사후연구원", "박사과정", "석사과정", "졸업생"], required: true},
-              {name: role_en, label: "직책 (영문)", widget: "select", options: ["Professor", "Postdoctoral Researcher", "Ph.D. Candidate", "M.S. Candidate", "Alumni"], required: false},
+              {name: role, label: "직책 (한글)", widget: "select", options: ["교수", "박사후연구원", "박사과정", "석사과정", "학부연구생", "졸업생"], required: true},
+              {name: role_en, label: "직책 (영문)", widget: "select", options: ["Professor", "Postdoctoral Researcher", "Ph.D. Candidate", "M.S. Candidate", "Undergraduate Researcher", "Alumni"], required: false},
               {name: degree, label: "학위", widget: "string", required: false},
               {name: major, label: "전공 (한글)", widget: "string", required: false},
               {name: major_en, label: "전공 (영문)", widget: "string", required: false},
@@ -117,7 +117,7 @@ collections:
               {name: research_interests_en, label: "연구 관심분야 (영문)", widget: "list", required: false},
               {name: google_scholar, label: "Google Scholar URL", widget: "string", required: false},
               {name: orcid, label: "ORCID", widget: "string", required: false},
-              {name: category, label: "카테고리", widget: "select", options: ["professor", "postdoc", "phd", "master", "alumni"], required: true},
+              {name: category, label: "카테고리", widget: "select", options: ["professor", "postdoc", "phd", "master", "undergrad", "alumni"], required: true},
               {name: order, label: "정렬 순서", widget: "number", required: true}
             ]}
 
