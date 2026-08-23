@@ -141,8 +141,6 @@ graph LR
 theme:
   primary_color: "#0071e3"    # 메인 액션 색상
   accent_color: "#0066cc"     # 링크/아웃라인 색상
-  dark_mode_default: false    # 다크 모드 기본값
-
 ```
 
 CSS 변수는 `assets/css/main.css`의 `:root`에서 정의됩니다.

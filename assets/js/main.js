@@ -1,34 +1,6 @@
 (function() {
   'use strict';
 
-  const THEME_KEY = 'marchlab-theme';
-  const DARK_CLASS = 'dark';
-
-  function initTheme() {
-    const savedTheme = localStorage.getItem(THEME_KEY);
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
-    
-    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
-    updateThemeToggle(isDark);
-  }
-
-  function updateThemeToggle(isDark) {
-    const toggle = document.getElementById('theme-toggle');
-    if (toggle) {
-      toggle.setAttribute('aria-label', isDark ? '라이트 모드로 전환' : '다크 모드로 전환');
-    }
-  }
-
-  function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem(THEME_KEY, newTheme);
-    updateThemeToggle(newTheme === 'dark');
-  }
-
   function initMobileNav() {
     const toggle = document.getElementById('mobile-menu-toggle');
     const nav = document.getElementById('mobile-nav');
@@ -430,7 +402,6 @@
   }
 
   function init() {
-    initTheme();
     initMobileNav();
     initMemberTabs();
     initPublicationFilters();
@@ -441,16 +412,6 @@
     initAnimations();
     initCopyDoi();
     initLazyImages();
-
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle?.addEventListener('click', toggleTheme);
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (!localStorage.getItem(THEME_KEY)) {
-        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-        updateThemeToggle(e.matches);
-      }
-    });
   }
 
   if (document.readyState === 'loading') {

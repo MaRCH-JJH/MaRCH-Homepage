@@ -370,52 +370,6 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   gap: var(--space-compact);
 }
 
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  border-radius: 50%;
-  color: var(--color-foreground);
-  cursor: pointer;
-  transition: background var(--transition-fast);
-}
-
-.theme-toggle:hover {
-  background: rgba(0, 0, 0, 0.06);
-}
-
-[data-theme="dark"] .theme-toggle:hover,
-:root:not([data-theme="light"]) .theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.theme-toggle:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
-.theme-toggle .icon-sun {
-  display: none;
-}
-
-.theme-toggle .icon-moon {
-  display: block;
-}
-
-[data-theme="light"] .theme-toggle .icon-sun,
-:root[data-theme="light"] .theme-toggle .icon-sun {
-  display: block;
-}
-
-[data-theme="light"] .theme-toggle .icon-moon,
-:root[data-theme="light"] .theme-toggle .icon-moon {
-  display: none;
-}
-
 .admin-link {
   display: flex;
   align-items: center;

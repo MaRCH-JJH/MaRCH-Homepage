@@ -84,8 +84,7 @@ collections:
             ]}
           - {name: theme, label: "테마", widget: "object", fields: [
               {name: primary_color, label: "기본 색상", widget: "string"},
-              {name: accent_color, label: "액센트 색상", widget: "string"},
-              {name: dark_mode_default, label: "다크 모드 기본값", widget: "boolean"}
+              {name: accent_color, label: "액센트 색상", widget: "string"}
             ]}
 
   # About page (single file: _data/about.yml -- the "연구실 소개" page's Hero/
