@@ -179,12 +179,13 @@ items:
     category: undergrad
   - name: 현중
     degree: B.S.
+    company_logo: https://march-jjh.github.io/MaRCH-Homepage/assets/images/1719294513_1.png
     order: 6
     major_en: Electrical Engineering
+    current_position: peopleworks ARSENAL
     role_en: Alumni
     role: 졸업생
     major: 전자공학
-    current_position: peopleworks ARSENAL
     id: Hyeonjung
     image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_230250623.jpg
     office: MaRCH Lab
