@@ -14,16 +14,13 @@ description: "MaRCH Lab은 RF/Microwave 회로 설계와 RF Power Amplifier를 �
 description_en: "MaRCH Lab researches RF/Microwave circuit design and RF power amplifiers, with a focus on MMIC and RF measurement systems."
 
 # Contact
-email: "marchlab@example.ac.kr"
-phone: "+82-33-640-0000"
-address: "강원도 강릉시 범일로 57 강원대학교 강릉캠퍼스 공학관 000호"
-address_en: "Engineering Building, Gangneung Campus, Kangwon National University, 57 Beomil-ro, Gangneung-si, Gangwon-do 25457, Korea"
+email: "jyjeon@kangwon.ac.kr"
+phone: "033-640-2430"
+address: "강원특별자치도 강릉시 죽헌길 7 (지변동) 공학1호관(N11) 501호"
+address_en: "Room 501, Engineering Building 1 (N11), 7 Jukheon-gil, Jibyeon-dong, Gangneung-si, Gangwon State, Korea"
 
 # Social
 github: "https://github.com/marchlab"
-twitter: "https://twitter.com/marchlab"
-linkedin: "https://linkedin.com/company/marchlab"
-youtube: "https://youtube.com/@marchlab"
 
 # SEO
 keywords: "RF, Microwave, RF Power Amplifier, MMIC, 반도체, 전자공학, 연구실"

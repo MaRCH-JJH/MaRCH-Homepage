@@ -1,5 +1,5 @@
 items:
-  - google_scholar: asd
+  - google_scholar: ""
     bio_en: Leads the lab's research on RF/Microwave circuits and RF power amplifiers.
     research_interests_en:
       - RF Power Amplifier
@@ -20,13 +20,12 @@ items:
     major: 전자공학
     id: prof-kim
     image: ""
-    orcid: as
+    orcid: ""
     office: 공학관 000호
     email: prof.kim@marchlab.example.ac.kr
     name_en: Prof. Kim
-    linkedin: df
     category: professor
-  - google_scholar: "-"
+  - google_scholar: ""
     bio_en: >-
       His research focuses on RF and microwave circuit design, particularly RF
       power amplifiers (PAs).
@@ -57,9 +56,8 @@ items:
     major: 전자공학
     id: jinho
     image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_121646380_03.jpg
-    orcid: "-"
+    orcid: ""
     office: MaRCH Lab
     email: wlsgh8403@kangwon.ac.kr
     name_en: Jinho Jeong
-    linkedin: "-"
     category: master

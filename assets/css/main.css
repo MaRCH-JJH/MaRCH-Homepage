@@ -1632,7 +1632,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 
 .member-image-wrapper {
   position: relative;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
 }
 
@@ -1640,6 +1640,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform var(--transition-slow);
 }
 

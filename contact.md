@@ -15,8 +15,8 @@ lang: "ko_KR"
       </div>
       <div class="contact-details">
         <h4>주소</h4>
-        <p>강원도 강릉시 범일로 57 강원대학교 강릉캠퍼스 공학관 000호</p>
-        <p>Gangneung Campus, Kangwon National University, 57 Beomil-ro, Gangneung-si, Gangwon-do, Korea</p>
+        <p>{{ site.data.site.address }}</p>
+        <p>{{ site.data.site.address_en }}</p>
       </div>
     </div>
     

@@ -8,13 +8,12 @@ lang: "ko_KR"
 # Author / Lab info
 lab_name: "MaRCH Lab"
 lab_name_en: "Microwave and RF Circuit ResearcH Lab"
-email: "marchlab@example.ac.kr"
-address: "강원도 강릉시 범일로 57 강원대학교 강릉캠퍼스 공학관 000호"
-phone: "+82-33-640-0000"
+email: "jyjeon@kangwon.ac.kr"
+address: "강원특별자치도 강릉시 죽헌길 7 (지변동) 공학1호관(N11) 501호"
+phone: "033-640-2430"
 
 # Social
 github_username: "marchlab"
-twitter_username: "marchlab"
 
 # Build settings
 markdown: kramdown
@@ -63,14 +62,12 @@ feed:
 
 # SEO
 twitter:
-  username: marchlab
   card: summary_large_image
 
 social:
   name: MaRCH Lab
   links:
     - https://github.com/marchlab
-    - https://twitter.com/marchlab
 
 # Google Analytics (optional)
 google_analytics: ""

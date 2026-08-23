@@ -25,7 +25,6 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@{{ site.twitter_username }}">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.data.site.name }}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.site.description }}{% endif %}">
 <meta name="twitter:image" content="{{ og_image_url }}">
@@ -40,17 +39,14 @@
   "url": "{{ site.url }}{{ site.baseurl }}",
   "logo": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png",
   "sameAs": [
-    "{{ site.data.site.github }}",
-    "{{ site.data.site.twitter }}",
-    "{{ site.data.site.linkedin }}",
-    "{{ site.data.site.youtube }}"
+    "{{ site.data.site.github }}"
   ],
   "email": "{{ site.data.site.email }}",
   "telephone": "{{ site.data.site.phone }}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "{{ site.data.site.address }}",
-    "addressLocality": "Seoul",
+    "addressLocality": "Gangneung",
     "addressCountry": "KR"
   }
 }

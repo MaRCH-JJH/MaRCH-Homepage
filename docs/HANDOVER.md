@@ -63,7 +63,7 @@
    - **이메일/연락처/연구실**
    - **프로필 이미지**: 업로드 또는 기존 이미지 선택
    - **소개/연구관심분야**
-   - **외부 링크**: Google Scholar, ORCID, LinkedIn
+   - **외부 링크**: Google Scholar, ORCID
    - **카테고리**: 탭 분류용 (professor/postdoc/phd/master/alumni)
    - **정렬 순서**: 숫자 (작을수록 위)
 4. **Save** → **Publish**
