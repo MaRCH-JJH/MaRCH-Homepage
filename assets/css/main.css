@@ -954,6 +954,10 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   }
 }
 
+.collection-content {
+  padding-top: 60px;
+}
+
 .collection-page .collection-content > * + * {
   margin-top: 60px;
 }
@@ -1041,6 +1045,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 
 .research-content {
   padding: 24px;
+  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -2611,7 +2616,11 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   .page-header {
     padding: calc(var(--header-height) + 40px) 0 30px;
   }
-  
+
+  .collection-content {
+    padding-top: 36px;
+  }
+
   .page-body {
     padding: 40px 0;
   }
