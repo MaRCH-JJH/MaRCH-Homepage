@@ -212,7 +212,7 @@ items:
     category: undergrad
   - name: 최은성
     degree: M.S.
-    company_logo: https://march-jjh.github.io/MaRCH-Homepage/assets/images/432231b9e513e.png
+    company_logo: ""
     order: 7
     major_en: Electrical Engineering
     current_position: MMII Laboratory
