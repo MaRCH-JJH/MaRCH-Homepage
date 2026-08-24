@@ -12,6 +12,12 @@ years:
           0.92 GHz in the Sub-GHz IoT band and2.4 GHz in the ISM band.
         pages: 109-113
         authors: 최은성 / Eun-Seong Choi, 전주영
+        keywords:
+          - Dual-band
+          - Wilkinson power divider miniaturization
+          - Sub-GHz IoT
+          - ISM band
+          - FR4 substrate
         title_ko: IoT 무선 통신용 이중대역 윌킨슨 전력분배기의 소형화 기법
         featured: false
         url: https://doi.org/10.7471/ikeee.2026.30.1.109
@@ -41,6 +47,12 @@ years:
 
         pages: 53-58
         authors: 우제욱 / Jewook Woo, 김희수 / Heesu Kim, 전주영
+        keywords:
+          - Transformer
+          - LTCC
+          - Power Amplifier
+          - Differential amplifier
+          - Magnetic coupling coefficient
         title_ko: 차동 전력증폭기 출력단용 LTCC 기반 RF 트랜스포머 설계
         featured: false
         url: https://doi.org/10.7471/ikeee.2023.27.1.53
