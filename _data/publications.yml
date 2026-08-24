@@ -95,3 +95,25 @@ years:
         year: 2022
         category: Power Amplifier
         doi: 10.7471/ikeee.2022.26.3.456
+  - year: 2021
+    items:
+      - authors: 김단비, 김욱현, 전주영
+        featured: false
+        date: 2021-11-19
+        conference_full: 2021 한국전자파학회 제33차 정기총회 및 추계학술대회
+        location: 서울 더케이호텔서울 애비뉴
+        title: 접지면과의 거리에 따른 RF transformer의 Q-factor 양상
+        type: Conference
+        id: danbi
+        conference: 제33차 정기총회 및 추계학술대회
+        category: Circuit Design
+      - authors: 김욱현, 김단비, 이상민, 전주영
+        featured: false
+        date: 2021-11-19
+        conference_full: 2021 한국전자파학회 제33차 정기총회 및 추계학술대회
+        location: 서울 더케이호텔서울 애비뉴
+        title: RF transformer의 coil 결합 구조가 성능에 미치는 영향
+        type: Conference
+        id: ukhyun
+        conference: 제33차 정기총회 및 추계학술대회
+        category: Circuit Design
