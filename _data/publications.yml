@@ -86,11 +86,15 @@ years:
         id: ukhyun
         conference: 2023년 한국전자파학회 하계종합학술대회
         category: MMIC
-      - featured: false
-        id: ukhyun
+      - authors: 김욱현, 이상민, 전주영
+        featured: false
+        conference_full: 2023년도 전자반도체인공지능 학술대회
+        location: 강릉원주대학교(강릉)
         title: 모바일 단말기용 전력 증폭기 효율 향상을 위한 온도보상 바이어스 회로 설계
-        authors: 김욱현, 이상민, 전주영
         type: Conference
+        id: ukhyun
+        conference: 2023년도 전자반도체인공지능 학술대회
+        year: ""
         category: MMIC
   - year: 2022
     items:
