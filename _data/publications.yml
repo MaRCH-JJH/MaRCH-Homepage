@@ -67,6 +67,15 @@ years:
         year: 2023
         category: Circuit Design
         doi: 10.7471/ikeee.2023.27.1.53
+      - authors: 김욱현, 전주영
+        title_ko: 이동통신 단말기용 전력증폭기의 효율 개선을 위한 온도보상  바이어스 회로 설계
+        featured: false
+        location: 원주
+        title: 이동통신 단말기용 전력증폭기의 효율 개선을 위한 온도보상  바이어스 회로 설계
+        type: Conference
+        id: ukhyun
+        conference: 2023 반도체국제포럼
+        category: Power Amplifier
   - year: 2022
     items:
       - abstract: In this paper, a two-stage single-ended power amplifier (PA) with
