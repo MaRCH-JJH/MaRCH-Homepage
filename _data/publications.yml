@@ -75,7 +75,7 @@ years:
         type: Conference
         id: ukhyun
         conference: 2023 반도체국제포럼
-        category: Power Amplifier
+        category: MMIC
       - authors: 김욱현, 전주영
         featured: false
         date: 2023-08-24
@@ -85,7 +85,13 @@ years:
         type: Conference
         id: ukhyun
         conference: 2023년 한국전자파학회 하계종합학술대회
-        category: Power Amplifier
+        category: MMIC
+      - featured: false
+        id: ukhyun
+        title: 모바일 단말기용 전력 증폭기 효율 향상을 위한 온도보상 바이어스 회로 설계
+        authors: 김욱현, 이상민, 전주영
+        type: Conference
+        category: MMIC
   - year: 2022
     items:
       - abstract: In this paper, a two-stage single-ended power amplifier (PA) with
