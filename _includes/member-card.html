@@ -1,6 +1,6 @@
 <article class="member-card" data-category="{{ include.member.category }}" role="listitem">
   <div class="member-image-wrapper">
-    {% if include.member.image %}
+    {% if include.member.image.size > 0 %}
     <img src="{% include image-url.html path=include.member.image %}" alt="" class="member-image" loading="lazy" width="300" height="400">
     {% else %}
     <div class="member-image-placeholder" aria-hidden="true">
@@ -8,13 +8,13 @@
     </div>
     {% endif %}
   </div>
-  
+
   <div class="member-info">
     <h3 class="member-name">{{ include.member.name }}</h3>
-    <p class="member-role">{{ include.member.role }}{% if include.member.degree %}, {{ include.member.degree }}{% endif %}</p>
-    {% if include.member.current_position %}
+    <p class="member-role">{{ include.member.role }}{% if include.member.degree.size > 0 %}, {{ include.member.degree }}{% endif %}</p>
+    {% if include.member.current_position.size > 0 %}
     <p class="member-position">
-      {% if include.member.company_logo %}
+      {% if include.member.company_logo.size > 0 %}
       <img src="{% include image-url.html path=include.member.company_logo %}" alt="{{ include.member.current_position }}" class="member-position-logo" loading="lazy">
       {% else %}
       {% include icon.html name="briefcase" size="small" %}
@@ -23,7 +23,7 @@
     </p>
     {% endif %}
     <p class="member-major">{{ include.member.major }}</p>
-    
+
     {% if include.member.research_interests.size > 0 %}
     <ul class="member-interests" aria-label="연구 관심분야">
       {% for interest in include.member.research_interests limit:3 %}
@@ -31,14 +31,14 @@
       {% endfor %}
     </ul>
     {% endif %}
-    
+
     <div class="member-links">
-      {% if include.member.email %}
+      {% if include.member.email.size > 0 %}
       <a href="mailto:{{ include.member.email }}" class="member-link" aria-label="이메일 보내기">
         {% include icon.html name="mail" size="small" %}
       </a>
       {% endif %}
-      {% if include.member.google_scholar %}
+      {% if include.member.google_scholar.size > 0 %}
       <a href="{{ include.member.google_scholar }}" class="member-link" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
         {% include icon.html name="scholar" size="small" %}
       </a>
