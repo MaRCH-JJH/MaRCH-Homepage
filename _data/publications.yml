@@ -111,11 +111,21 @@ years:
         issue: "3"
         volume: "26"
         type: Journal
-        id: ukhyun
+        id: "1"
         conference: ""
         year: 2022
         category: Power Amplifier
         doi: 10.7471/ikeee.2022.26.3.456
+      - authors: 우제욱, 김욱현, 이상민, 전주영
+        featured: false
+        date: 2022-11-18
+        conference_full: 2022년 한국전자파학회 제34차 정기총회 및 추계학술대회
+        location: 더케이호텔서울
+        title: Dual-band 증폭기를 위한 RF Transformer 설계
+        type: Conference
+        id: "2"
+        conference: 제34차 정기총회 및 추계학술대회
+        category: Power Amplifier
   - year: 2021
     items:
       - authors: 김단비, 김욱현, 전주영
