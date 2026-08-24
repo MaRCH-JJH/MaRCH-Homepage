@@ -127,7 +127,7 @@ years:
         issue: "3"
         volume: "26"
         type: Journal
-        id: "1"
+        id: ukhyun
         conference: ""
         year: 2022
         category: Power Amplifier
@@ -139,7 +139,7 @@ years:
         location: 더케이호텔서울
         title: Dual-band 증폭기를 위한 RF Transformer 설계
         type: Conference
-        id: "2"
+        id: Jewook
         conference: 제34차 정기총회 및 추계학술대회
         category: Power Amplifier
   - year: 2021
