@@ -76,6 +76,16 @@ years:
         id: ukhyun
         conference: 2023 반도체국제포럼
         category: Power Amplifier
+      - authors: 김욱현, 전주영
+        featured: false
+        date: 2023-08-24
+        conference_full: 2023년 한국전자파학회 하계종합학술대회
+        location: 델피노리조트(강원도 고성)
+        title: 이동통신 단말기용 전력증폭기의 효율 개선을 위한 온도보상 바이어스 회로 설계
+        type: Conference
+        id: ukhyun
+        conference: 2023년 한국전자파학회 하계종합학술대회
+        category: Power Amplifier
   - year: 2022
     items:
       - abstract: In this paper, a two-stage single-ended power amplifier (PA) with
