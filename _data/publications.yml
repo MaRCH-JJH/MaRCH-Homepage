@@ -1,4 +1,103 @@
 years:
+  - year: 2026
+    items:
+      - abstract: In this paper, an effective miniaturization technique for a
+          conventional dual-band Wilkinson power divider ispresented. By
+          applying an additional size-reduction approach to a previously
+          reported π-type equivalent dual-bandstructure, the effective circuit
+          core area is significantly reduced while preserving the dual-band
+          operatingcharacteristics. The proposed miniaturized structure is
+          implemented on a cost-effective FR4 substrate instead ofexpensive
+          low-loss substrates, and its validity is experimentally verified at
+          0.92 GHz in the Sub-GHz IoT band and2.4 GHz in the ISM band.
+        pages: 109-113
+        authors: 최은성 / Eun-Seong Choi, 전주영
+        keywords:
+          - Dual-band
+          - Wilkinson power divider miniaturization
+          - Sub-GHz IoT
+          - ISM band
+          - FR4 substrate
+        title_ko: IoT 무선 통신용 이중대역 윌킨슨 전력분배기의 소형화 기법
+        featured: false
+        url: https://doi.org/10.7471/ikeee.2026.30.1.109
+        journal: 전기전자학회논문지 / Journal of IKEEE
+        title: Miniaturization Technique of a Dual-Band Wilkinson Power Divider for IoT
+          Wireless Communication
+        issue: "1"
+        volume: "30"
+        type: Journal
+        id: "1"
+        year: 2026
+        category: Circuit Design
+        doi: 10.7471/ikeee.2026.30.1.109
+  - year: 2024
+    items: []
+  - year: 2023
+    items:
+      - abstract: >+
+          In this paper, a Radio Frequency (RF) transformer (TF) based on LTCC
+          (Low Temperature Co-fired Ceramic) forthe output stage of differential
+          power amplifiers is presented. Instead of using an usual L-C matching
+          circuit, asmall-sized transformer was implemented on the LTCC board
+          and the results were verified through simulation. Forreduced size and
+          better performance, a TF using more metal layers was implemented and
+          compared with theexisting TF through simulation. As a result of
+          comparison, the proposed TF has an area reduced by 55% and acoupling
+          coefficient increased by 25%, and insertion loss improvement of about
+          0.4dB at 5GHz was confirmed.
+
+        pages: 53-58
+        authors: 우제욱 / Jewook Woo, 김희수 / Heesu Kim, 전주영
+        keywords:
+          - Transformer
+          - LTCC
+          - Power Amplifier
+          - Differential amplifier
+          - Magnetic coupling coefficient
+        title_ko: 차동 전력증폭기 출력단용 LTCC 기반 RF 트랜스포머 설계
+        featured: false
+        url: https://doi.org/10.7471/ikeee.2023.27.1.53
+        journal: 전기전자학회논문지 / Journal of IKEEE
+        title: LTCC-based transformer design for output stage of differential RF power
+          amplifiers
+        issue: "1"
+        volume: "27"
+        type: Journal
+        id: "Jewook "
+        conference: ""
+        year: 2023
+        category: Circuit Design
+        doi: 10.7471/ikeee.2023.27.1.53
+      - authors: 김욱현, 전주영
+        title_ko: 이동통신 단말기용 전력증폭기의 효율 개선을 위한 온도보상  바이어스 회로 설계
+        featured: false
+        location: 원주
+        title: 이동통신 단말기용 전력증폭기의 효율 개선을 위한 온도보상  바이어스 회로 설계
+        type: Conference
+        id: ukhyun
+        conference: 2023 반도체국제포럼
+        category: MMIC
+      - authors: 김욱현, 전주영
+        featured: false
+        date: 2023-08-24
+        conference_full: 2023년 한국전자파학회 하계종합학술대회
+        location: 델피노리조트(강원도 고성)
+        title: 이동통신 단말기용 전력증폭기의 효율 개선을 위한 온도보상 바이어스 회로 설계
+        type: Conference
+        id: ukhyun
+        conference: 2023년 한국전자파학회 하계종합학술대회
+        category: MMIC
+      - authors: 김욱현, 이상민, 전주영
+        featured: false
+        conference_full: 2023년도 전자반도체인공지능 학술대회
+        location: 강릉원주대학교(강릉)
+        title: 모바일 단말기용 전력 증폭기 효율 향상을 위한 온도보상 바이어스 회로 설계
+        type: Conference
+        id: ukhyun
+        conference: 2023년도 전자반도체인공지능 학술대회
+        year: ""
+        category: MMIC
   - year: 2022
     items:
       - abstract: In this paper, a two-stage single-ended power amplifier (PA) with
@@ -39,59 +138,35 @@ years:
         year: 2022
         category: Power Amplifier
         doi: 10.7471/ikeee.2022.26.3.456
-  - year: 2023
-    items:
-      - abstract: >+
-          In this paper, a Radio Frequency (RF) transformer (TF) based on LTCC
-          (Low Temperature Co-fired Ceramic) forthe output stage of differential
-          power amplifiers is presented. Instead of using an usual L-C matching
-          circuit, asmall-sized transformer was implemented on the LTCC board
-          and the results were verified through simulation. Forreduced size and
-          better performance, a TF using more metal layers was implemented and
-          compared with theexisting TF through simulation. As a result of
-          comparison, the proposed TF has an area reduced by 55% and acoupling
-          coefficient increased by 25%, and insertion loss improvement of about
-          0.4dB at 5GHz was confirmed.
-
-        pages: 53-58
-        authors: 우제욱 / Jewook Woo, 김희수 / Heesu Kim, 전주영
-        title_ko: 차동 전력증폭기 출력단용 LTCC 기반 RF 트랜스포머 설계
+      - authors: 우제욱, 김욱현, 이상민, 전주영
         featured: false
-        url: https://doi.org/10.7471/ikeee.2023.27.1.53
-        journal: 전기전자학회논문지 / Journal of IKEEE
-        title: LTCC-based transformer design for output stage of differential RF power
-          amplifiers
-        issue: "1"
-        volume: "27"
-        type: Journal
-        id: "1"
-        conference: ""
-        year: 2023
-        category: Circuit Design
-        doi: 10.7471/ikeee.2023.27.1.53
-  - year: 2026
+        date: 2022-11-18
+        conference_full: 2022년 한국전자파학회 제34차 정기총회 및 추계학술대회
+        location: 더케이호텔서울
+        title: Dual-band 증폭기를 위한 RF Transformer 설계
+        type: Conference
+        id: Jewook
+        conference: 제34차 정기총회 및 추계학술대회
+        category: Power Amplifier
+  - year: 2021
     items:
-      - abstract: In this paper, an effective miniaturization technique for a
-          conventional dual-band Wilkinson power divider ispresented. By
-          applying an additional size-reduction approach to a previously
-          reported π-type equivalent dual-bandstructure, the effective circuit
-          core area is significantly reduced while preserving the dual-band
-          operatingcharacteristics. The proposed miniaturized structure is
-          implemented on a cost-effective FR4 substrate instead ofexpensive
-          low-loss substrates, and its validity is experimentally verified at
-          0.92 GHz in the Sub-GHz IoT band and2.4 GHz in the ISM band.
-        pages: 109-113
-        authors: 최은성 / Eun-Seong Choi, 전주영
-        title_ko: IoT 무선 통신용 이중대역 윌킨슨 전력분배기의 소형화 기법
+      - authors: 김단비, 김욱현, 전주영
         featured: false
-        url: https://doi.org/10.7471/ikeee.2026.30.1.109
-        journal: 전기전자학회논문지 / Journal of IKEEE
-        title: Miniaturization Technique of a Dual-Band Wilkinson Power Divider for IoT
-          Wireless Communication
-        issue: "1"
-        volume: "30"
-        type: Journal
-        id: "1"
-        year: 2026
+        date: 2021-11-19
+        conference_full: 2021 한국전자파학회 제33차 정기총회 및 추계학술대회
+        location: 서울 더케이호텔서울 애비뉴
+        title: 접지면과의 거리에 따른 RF transformer의 Q-factor 양상
+        type: Conference
+        id: danbi
+        conference: 제33차 정기총회 및 추계학술대회
         category: Circuit Design
-        doi: 10.7471/ikeee.2026.30.1.109
+      - authors: 김욱현, 김단비, 이상민, 전주영
+        featured: false
+        date: 2021-11-19
+        conference_full: 2021 한국전자파학회 제33차 정기총회 및 추계학술대회
+        location: 서울 더케이호텔서울 애비뉴
+        title: RF transformer의 coil 결합 구조가 성능에 미치는 영향
+        type: Conference
+        id: ukhyun
+        conference: 제33차 정기총회 및 추계학술대회
+        category: Circuit Design
