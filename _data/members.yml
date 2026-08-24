@@ -210,10 +210,23 @@ items:
     email: gustjr3521@naver.com
     name_en: Hyeonseok Jeong
     category: undergrad
+  - name: 최은성
+    degree: M.S.
+    company_logo: https://march-jjh.github.io/MaRCH-Homepage/assets/images/432231b9e513e.png
+    order: 7
+    major_en: Electrical Engineering
+    current_position: MMII Laboratory
+    role_en: Alumni
+    role: 졸업생
+    major: 전자공학
+    id: eunsung
+    image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/스크린샷-2026-08-24-164505.png
+    name_en: Eunsung Choi
+    category: alumni
   - name: 김현중
     degree: B.S.
     company_logo: https://march-jjh.github.io/MaRCH-Homepage/assets/images/1719294513_1.png
-    order: 7
+    order: 8
     major_en: Electrical Engineering
     current_position: peopleworks ARSENAL
     role_en: Alumni
