@@ -52,7 +52,7 @@
     {% if include.pub.abstract %}
     <details class="publication-abstract">
       <summary>초록 보기</summary>
-      <p>{{ include.pub.abstract }}</p>
+      <p>{{ include.pub.abstract | newline_to_br }}</p>
     </details>
     {% endif %}
     

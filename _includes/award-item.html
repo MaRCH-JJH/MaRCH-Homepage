@@ -8,7 +8,7 @@
     <p class="award-organization">{{ include.award.organization }}</p>
     <p class="award-recipient">수상자: {{ include.award.recipient }}</p>
     {% if include.award.description %}
-    <p class="award-description">{{ include.award.description }}</p>
+    <p class="award-description">{{ include.award.description | newline_to_br }}</p>
     {% endif %}
   </div>
   
