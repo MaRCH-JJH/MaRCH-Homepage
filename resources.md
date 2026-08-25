@@ -35,10 +35,10 @@ lang: "ko_KR"
         <time class="resource-date" datetime="{{ item.date }}">{{ item.date | date: "%Y.%m.%d" }}</time>
         {% endif %}
       </div>
-      {% if item.file %}
-      <a href="{% include image-url.html path=item.file %}" class="resource-download" download aria-label="{{ item.title }} 다운로드">
-        {% include icon.html name="download" size="small" %}
-        다운로드
+      {% if item.url %}
+      <a href="{{ item.url }}" class="resource-link" target="_blank" rel="noopener noreferrer" aria-label="{{ item.title }} Google Drive에서 열기">
+        {% include icon.html name="external-link" size="small" %}
+        Drive에서 열기
       </a>
       {% endif %}
     </li>

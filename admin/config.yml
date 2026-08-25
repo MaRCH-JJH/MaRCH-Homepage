@@ -160,16 +160,16 @@ collections:
             ]}
           - {name: office, label: "연구실 위치", widget: "string", required: false}
 
-  # Resources (single file: _data/resources.yml -- 자료실 password + file
-  # list). Uploaded files go to their own assets/files/ folder instead of
-  # assets/images/, via the field-level media_folder/public_folder override.
+  # Resources (single file: _data/resources.yml -- 자료실 password + link
+  # list). Each item links out to a Google Drive file/folder instead of
+  # uploading into this repo, since large files don't belong in git.
   # NOTE: the password gate on the page itself is client-side only (this is
   # a static GitHub Pages site with no backend), so it only deters casual
   # visitors -- it isn't real access control.
   - name: "resources"
     label: "자료실"
     label_singular: "자료실"
-    description: "자료실 비밀번호 및 파일 관리"
+    description: "자료실 비밀번호 및 자료 목록 관리"
     files:
       - name: "resources"
         label: "자료실"
@@ -180,7 +180,7 @@ collections:
               {name: title, label: "제목", widget: "string", required: true},
               {name: description, label: "설명", widget: "text", required: false},
               {name: date, label: "날짜", widget: "datetime", required: false, date_format: "YYYY-MM-DD", time_format: false},
-              {name: file, label: "파일", widget: "file", required: true, media_folder: "assets/files", public_folder: "https://march-jjh.github.io/MaRCH-Homepage/assets/files"}
+              {name: url, label: "Google Drive 링크", widget: "string", required: true, hint: "Google Drive에서 '링크 보기' 권한으로 공유한 URL을 붙여넣으세요."}
             ]}
 
   # News (Jekyll posts, one file per entry in _posts/ -- this one genuinely is

@@ -1,10 +1,13 @@
 # 자료실 (Resources) page content
 # Editable via Decap CMS (자료실 collection)
 #
+# Each item links out to a Google Drive file/folder (url) instead of
+# uploading the file into this repo -- keeps large files off GitHub.
+#
 # IMPORTANT: this is a client-side-only gate (no server/backend on GitHub
 # Pages), so it only deters casual visitors -- anyone who views page source
-# or opens devtools can see the file list and links without the password.
-# Don't rely on this for anything genuinely sensitive.
+# or opens devtools can see the resource list and links without the
+# password. Don't rely on this for anything genuinely sensitive.
 
 password: "2430"
 

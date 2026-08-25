@@ -1099,7 +1099,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   color: var(--color-muted);
 }
 
-.resource-download {
+.resource-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -1113,7 +1113,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   transition: border-color var(--transition-fast), color var(--transition-fast);
 }
 
-.resource-download:hover {
+.resource-link:hover {
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
@@ -1131,7 +1131,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
     flex-wrap: wrap;
   }
 
-  .resource-download {
+  .resource-link {
     width: 100%;
     justify-content: center;
   }
