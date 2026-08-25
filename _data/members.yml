@@ -207,12 +207,12 @@ items:
     id: hyeonseok
     image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260824_160551593.jpg
     office: MaRCH Lab
-    email: gustjr3521@naver.com
+    email: gustjr3521@kangwon.ac.kr
     name_en: Hyeonseok Jeong
     category: undergrad
   - name: 최은성
     degree: M.S.
-    company_logo: https://march-jjh.github.io/MaRCH-Homepage/assets/images/스크린샷-2026-08-24-165351.png
+    company_logo: https://march-jjh.github.io/MaRCH-Homepage/assets/images/default.png
     order: 7
     major_en: Electrical Engineering
     current_position: MMII Laboratory
