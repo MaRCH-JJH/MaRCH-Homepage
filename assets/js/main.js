@@ -165,6 +165,41 @@
     });
   }
 
+  function initResourcesGate() {
+    const gate = document.getElementById('resources-gate');
+    const content = document.getElementById('resources-content');
+    if (!gate || !content) return;
+
+    const STORAGE_KEY = 'marchlab-resources-unlocked';
+    const correctPassword = window.__RESOURCES_PASSWORD__ || '';
+
+    function unlock() {
+      gate.hidden = true;
+      content.hidden = false;
+    }
+
+    if (sessionStorage.getItem(STORAGE_KEY) === '1') {
+      unlock();
+      return;
+    }
+
+    const form = document.getElementById('resources-gate-form');
+    const input = document.getElementById('resources-password-input');
+    const error = document.getElementById('resources-gate-error');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (input.value === correctPassword) {
+        sessionStorage.setItem(STORAGE_KEY, '1');
+        unlock();
+      } else {
+        error.hidden = false;
+        input.value = '';
+        input.focus();
+      }
+    });
+  }
+
   function initImageModal() {
     const triggers = document.querySelectorAll('.award-image-trigger');
     
@@ -328,7 +363,7 @@
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     const animatedElements = document.querySelectorAll(
-      '.highlight-card, .research-card, .award-item, .publication-item, .member-card, .news-card, .stat-item, .workflow-step'
+      '.highlight-card, .research-card, .award-item, .publication-item, .member-card, .news-card, .stat-item, .workflow-step, .resource-item'
     );
 
     const observerOptions = {
@@ -408,6 +443,7 @@
     initAnimations();
     initCopyDoi();
     initLazyImages();
+    initResourcesGate();
   }
 
   if (document.readyState === 'loading') {

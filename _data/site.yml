@@ -36,6 +36,9 @@ navigation:
   - title: 논문/성과
     url: /publications/
     en: Publications
+  - title: 자료실
+    url: /resources/
+    en: Resources
   - title: 연락처
     url: /contact/
     en: Contact

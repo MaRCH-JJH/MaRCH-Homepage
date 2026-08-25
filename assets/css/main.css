@@ -971,6 +971,172 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   border-radius: var(--radius-docs-card);
 }
 
+/* Resources page (자료실) -- client-side password gate. This is a static
+   GitHub Pages site with no backend, so the check only happens in the
+   browser; it deters casual visitors but isn't real access control. */
+.resources-gate {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 40px;
+  background: var(--color-surface);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-docs-card);
+}
+
+[data-theme="dark"] .resources-gate,
+:root:not([data-theme="light"]) .resources-gate {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.resources-gate-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: var(--color-canvas);
+  color: var(--color-muted);
+  border-radius: 50%;
+  margin-bottom: var(--space-content);
+}
+
+.resources-gate-title {
+  margin-bottom: var(--space-compact);
+}
+
+.resources-gate-subtitle {
+  font-size: var(--type-body-small-size);
+  color: var(--color-muted);
+  margin-bottom: var(--space-content);
+}
+
+.resources-gate-form {
+  display: flex;
+  gap: var(--space-compact);
+}
+
+.resources-gate-input {
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-compact) var(--space-content);
+  font-family: var(--font-text);
+  font-size: var(--type-body-size);
+  color: var(--color-foreground);
+  background: var(--color-surface);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-control);
+}
+
+[data-theme="dark"] .resources-gate-input,
+:root:not([data-theme="light"]) .resources-gate-input {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.resources-gate-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.resources-gate-error {
+  margin-top: var(--space-content);
+  font-size: var(--type-body-small-size);
+  color: #c0392b;
+}
+
+.resources-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-content);
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-content);
+  padding: var(--space-content);
+  background: var(--color-surface);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-docs-card);
+}
+
+[data-theme="dark"] .resource-item,
+:root:not([data-theme="light"]) .resource-item {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.resource-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: var(--color-canvas);
+  color: var(--color-muted);
+  border-radius: var(--radius-control);
+}
+
+.resource-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.resource-title {
+  font-size: var(--type-body-size);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.resource-description {
+  font-size: var(--type-body-small-size);
+  color: var(--color-secondary);
+  margin-bottom: 4px;
+}
+
+.resource-date {
+  font-size: var(--type-caption-size);
+  color: var(--color-muted);
+}
+
+.resource-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  font-size: var(--type-body-small-size);
+  font-weight: 500;
+  color: var(--color-link);
+  padding: var(--space-compact) var(--space-content);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-marketing-pill);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.resource-download:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+@media (max-width: 480px) {
+  .resources-gate {
+    padding: 40px 24px;
+  }
+
+  .resources-gate-form {
+    flex-direction: column;
+  }
+
+  .resource-item {
+    flex-wrap: wrap;
+  }
+
+  .resource-download {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 .research-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));

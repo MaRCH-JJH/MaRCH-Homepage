@@ -160,6 +160,29 @@ collections:
             ]}
           - {name: office, label: "연구실 위치", widget: "string", required: false}
 
+  # Resources (single file: _data/resources.yml -- 자료실 password + file
+  # list). Uploaded files go to their own assets/files/ folder instead of
+  # assets/images/, via the field-level media_folder/public_folder override.
+  # NOTE: the password gate on the page itself is client-side only (this is
+  # a static GitHub Pages site with no backend), so it only deters casual
+  # visitors -- it isn't real access control.
+  - name: "resources"
+    label: "자료실"
+    label_singular: "자료실"
+    description: "자료실 비밀번호 및 파일 관리"
+    files:
+      - name: "resources"
+        label: "자료실"
+        file: "_data/resources.yml"
+        fields:
+          - {name: password, label: "비밀번호", widget: "string", required: true, hint: "자료실 접속 비밀번호입니다. 실제 서버 인증이 아닌 방문자 안내용입니다."}
+          - {name: items, label: "자료 목록", widget: "list", fields: [
+              {name: title, label: "제목", widget: "string", required: true},
+              {name: description, label: "설명", widget: "text", required: false},
+              {name: date, label: "날짜", widget: "datetime", required: false, date_format: "YYYY-MM-DD", time_format: false},
+              {name: file, label: "파일", widget: "file", required: true, media_folder: "assets/files", public_folder: "https://march-jjh.github.io/MaRCH-Homepage/assets/files"}
+            ]}
+
   # News (Jekyll posts, one file per entry in _posts/ -- this one genuinely is
   # a folder collection, unlike members/research/awards/publications above,
   # since Jekyll posts are already designed as one-file-per-post)
