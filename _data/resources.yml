@@ -4,10 +4,19 @@
 # Each item links out to a Google Drive file/folder (url) instead of
 # uploading the file into this repo -- keeps large files off GitHub.
 #
-# IMPORTANT: this is a client-side-only gate (no server/backend on GitHub
-# Pages), so it only deters casual visitors -- anyone who views page source
-# or opens devtools can see the resource list and links without the
-# password. Don't rely on this for anything genuinely sensitive.
+# password: kept here as plain text (easy to edit via the CMS), but it is
+# hashed with SHA-256 at build time (see _plugins/sha256_filter.rb) before
+# it ever reaches the built page -- resources.md only ships the hash, not
+# this plaintext value, so "View Source" / devtools no longer show it
+# directly.
+#
+# IMPORTANT: this is still a client-side-only gate (no server/backend on
+# GitHub Pages) with no rate limiting, so it only deters casual visitors --
+# a short/numeric password (like the current 4-digit one) can still be
+# brute-forced against the visible hash from the browser console in well
+# under a second. Don't rely on this for anything genuinely sensitive, and
+# prefer a longer, non-numeric password if you want it to hold up to more
+# than a casual glance.
 
 password: "2430"
 

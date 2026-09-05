@@ -165,13 +165,21 @@
     });
   }
 
+  async function sha256Hex(text) {
+    const data = new TextEncoder().encode(text);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    return Array.from(new Uint8Array(hashBuffer))
+      .map(byte => byte.toString(16).padStart(2, '0'))
+      .join('');
+  }
+
   function initResourcesGate() {
     const gate = document.getElementById('resources-gate');
     const content = document.getElementById('resources-content');
     if (!gate || !content) return;
 
     const STORAGE_KEY = 'marchlab-resources-unlocked';
-    const correctPassword = window.__RESOURCES_PASSWORD__ || '';
+    const correctHash = window.__RESOURCES_PASSWORD_HASH__ || '';
 
     function unlock() {
       gate.hidden = true;
@@ -187,9 +195,10 @@
     const input = document.getElementById('resources-password-input');
     const error = document.getElementById('resources-gate-error');
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      if (input.value === correctPassword) {
+      const enteredHash = await sha256Hex(input.value);
+      if (enteredHash === correctHash) {
         sessionStorage.setItem(STORAGE_KEY, '1');
         unlock();
       } else {

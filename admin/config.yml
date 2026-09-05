@@ -175,7 +175,7 @@ collections:
         label: "자료실"
         file: "_data/resources.yml"
         fields:
-          - {name: password, label: "비밀번호", widget: "string", required: true, hint: "자료실 접속 비밀번호입니다. 실제 서버 인증이 아닌 방문자 안내용입니다."}
+          - {name: password, label: "비밀번호", widget: "string", required: true, hint: "여기에는 평문으로 입력하세요 (배포 시 자동으로 안전하게 변환되어 배포된 페이지에는 원문이 노출되지 않습니다). 다만 서버가 없는 사이트라 방문자 안내용이지 실제 보안은 아니며, 숫자 4자리처럼 짧은 비밀번호는 여전히 쉽게 뚫릴 수 있으니 가능하면 길고 복잡한 값을 권장합니다."}
           - {name: items, label: "자료 목록", widget: "list", fields: [
               {name: title, label: "제목", widget: "string", required: true},
               {name: description, label: "설명", widget: "text", required: false},

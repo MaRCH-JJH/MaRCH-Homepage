@@ -52,5 +52,7 @@ lang: "ko_KR"
 </div>
 
 <script>
-  window.__RESOURCES_PASSWORD__ = {{ site.data.resources.password | jsonify }};
+  // Only a SHA-256 hash of the password ships in page source -- see
+  // _plugins/sha256_filter.rb and initResourcesGate() in main.js.
+  window.__RESOURCES_PASSWORD_HASH__ = {{ site.data.resources.password | sha256 | jsonify }};
 </script>
