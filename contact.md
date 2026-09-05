@@ -8,7 +8,19 @@ lang: "ko_KR"
 <div class="contact-grid">
   <div class="contact-info">
     <h3>연락처</h3>
-    
+
+    {% if site.data.site.apply_form_url %}
+    <div class="contact-item">
+      <div class="contact-icon">
+        {% include icon.html name="briefcase" size="large" %}
+      </div>
+      <div class="contact-details">
+        <h4>연구실 지원</h4>
+        <p><a href="{{ site.data.site.apply_form_url }}" target="_blank" rel="noopener noreferrer">지원서 작성하기</a></p>
+      </div>
+    </div>
+    {% endif %}
+
     <div class="contact-item">
       <div class="contact-icon">
         {% include icon.html name="location" size="large" %}
@@ -49,18 +61,6 @@ lang: "ko_KR"
         <p><a href="{{ site.data.site.github }}" target="_blank" rel="noopener noreferrer">{{ site.data.site.github }}</a></p>
       </div>
     </div>
-
-    {% if site.data.site.apply_form_url %}
-    <div class="contact-item">
-      <div class="contact-icon">
-        {% include icon.html name="briefcase" size="large" %}
-      </div>
-      <div class="contact-details">
-        <h4>연구실 지원</h4>
-        <p><a href="{{ site.data.site.apply_form_url }}" target="_blank" rel="noopener noreferrer">지원서 작성하기</a></p>
-      </div>
-    </div>
-    {% endif %}
   </div>
   
   <div class="contact-map">
