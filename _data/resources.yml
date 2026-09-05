@@ -20,4 +20,7 @@
 
 password: "march2403"
 
-items: []
+items:
+  - title: EM Simulation 공부 자료
+    date: 2026-08-25
+    url: https://drive.google.com/drive/folders/1cITGitcU5S6VsFGTOo5Sc0BG2cd1tqJF?usp=drive_link
