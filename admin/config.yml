@@ -47,6 +47,7 @@ collections:
           - {name: address, label: "주소 (한글)", widget: "string"}
           - {name: address_en, label: "주소 (영문)", widget: "string"}
           - {name: github, label: "GitHub URL", widget: "string"}
+          - {name: apply_form_url, label: "연구실 지원서 폼 URL", widget: "string", required: false, hint: "연락처 페이지의 '지원서 작성하기' 버튼이 연결됩니다 (Naver Form, Google Form 등)."}
           - {name: keywords, label: "키워드", widget: "string"}
           - {name: og_image, label: "OG 이미지 경로", widget: "string"}
           - {name: navigation, label: "네비게이션", widget: "list", fields: [
