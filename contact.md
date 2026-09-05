@@ -49,6 +49,18 @@ lang: "ko_KR"
         <p><a href="{{ site.data.site.github }}" target="_blank" rel="noopener noreferrer">{{ site.data.site.github }}</a></p>
       </div>
     </div>
+
+    {% if site.data.site.apply_form_url %}
+    <div class="contact-item">
+      <div class="contact-icon">
+        {% include icon.html name="briefcase" size="large" %}
+      </div>
+      <div class="contact-details">
+        <h4>연구실 지원</h4>
+        <p><a href="{{ site.data.site.apply_form_url }}" target="_blank" rel="noopener noreferrer">지원서 작성하기</a></p>
+      </div>
+    </div>
+    {% endif %}
   </div>
   
   <div class="contact-map">
@@ -77,18 +89,3 @@ lang: "ko_KR"
     </div>
   </div>
 </section>
-
-{% if site.data.site.apply_form_url %}
-<section class="about-cta">
-  <div class="container">
-    <div class="about-cta-inner">
-      <h2 class="about-cta-title">연구실 지원</h2>
-      <p class="about-cta-text">MaRCH Lab에 지원하고 싶으신 분은 아래 지원서를 작성해 주세요.</p>
-      <a href="{{ site.data.site.apply_form_url }}" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
-        지원서 작성하기
-        {% include icon.html name="external-link" size="small" %}
-      </a>
-    </div>
-  </div>
-</section>
-{% endif %}
