@@ -1374,7 +1374,12 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 
 .award-content {
   flex: 1;
-  min-width: 280px;
+  /* min-width: 0 (not a fixed floor like 280px) -- .award-item is
+     flex-wrap, so the 160px image already drops to its own line when
+     space is tight. A fixed 280px floor doesn't account for the
+     .award-year-content/.container padding eating into that budget, which
+     forced horizontal overflow on narrow phones (~320-375px). */
+  min-width: 0;
 }
 
 .award-meta {
