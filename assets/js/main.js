@@ -47,6 +47,43 @@
     });
   }
 
+  function initNewsViewToggle() {
+    const list = document.getElementById('news-list');
+    const buttons = document.querySelectorAll('.news-view-btn');
+    if (!list || buttons.length === 0) return;
+
+    const STORAGE_KEY = 'marchlab-news-view';
+
+    function setView(view) {
+      list.classList.toggle('is-grid-view', view === 'grid');
+      buttons.forEach(btn => {
+        const isActive = btn.dataset.view === view;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+      try {
+        localStorage.setItem(STORAGE_KEY, view);
+      } catch (e) {
+        // localStorage unavailable (private browsing, etc.) -- view still
+        // works for this page load, it just won't be remembered.
+      }
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => setView(button.dataset.view));
+    });
+
+    let savedView = null;
+    try {
+      savedView = localStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+      // ignore
+    }
+    if (savedView === 'grid') {
+      setView('grid');
+    }
+  }
+
   function initMemberTabs() {
     const tabButtons = document.querySelectorAll('.tab-btn');
     const memberCards = document.querySelectorAll('.member-card');
@@ -453,6 +490,7 @@
     initCopyDoi();
     initLazyImages();
     initResourcesGate();
+    initNewsViewToggle();
   }
 
   if (document.readyState === 'loading') {

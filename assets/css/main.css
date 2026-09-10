@@ -716,6 +716,57 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   gap: var(--space-content);
 }
 
+/* /news/ page's view toggle -- .news-list defaults to a single column and
+   switches to the same 3-up layout as .news-grid when .is-grid-view is
+   added by initNewsViewToggle() in main.js. */
+.news-view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-compact);
+  margin-bottom: var(--space-content);
+}
+
+.news-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: var(--space-compact) var(--space-content);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-marketing-pill);
+  font-family: var(--font-text);
+  font-size: var(--type-body-small-size);
+  font-weight: 500;
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.news-view-btn:hover {
+  color: var(--color-foreground);
+  background: var(--color-canvas);
+}
+
+.news-view-btn.active {
+  color: var(--color-primary);
+  background: rgba(0, 113, 227, 0.1);
+}
+
+.news-view-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-content);
+}
+
+.news-list.is-grid-view {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
 .stats-section {
   background: var(--color-surface);
   padding: 60px 0;
@@ -2802,6 +2853,7 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
   
   .highlights-grid,
   .news-grid,
+  .news-list.is-grid-view,
   .research-grid,
   .members-grid {
     grid-template-columns: 1fr;
