@@ -19,6 +19,9 @@ navigation:
   - title: 홈
     url: /
     en: Home
+  - title: 최신소식
+    url: /news/
+    en: News
   - title: 연구실 소개
     url: /about/
     en: About

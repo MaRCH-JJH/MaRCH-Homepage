@@ -1424,7 +1424,16 @@ h3 { font-size: var(--type-tile-heading-size); line-height: var(--type-tile-head
 
 .award-description {
   font-size: var(--type-body-small-size);
+  line-height: var(--type-body-line-height);
   color: var(--color-secondary);
+}
+
+.award-description p {
+  margin-bottom: var(--space-compact);
+}
+
+.award-description p:last-child {
+  margin-bottom: 0;
 }
 
 .award-image-wrapper {

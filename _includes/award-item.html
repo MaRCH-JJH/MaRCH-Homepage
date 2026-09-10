@@ -8,7 +8,14 @@
     <p class="award-organization">{{ include.award.organization }}</p>
     <p class="award-recipient">수상자: {{ include.award.recipient }}</p>
     {% if include.award.description %}
-    <p class="award-description">{{ include.award.description | newline_to_br }}</p>
+    <div class="award-description">
+      {% assign description_paragraphs = include.award.description | split: "\n" %}
+      {% for paragraph in description_paragraphs %}
+      {% if paragraph.size > 0 %}
+      <p>{{ paragraph }}</p>
+      {% endif %}
+      {% endfor %}
+    </div>
     {% endif %}
   </div>
   
