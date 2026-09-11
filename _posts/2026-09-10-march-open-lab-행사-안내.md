@@ -10,6 +10,7 @@ excerpt: |-
   전자반도체공학부 Open Lab 행사, MaRCH Lab.이 재학생들과 함께했습니다.
   MaRCH Lab., 전자반도체공학부 Open Lab에서 연구실을 소개했습니다.
   전자반도체공학부 재학생 대상 Open Lab 행사 개최 소식을 전합니다.
+image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/260911_open_lab1.jpg
 gallery_columns: "3"
 ---
 전자반도체공학부 Open Lab 행사가 9월 11일(금) 오후 1시, 공학2호관(N12) 516호에서 진행되었습니다.
