@@ -1,7 +1,7 @@
 ---
 layout: post
 lang: ko_KR
-title: Open Lab 행사 안내
+title: Open Lab. 행사 안내
 date: 2026-09-11
 pinned: false
 order: 1
