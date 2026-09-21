@@ -153,31 +153,6 @@ items:
     email: kbj5521@kangwon.ac.kr
     name_en: Byeongjun Kwon
     category: undergrad
-  - research_interests_en:
-      - RF Power Amplifier
-      - Passive Components
-      - MMIC Design
-    research_interests:
-      - RF Power Amplifier
-      - Passive Components
-      - MMIC Design
-    bio: RF 및 마이크로파 회로설계에 관심을 가지고 있으며, 특히 MMIC(Monolithic Microwave Integrated
-      Circuit) 설계 분야를 중점적으로 공부하고 있습니다. 고주파 회로의 동작 원리와 설계 기법을 익히고, 시뮬레이션과 회로 설계
-      경험을 바탕으로 RF 집적회로 설계 역량을 발전시키는 것을 목표로 하고 있습니다.
-    name: 김린
-    degree: ""
-    phone: 010-8524-4997
-    order: 5
-    major_en: Department of Electronic and Semiconductor Engineering
-    role_en: Undergraduate Researcher
-    role: 학부연구생
-    major: 전자반도체공학부
-    id: lynn
-    image: https://march-jjh.github.io/MaRCH-Homepage/assets/images/kakaotalk_20260823_170620760.jpg
-    office: MaRCH Lab
-    email: lynnda64589@gmail.com
-    name_en: Kim Lynn
-    category: undergrad
   - bio_en: I am an undergraduate student majoring in Electronics and Semiconductor
       Engineering, with an interest in RF and microwave engineering. Currently,
       I am studying RF circuits and transmission lines in an RF research
